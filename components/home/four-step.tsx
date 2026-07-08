@@ -10,7 +10,7 @@ import {
 
 export function FourStepSection() {
     return (
-        <section className="relative">
+        <section className="relative m-3">
             <Tabs defaultValue="1">
                 <div className="relative w-full mx-auto max-w-5xl border border-b-0 py-10 mx-auto border-[#D5BBEA]/60 rounded-t-[40px]">
                     <div className="relative mt-10 flex flex-col h-full justify-center items-center">
@@ -33,27 +33,29 @@ export function FourStepSection() {
                         </div>
 
                     </div>
-                    <div className="flex flex-col justify-center items-center mt-6">
-
-                        <TabsList>
-                            <TabsTrigger value="1">Knee pain</TabsTrigger>
-                            <TabsTrigger value="2">Back pain</TabsTrigger>
-                            <TabsTrigger value="3">Muscle longevity</TabsTrigger>
-                            <TabsTrigger value="4">Obesity & GLP-1</TabsTrigger>
-                        </TabsList>
-
+                    <div className="flex justify-center mt-10">
+                        <div className="">
+                            <TabsList className="overflow-auto w-full mx-auto  max-w-sm md:max-w-full">
+                                <div className="flex flex-nowrap overflow-auto  whitespace-nowrap">
+                                    <TabsTrigger value="1">Knee pain</TabsTrigger>
+                                    <TabsTrigger value="2">Back pain</TabsTrigger>
+                                    <TabsTrigger value="3">Muscle longevity</TabsTrigger>
+                                    <TabsTrigger value="4">Obesity & GLP-1</TabsTrigger>
+                                </div>
+                            </TabsList>
+                        </div>
                     </div>
                 </div>
                 <TabsContent value="1" className={"relative h-full -mt-3 w-full mx-auto max-w-7xl"}>
-                    <div className="rounded-3xl">
+                     
                         <Image
                             src="/new/knee-pain-1.jpg"
                             alt="Hero"
                             width={1600}
                             height={1000}
-                            className="object-cover rounded-3xl h-full w-full"
+                            className="object-cover md:rounded-3xl rounded-sm h-full w-full"
                         />
-                    </div>
+                    
                 </TabsContent>
                 <TabsContent value="2" className={"relative h-full -mt-3 w-full mx-auto max-w-7xl"}><div className="rounded-3xl">
                     <Image
@@ -61,7 +63,7 @@ export function FourStepSection() {
                         alt="Hero"
                         width={1600}
                         height={1000}
-                        className="object-cover rounded-3xl h-full w-full"
+                        className="object-cover md:rounded-3xl rounded-sm h-full w-full"
                     />
                 </div>
                 </TabsContent>
@@ -71,7 +73,7 @@ export function FourStepSection() {
                         alt="Hero"
                         width={1600}
                         height={1000}
-                        className="object-cover rounded-3xl h-full w-full"
+                        className="object-cover md:rounded-3xl rounded-sm h-full w-full"
                     />
                 </div>
                 </TabsContent>
@@ -81,7 +83,7 @@ export function FourStepSection() {
                         alt="Hero"
                         width={1600}
                         height={1000}
-                        className="object-cover rounded-3xl h-full w-full"
+                        className="object-cover md:rounded-3xl rounded-sm h-full w-full"
                     />
                 </div>
                 </TabsContent>
@@ -144,7 +146,7 @@ export function FourStepSection() {
                     <HoverCardContent>
                         A fragment of cross-linked type II collagen, reflecting cartilage degradation and enabling assessment of joint tissue turnover. Key features and values.
                     </HoverCardContent>
-                </HoverCard> 
+                </HoverCard>
             </div>
         </section>
     );

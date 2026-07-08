@@ -12,25 +12,25 @@ import {
 
 const steps = [
     {
-        value: "account",
+        value: "1",
         day: "Day 1-3",
         title: "OrthoAGE™ baseline",
         description: "Cartilage, inflammatory & muscle biomarkers drawn. Biological knee age computed in 48 hours.",
     },
     {
-        value: "profile",
+        value: "2",
         day: "Day 7",
         title: "Protocol designed",
         description: "Plant formulation, movement therapy, and GLP-1 if indicated — all biomarker-driven.",
     },
     {
-        value: "payment",
+        value: "3",
         day: "Day 30/60",
         title: "Payment Details",
         description: "Set up billing and payment methods",
     },
     {
-        value: "complete",
+        value: "4",
         day: "Day 90",
         title: "Complete Setup",
         description: "Review and finish your account setup",
@@ -38,7 +38,7 @@ const steps = [
 ];
 export function ProtocolSection() {
     return (
-        <section className="relative py-20">
+        <section className="relative py-20 m-3">
 
             <div className="relative flex flex-col h-full space-y-6 justify-center items-center">
 
@@ -50,11 +50,11 @@ export function ProtocolSection() {
                 </div>
 
             </div>
-            <Stepper defaultValue="account" className="w-full justify-center mx-auto mt-20 flex max-w-3xl">
+            <Stepper defaultValue="1" className="w-full justify-center mx-auto mt-20 flex max-w-3xl">
                 <StepperList>
                     {steps.map((step) => (
                         <StepperItem key={step.value} value={step.value}>
-                            <StepperTrigger className="flex flex-col items-center gap-6">
+                            <StepperTrigger className="flex flex-col text-center justify-center items-center gap-6">
                                 <span className="text-md font-semibold text-black uppercase">
                                     {step.day}
                                 </span>

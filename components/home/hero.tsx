@@ -6,18 +6,18 @@ import { GaugeDemo1, GaugeDemo2, GaugeDemo3 } from "./gauge-demo";
  
 export function HeroSection1() {
     return (
-        <section className="relative h-[920px] w-full overflow-hidden">
-            <div className="absolute inset-0 ring ring-[#D5BBEA] rounded-3xl m-3">
+        <section className="relative h-[800px] md:h-[920px]  w-full overflow-hidden">
+            <div className="absolute inset-0  m-3">
              <Image
                     src="/new/hero-1.jpg"
                     alt="Hero"
                     width={1600}
                     height={1000}
-                    className="object-cover rounded-3xl h-full w-full"
+                    className="object-cover rounded-[30px] h-full w-full"
                 />
             </div> 
             <GaugeDemo1 /> 
-            <div className="absolute block md:hidden inset-3 rounded-3xl bg-black/40" />
+            <div className="absolute block md:hidden inset-3 rounded-[30px] bg-black/40" />
  
             <div className="relative z-10 flex h-full items-center">
                 <div className="container mx-auto mt-20">
@@ -55,20 +55,20 @@ export function HeroSection1() {
 
 export function HeroSection2() {
     return (
-        <section className="relative h-[920px] w-full overflow-hidden">
-            <div className="absolute inset-0 m-3">
+        <section className="relative h-[800px] md:h-[920px] w-full overflow-hidden">
+            <div className="absolute  inset-0 m-3">
                 <Image
                     src="/new/hero-2.jpg"
                     alt="Hero"
                     width={1600}
                     height={1000}
-                    className="object-cover rounded-3xl h-full w-full"
+                    className="object-cover rounded-[30px] h-full w-full"
                 />
             </div>
 
             <GaugeDemo2 />
 
-            <div className="absolute block  md:hidden inset-3 rounded-3xl bg-white/40" />
+            <div className="absolute block  md:hidden inset-3 rounded-[30px] bg-white/40" />
 
              
 
@@ -110,20 +110,20 @@ export function HeroSection2() {
 
 export function HeroSection3() {
     return (
-        <section className="relative h-[920px] w-full overflow-hidden">
-            <div className="absolute inset-0 m-3">
+        <section className="relative h-[800px] md:h-[920px] w-full overflow-hidden">
+            <div className="absolute inset-0  m-3">
                 <Image
                     src="/new/hero-3.jpg"
                     alt="Hero"
                     width={1600}
                     height={1000}
-                    className="object-cover rounded-3xl h-full w-full"
+                    className="object-cover rounded-[30px] h-full w-full"
                 />
             </div>
 
             <GaugeDemo3 />
 
-            <div className="absolute block md:hidden inset-3 rounded-3xl bg-white/40" />
+            <div className="absolute block md:hidden inset-3 rounded-[30px] bg-white/40" />
 
              
 

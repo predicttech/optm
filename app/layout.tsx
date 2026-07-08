@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils";
 import Header from "@/components/layout/header";
 import { euclid, idGrotesk } from "@/lib/fonts";
 import { StripSection } from "@/components/home/strip";
+import { Footer } from "@/components/layout/footer";
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' })
 
@@ -30,6 +31,7 @@ export default function RootLayout({
           <StripSection/>
           <Header />
           {children}
+          <Footer/>
           </ThemeProvider>
       </body>
     </html>

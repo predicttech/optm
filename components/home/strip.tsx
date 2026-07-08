@@ -3,7 +3,7 @@ import { Dithering, NeuroNoise } from "@paper-design/shaders-react";
 
 export function StripSection() {
     return (
-        <section className="z-50 relative w-full gap-3 flex justify-center items-center py-2">
+        <section className="z-50 px-6 relative w-full gap-2 flex justify-center items-center py-2">
             <p className="text-sm">
                 India's first biomarker-driven pain & metabolic clinic.
             </p>

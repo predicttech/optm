@@ -52,7 +52,7 @@ export function CarouselHero() {
             }}
             className="relative -mt-17"
         >
-            <CarouselContent className="h-[920px]">
+            <CarouselContent className="h-[800px] md:h-[920px]">
                 <CarouselItem>
                     <HeroSection1 />
                 </CarouselItem>
