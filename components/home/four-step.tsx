@@ -7,6 +7,14 @@ import {
     HoverCardContent,
     HoverCardTrigger,
 } from "@/components/ui/hover-card"
+import {
+    CompareSlider,
+    CompareSliderAfter,
+    CompareSliderBefore,
+    CompareSliderHandle,
+} from "@/components/ui/compare-slider";
+import { HugeiconsIcon } from "@hugeicons/react";
+import { ChevronDoubleCloseIcon } from "@hugeicons/core-free-icons";
 
 export function FourStepSection() {
     return (
@@ -46,43 +54,99 @@ export function FourStepSection() {
                 </div>
                 <TabsContent value="1" className={"relative h-full -mt-3 w-full mx-auto max-w-7xl"}>
 
-                    <Image
-                        src="/new/knee-pain-1.jpg"
-                        alt="Hero"
-                        width={1600}
-                        height={1000}
-                        className="object-cover md:rounded-3xl rounded-sm h-full w-full"
-                    />
+                    <CompareSlider
+                        defaultValue={40}
+                        className="relative w-full aspect-[16/8] overflow-hidden rounded-none md:rounded-3xl"
+                    >
+                        <CompareSliderBefore>
+                            <img
+                                src="/new/knee-pain-1.jpg"
+                                alt="Before"
+                                className="w-full h-full object-cover"
+                            />
+                        </CompareSliderBefore>
+
+                        <CompareSliderAfter>
+                            <img
+                                src="/new/knee-pain-2.jpg"
+                                alt="After"
+                                className="w-full h-full object-cover"
+                            />
+                        </CompareSliderAfter>
+                        <CompareSliderHandle />
+                    </CompareSlider>
 
                 </TabsContent>
                 <TabsContent value="2" className={"relative h-full -mt-3 w-full mx-auto max-w-7xl"}><div className="rounded-3xl">
-                    <Image
-                        src="/new/knee-pain-1.jpg"
-                        alt="Hero"
-                        width={1600}
-                        height={1000}
-                        className="object-cover md:rounded-3xl rounded-sm h-full w-full"
-                    />
+                    <CompareSlider
+                        defaultValue={40}
+                        className="relative w-full aspect-[16/8] overflow-hidden rounded-none md:rounded-3xl"
+                    >
+                        <CompareSliderBefore>
+                            <img
+                                src="/new/back-pain-1.jpg"
+                                alt="Before"
+                                className="w-full h-full object-cover"
+                            />
+                        </CompareSliderBefore>
+
+                        <CompareSliderAfter>
+                            <img
+                                src="/new/back-pain-2.jpg"
+                                alt="After"
+                                className="w-full h-full object-cover"
+                            />
+                        </CompareSliderAfter>
+                        <CompareSliderHandle />
+                    </CompareSlider>
                 </div>
                 </TabsContent>
                 <TabsContent value="3" className={"relative h-full -mt-3 w-full mx-auto max-w-7xl"}><div className="rounded-3xl">
-                    <Image
-                        src="/new/knee-pain-1.jpg"
-                        alt="Hero"
-                        width={1600}
-                        height={1000}
-                        className="object-cover md:rounded-3xl rounded-sm h-full w-full"
-                    />
+                    <CompareSlider
+                        defaultValue={40}
+                        className="relative w-full aspect-[16/8] overflow-hidden rounded-none md:rounded-3xl"
+                    >
+                        <CompareSliderBefore>
+                            <img
+                                src="/new/muscle-pain-1.jpg"
+                                alt="Before"
+                                className="w-full h-full object-cover"
+                            />
+                        </CompareSliderBefore>
+
+                        <CompareSliderAfter>
+                            <img
+                                src="/new/muscle-pain-2.jpg"
+                                alt="After"
+                                className="w-full h-full object-cover"
+                            />
+                        </CompareSliderAfter>
+                        <CompareSliderHandle />
+                    </CompareSlider>
                 </div>
                 </TabsContent>
                 <TabsContent value="4" className={"relative h-full -mt-3 w-full mx-auto max-w-7xl"}><div className="rounded-3xl">
-                    <Image
-                        src="/new/knee-pain-1.jpg"
-                        alt="Hero"
-                        width={1600}
-                        height={1000}
-                        className="object-cover md:rounded-3xl rounded-sm h-full w-full"
-                    />
+                    <CompareSlider
+                        defaultValue={40}
+                        className="relative w-full aspect-[16/8] overflow-hidden rounded-none md:rounded-3xl"
+                    >
+                        <CompareSliderBefore>
+                            <img
+                                src="/new/obesity-pain-1.jpg"
+                                alt="Before"
+                                className="w-full h-full object-cover"
+                            />
+                        </CompareSliderBefore>
+
+                        <CompareSliderAfter>
+                            <img
+                                src="/new/obesity-pain-2.jpg"
+                                alt="After"
+                                className="w-full h-full object-cover"
+                            />
+                        </CompareSliderAfter>
+                        <CompareSliderHandle />
+                    </CompareSlider>
                 </div>
                 </TabsContent>
             </Tabs>

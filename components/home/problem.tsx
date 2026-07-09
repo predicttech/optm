@@ -20,8 +20,8 @@ export function ProblemSection() {
                         Chronic pain and metabolic disease are managed in brief, separate appointments. Between visits, inflammation compounds, cartilage degrades, and muscle mass declines silently. Nobody is measuring what is happening in between.
                     </p>
                 </div>
-                <div className="grid max-w-3xl mt-10 grid-cols-2 ">
-                    <div className="border-r max-w-80 text-center px-8">
+                <div className="grid md:max-w-3xl mt-10 md:grid-cols-2 ">
+                    <div className="md:border-r md:border-0 border-b pb-10 max-w-80 text-center px-8">
                         <h1
                             className="font-heading text-2xl font-semibold text-black leading-tight md:text-3xl">
                             220M
@@ -33,7 +33,7 @@ export function ProblemSection() {
                             ICMR Burden of Disease Study
                         </p>
                     </div>
-                    <div className="max-w-80 text-center px-8">
+                    <div className="max-w-80 md:pt-0 pt-10 text-center px-8">
                         <h1
                             className="font-heading text-2xl font-semibold text-black leading-tight md:text-3xl">
                             1 in 4

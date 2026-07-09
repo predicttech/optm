@@ -1,30 +1,32 @@
 
 import { Button } from "@/components/ui/button";
-import Image from "next/image"; 
+import Image from "next/image";
 import { GaugeDemo1, GaugeDemo2, GaugeDemo3 } from "./gauge-demo";
- 
- 
+import { HugeiconsIcon } from "@hugeicons/react";
+import { Location06Icon } from "@hugeicons/core-free-icons";
+
+
 export function HeroSection1() {
     return (
         <section className="relative h-[800px] md:h-[920px]  w-full overflow-hidden">
             <div className="absolute inset-0  m-3">
-             <Image
+                <Image
                     src="/new/hero-1.jpg"
                     alt="Hero"
                     width={1600}
                     height={1000}
                     className="object-cover rounded-[30px] h-full w-full"
                 />
-            </div> 
-            <GaugeDemo1 /> 
+            </div>
+            <GaugeDemo1 />
             <div className="absolute block md:hidden inset-3 rounded-[30px] bg-black/40" />
- 
+
             <div className="relative z-10 flex h-full items-center">
                 <div className="container mx-auto mt-20">
                     <div className="max-w-sm md:max-w-lg px-8">
                         <h1
                             className="font-heading text-4xl font-semibold text-white leading-tight md:text-5xl">
-                            Pain that keeps coming back ends here at OPTM.
+                            Pain that keeps coming back ends here at optm.
                         </h1>
 
                         <p className="mt-6 max-w-sm text-sm leading-6 text-white/60">
@@ -40,9 +42,12 @@ export function HeroSection1() {
                             </Button>
                         </div>
 
-                        <div className="flex">
-                        
-                            <p className="pt-40 max-w-md text-xs leading-7 text-white/60">
+                        <div className="flex gap-3 max-w-60  items-center pt-40">
+                            <Button variant={"ghost"} className={"shadow-none text-white hover:text-primary"} size={"icon"}>
+                                <HugeiconsIcon icon={Location06Icon} />
+                            </Button>
+
+                            <p className="text-xs text-white/60">
                                 Chronic pain & metabolic health · Delhi NCR
                             </p>
                         </div>
@@ -58,7 +63,7 @@ export function HeroSection2() {
         <section className="relative h-[800px] md:h-[920px] w-full overflow-hidden">
             <div className="absolute  inset-0 m-3">
                 <Image
-                    src="/new/hero-2.jpg"
+                    src="/new/hero-5.jpg"
                     alt="Hero"
                     width={1600}
                     height={1000}
@@ -70,21 +75,21 @@ export function HeroSection2() {
 
             <div className="absolute block  md:hidden inset-3 rounded-[30px] bg-white/40" />
 
-             
+
 
             <div className="relative z-10 flex h-full items-center">
                 <div className="container mx-auto mt-20">
                     <div className="max-w-sm md:max-w-lg px-8">
                         <h1
                             className="font-heading text-4xl font-semibold leading-tight text-black md:text-5xl">
-                            What If <br/>
+                            What If <br />
                             Your Pain Isn't the Real Problem?
 
                         </h1>
 
                         <p className="mt-6 max-w-md text-sm leading-6 text-black/60">
                             Most treatments focus on where you feel pain.
-                            <br/>
+                            <br />
 
                             At OPTM, we start by understanding why it exists.
                         </p>
@@ -95,9 +100,12 @@ export function HeroSection2() {
                             </Button>
                         </div>
 
-                        <div className="flex">
+                        <div className="flex gap-3 max-w-60  items-center pt-40">
+                            <Button variant={"ghost"} className={"shadow-none border-black/60 text-black hover:text-primary"} size={"icon"}>
+                                <HugeiconsIcon icon={Location06Icon} />
+                            </Button>
 
-                            <p className="pt-40 max-w-sm text-xs leading-7 text-black/60">
+                            <p className="text-xs text-black/60">
                                 Chronic pain & metabolic health · Delhi NCR
                             </p>
                         </div>
@@ -125,7 +133,7 @@ export function HeroSection3() {
 
             <div className="absolute block md:hidden inset-3 rounded-[30px] bg-white/40" />
 
-             
+
 
             <div className="relative z-10 flex h-full items-center">
                 <div className="container mx-auto mt-20">
@@ -147,9 +155,12 @@ export function HeroSection3() {
                             </Button>
                         </div>
 
-                        <div className="flex">
+                        <div className="flex gap-3 max-w-60  items-center pt-40">
+                            <Button variant={"ghost"} className={"shadow-none border-black/60 text-black hover:text-primary"} size={"icon"}>
+                                <HugeiconsIcon icon={Location06Icon} />
+                            </Button>
 
-                            <p className="pt-40 max-w-md text-xs leading-7  text-black/60">
+                            <p className="text-xs text-black/60">
                                 Chronic pain & metabolic health · Delhi NCR
                             </p>
                         </div>

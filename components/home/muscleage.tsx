@@ -11,7 +11,7 @@ import { Badge } from "../ui/badge";
 export function MuscleAgeSection() {
     return (
         <section className="relative m-3 ">
-            <div className="relative p-3 border mx-auto border-[#D5BBEA]/60 rounded-[40px] max-w-5xl">
+            <div className="relative p-3 border mx-auto border-[#D5BBEA]/60 rounded-[30px] max-w-5xl">
                 <div className="relative flex flex-col h-full justify-center items-center">
 
                     <div className="relative flex flex-col justify-center mt-10 items-center h-40 w-80">

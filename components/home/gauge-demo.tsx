@@ -54,7 +54,7 @@ export function GaugeDemo1() {
   return (
     <div className="hidden md:block">
 
-      <Gauge className="absolute left-1/2 bottom-1/3 translate-x-[100%] translate-y-1/2" value={biologicalValue} size={100} thickness={8}>
+      <Gauge className="absolute left-1/2 bottom-1/3 pb-20 translate-x-[100%] translate-y-1/2" value={biologicalValue} size={100} thickness={8}>
         <GaugeIndicator className="bg-white/10 rounded-full backdrop-blur-sm">
           <GaugeTrack className="bg-white" />
           <GaugeRange stroke="white" />
@@ -62,9 +62,9 @@ export function GaugeDemo1() {
 
         <GaugeValueText className="text-white">{biologicalValue}</GaugeValueText>
 
-        <GaugeLabel className="text-white">Biological</GaugeLabel>
+        <GaugeLabel className="text-white">Knee Age</GaugeLabel>
       </Gauge>
-      <Gauge className="absolute right-1/4 bottom-1/4 translate-x-[200%] -translate-y-1/2" value={chronologicalValue} size={100} thickness={8}>
+      <Gauge className="absolute right-1/4 mr-10 top-1/2 translate-x-[250%] -translate-y-1/2" value={chronologicalValue} size={100} thickness={8}>
         <GaugeIndicator className="bg-white/10 rounded-full backdrop-blur-sm">
           <GaugeTrack className="bg-white" />
           <GaugeRange stroke="white" />
@@ -72,7 +72,7 @@ export function GaugeDemo1() {
 
         <GaugeValueText className="text-white">{chronologicalValue}</GaugeValueText>
 
-        <GaugeLabel className="text-white">Chronological</GaugeLabel>
+        <GaugeLabel className="text-white">Biological Age</GaugeLabel>
       </Gauge>
     </div>
   );
@@ -121,17 +121,17 @@ export function GaugeDemo2() {
   return (
     <div className="hidden md:block">
 
-      <Gauge className="absolute left-1/3 bottom-1/2 translate-x-[220%] translate-y-1/2" value={biologicalValue} size={100} thickness={8}>
-        <GaugeIndicator className="rounded-full backdrop-blur-sm">
-          <GaugeTrack />
-          <GaugeRange />
+      <Gauge className="absolute left-1/3 bottom-1/3 translate-x-[220%] translate-y-1/2" value={biologicalValue} size={100} thickness={8}>
+      <GaugeIndicator className="bg-white/10 rounded-full backdrop-blur-sm">
+          <GaugeTrack  />
+          <GaugeRange   />
         </GaugeIndicator>
 
         <GaugeValueText>{biologicalValue}</GaugeValueText>
 
-        <GaugeLabel>Biological</GaugeLabel>
+        <GaugeLabel  >Biological</GaugeLabel>
       </Gauge>
-      <Gauge className="absolute right-1/4 bottom-1/5 translate-x-[220%] -translate-y-1/2" value={chronologicalValue} size={100} thickness={8}>
+      <Gauge className="absolute right-1/4 top-1/3 translate-x-[150%] -translate-y-1/2" value={chronologicalValue} size={100} thickness={8}>
         <GaugeIndicator className=" rounded-full backdrop-blur-sm">
           <GaugeTrack   />
           <GaugeRange  />

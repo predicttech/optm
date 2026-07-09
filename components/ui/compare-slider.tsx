@@ -428,11 +428,11 @@ function CompareSliderHandle(props: DivProps) {
               "absolute bg-background",
               isVertical
                 ? "top-1/2 h-1 w-full -translate-y-1/2"
-                : "left-1/2 h-full w-1 -translate-x-1/2",
+                : "left-1/2 h-full w-0.5 -translate-x-1/2",
             )}
           />
           {interaction === "drag" && (
-            <div className="z-50 flex aspect-square size-11 shrink-0 items-center justify-center rounded-full bg-background p-2 [&_svg]:size-4 [&_svg]:select-none [&_svg]:stroke-3 [&_svg]:text-muted-foreground">
+            <div className="z-50 flex aspect-square size-8 shrink-0 items-center justify-center rounded-full bg-background p-1 [&_svg]:size-3 [&_svg]:select-none [&_svg]:stroke-4 [&_svg]:text-muted-foreground">
               {isVertical ? (
                 <div className="flex flex-col items-center">
                   <ChevronUpIcon />
