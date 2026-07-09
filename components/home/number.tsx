@@ -19,43 +19,43 @@ export function NumberSection() {
                 </div>
                 <div className="grid md:gap-3 rounded-3xl bg-primary max-w-5xl mt-10 md:grid-cols-2 ">
                     <div className="grid p-3 md:pr-0 gap-3 h-full w-full grid-cols-2">
-                        <div className="flex rounded-xl flex-col items-center justify-center h-full w-full bg-[#D5BBEA] text-center aspect-square  px-8">
+                        <div className="flex rounded-xl flex-col items-center justify-center h-full w-full bg-[#D5BBEA] text-center aspect-square  px-6">
                             <h1
                                 className="font-heading text-2xl font-semibold text-white leading-tight md:text-3xl">
                                 8 yrs
                             </h1>
-                            <p className="mt-4 text-sm leading-6 text-white/60">
+                            <p className="mt-4 text-md leading-6 text-white/80">
                                 average reduction in inflammatory biological age at 90 days
                             </p>
 
                         </div>
-                        <div className="flex rounded-xl flex-col items-center justify-center h-full w-full bg-[#D5BBEA] text-center aspect-square  px-8">
+                        <div className="flex rounded-xl flex-col items-center justify-center h-full w-full bg-[#D5BBEA] text-center aspect-square  px-6">
                             <h1
                                 className="font-heading text-2xl font-semibold text-white leading-tight md:text-3xl">
-                                8 yrs
+                                93%
                             </h1>
-                            <p className="mt-4 text-sm leading-6 text-white/60">
-                                average reduction in inflammatory biological age at 90 days
+                            <p className="mt-4 text-md leading-6 text-white/80">
+                            of patients report significant pain reduction at day 90
                             </p>
 
                         </div>
-                        <div className="flex rounded-xl flex-col items-center justify-center h-full w-full bg-[#D5BBEA] text-center aspect-square  px-8">
+                        <div className="flex rounded-xl flex-col items-center justify-center h-full w-full bg-[#D5BBEA] text-center aspect-square  px-6">
                             <h1
                                 className="font-heading text-2xl font-semibold text-white leading-tight md:text-3xl">
-                                8 yrs
+                                ↓ 44%
                             </h1>
-                            <p className="mt-4 text-sm leading-6 text-white/60">
-                                average reduction in inflammatory biological age at 90 days
+                            <p className="mt-4 text-md leading-6 text-white/80">
+                            average drop in CRP within 3 weeks of GLP-1
                             </p>
 
                         </div>
-                        <div className="flex rounded-xl flex-col items-center justify-center h-full w-full bg-[#D5BBEA] text-center aspect-square  px-8">
+                        <div className="flex rounded-xl flex-col items-center justify-center h-full w-full bg-[#D5BBEA] text-center aspect-square  px-6">
                             <h1
                                 className="font-heading text-2xl font-semibold text-white leading-tight md:text-3xl">
-                                8 yrs
+                                3X
                             </h1>
-                            <p className="mt-4 text-sm leading-6 text-white/60">
-                                average reduction in inflammatory biological age at 90 days
+                            <p className="mt-4 text-md leading-6 text-white/80">
+                            biomarker retests confirm biological reversal - not symptom relief
                             </p>
 
                         </div>
@@ -63,7 +63,7 @@ export function NumberSection() {
                     <div className="h-full p-3 pt-0 md:pt-3 md:pl-0 w-full">
                         <div className="flex rounded-xl flex-col h-full w-full bg-white aspect-square p-8">
                             <h1
-                                className="font-heading text-2xl font-semibold text-black leading-tight md:text-3xl">
+                                className="font-heading text-xl font-semibold text-black leading-tight md:text-3xl">
                                 "When I was told I might need knee replacement surgery, I felt like I had run out of options. OPTM helped me understand my condition and guided me through a personalized recovery journey."
                             </h1>
                             <p className="mt-10 text-lg leading-6 text-black">

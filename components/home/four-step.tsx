@@ -33,29 +33,27 @@ export function FourStepSection() {
                         </div>
 
                     </div>
-                    <div className="flex justify-center mt-10">
-                        <div className="">
-                            <TabsList className="overflow-auto w-full mx-auto  max-w-sm md:max-w-full">
-                                <div className="flex flex-nowrap overflow-auto  whitespace-nowrap">
-                                    <TabsTrigger value="1">Knee pain</TabsTrigger>
-                                    <TabsTrigger value="2">Back pain</TabsTrigger>
-                                    <TabsTrigger value="3">Muscle longevity</TabsTrigger>
-                                    <TabsTrigger value="4">Obesity & GLP-1</TabsTrigger>
-                                </div>
+                    <div className="mt-10">
+                        <div className="overflow-x-auto mx-10 rounded-full">
+                            <TabsList className="mx-auto flex w-max md:w-fit gap-2 whitespace-nowrap">
+                                <TabsTrigger value="1">Knee pain</TabsTrigger>
+                                <TabsTrigger value="2">Back pain</TabsTrigger>
+                                <TabsTrigger value="3">Muscle longevity</TabsTrigger>
+                                <TabsTrigger value="4">Obesity & GLP-1</TabsTrigger>
                             </TabsList>
                         </div>
                     </div>
                 </div>
                 <TabsContent value="1" className={"relative h-full -mt-3 w-full mx-auto max-w-7xl"}>
-                     
-                        <Image
-                            src="/new/knee-pain-1.jpg"
-                            alt="Hero"
-                            width={1600}
-                            height={1000}
-                            className="object-cover md:rounded-3xl rounded-sm h-full w-full"
-                        />
-                    
+
+                    <Image
+                        src="/new/knee-pain-1.jpg"
+                        alt="Hero"
+                        width={1600}
+                        height={1000}
+                        className="object-cover md:rounded-3xl rounded-sm h-full w-full"
+                    />
+
                 </TabsContent>
                 <TabsContent value="2" className={"relative h-full -mt-3 w-full mx-auto max-w-7xl"}><div className="rounded-3xl">
                     <Image

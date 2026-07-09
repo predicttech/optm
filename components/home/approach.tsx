@@ -19,13 +19,12 @@ export function ApproachSection() {
                         Our approach
                     </h1>
                 </div>
-
             </div>
 
             <div className="mt-20 md:flex grid gap-2 mx-auto max-w-5xl">
                 <Card className="relative  bg-transparent shadow-none ring-0 mx-auto w-full max-w-sm pt-0">
                     <img
-                        src="/new/hero-1.jpg"
+                        src="/new/approach-3.jpg"
                         alt="Event cover"
                         className="relative border border-[#D5BBEA] rounded-3xl z-20 w-full object-cover"
                     />
@@ -36,37 +35,38 @@ export function ApproachSection() {
                         <CardDescription className="text-white/80">
                             Our systematic approach moves patients from guesswork to proven outcomes through Assessment, Personalised Protocol formulation, Biomarker Monitoring, and Outcome Reporting.
                         </CardDescription>
-                    </CardHeader> 
+                    </CardHeader>
                 </Card>
                 <Card className="relative  bg-transparent shadow-none ring-0 mx-auto w-full max-w-sm pt-0">
                     <img
-                        src="/new/hero-1.jpg"
+                        src="/new/approach-2.jpg"
                         alt="Event cover"
                         className="relative border border-[#D5BBEA] rounded-3xl z-20 w-full object-cover"
                     />
                     <CardHeader>
                         <CardTitle className="text-white text-xl font-semibold">
-                            The 4-Step Protocol
+                            Advanced Phytotherapy
                         </CardTitle>
                         <CardDescription className="text-white/80">
-                            Our systematic approach moves patients from guesswork to proven outcomes through Assessment, Personalised Protocol formulation, Biomarker Monitoring, and Outcome Reporting.
+                            We utilize targeted, plant-based phytotherapy to address the biological drivers of pain. This intervention is so effective that it boasts a 100% medication-stopped statistic, allowing many to stop their NSAIDs from Day 1.
                         </CardDescription>
-                    </CardHeader> 
+                    </CardHeader>
                 </Card>
                 <Card className="relative  bg-transparent shadow-none ring-0 mx-auto w-full max-w-sm pt-0">
                     <img
-                        src="/new/hero-1.jpg"
+                        src="/new/approach-1.jpg"
                         alt="Event cover"
                         className="relative border border-[#D5BBEA] rounded-3xl z-20 w-full object-cover"
                     />
                     <CardHeader>
                         <CardTitle className="text-white text-xl font-semibold">
-                            The 4-Step Protocol
+                            MuscleAGE™ & <br/>
+                            Bio-Musculo Index
                         </CardTitle>
                         <CardDescription className="text-white/80">
-                            Our systematic approach moves patients from guesswork to proven outcomes through Assessment, Personalised Protocol formulation, Biomarker Monitoring, and Outcome Reporting.
+                            Recovery shouldn't be a feeling; it should be a number. We track your biological muscle age versus your chronological age, monitoring the real-time reduction of inflammation markers (like IL-6) from Day 1 to Day 60 to optimize longevity.
                         </CardDescription>
-                    </CardHeader> 
+                    </CardHeader>
                 </Card>
             </div>
 

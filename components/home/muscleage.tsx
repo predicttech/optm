@@ -6,7 +6,7 @@ import {
     AccordionItem,
     AccordionTrigger,
 } from "@/components/ui/accordion"
-import { Badge } from "../ui/badge";
+import { Badge } from "../ui/badge"; 
 
 export function MuscleAgeSection() {
     return (
@@ -17,7 +17,6 @@ export function MuscleAgeSection() {
                     <div className="relative flex flex-col justify-center mt-10 items-center h-40 w-80">
 
                         <div className="border border-[#D5BBEA]/60 rounded-3xl mb-8 absolute h-32 w-32" />
-
                         <Image
                             src="/new/muscle.png"
                             alt="Hero"
@@ -56,8 +55,7 @@ export function MuscleAgeSection() {
                                 </Badge>
                             </AccordionTrigger>
                             <AccordionContent>
-                                CRP and IL-6 reveal the low-grade inflammation quietly accelerating your joint pain.
-
+                            CRP and IL-6 reveal the low-grade inflammation quietly accelerating your joint pain.
                             </AccordionContent>
                         </AccordionItem>
                         <AccordionItem value="returns">
@@ -67,8 +65,7 @@ export function MuscleAgeSection() {
                                 </Badge>
                             </AccordionTrigger>
                             <AccordionContent>
-                                Returns accepted within 30 days. Items must be unused and in original
-                                packaging. Refunds processed within 5-7 business days.
+                            Vitamin D, PTH and calcium levels show how well your bones and muscles are actually functioning.
                             </AccordionContent>
                         </AccordionItem>
                         <AccordionItem value="support">
@@ -78,8 +75,7 @@ export function MuscleAgeSection() {
                                 </Badge>
                             </AccordionTrigger>
                             <AccordionContent>
-                                Reach us via email, live chat, or phone. We respond within 24 hours
-                                during business days.
+                            PINP and CTX-II show whether your body is building bone faster than it's breaking down — or losing the race.
                             </AccordionContent>
                         </AccordionItem>
                         <AccordionItem value="integrity">
@@ -89,8 +85,7 @@ export function MuscleAgeSection() {
                                 </Badge>
                             </AccordionTrigger>
                             <AccordionContent>
-                                Reach us via email, live chat, or phone. We respond within 24 hours
-                                during business days.
+                            CK-MM and MDA measure real muscle breakdown and oxidative stress — the earliest sign of degeneration.
                             </AccordionContent>
                         </AccordionItem>
                         <AccordionItem value="blood">
@@ -100,8 +95,7 @@ export function MuscleAgeSection() {
                                 </Badge>
                             </AccordionTrigger>
                             <AccordionContent>
-                                Reach us via email, live chat, or phone. We respond within 24 hours
-                                during business days.
+                            VEGF and BDNF reveal how well blood and nerve signals are reaching your muscles and joints.
                             </AccordionContent>
                         </AccordionItem>
                     </Accordion>

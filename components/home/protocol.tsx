@@ -9,6 +9,7 @@ import {
     StepperSeparator,
     StepperTrigger,
 } from "@/components/ui/stepper";
+import { Badge } from "../ui/badge";
 
 const steps = [
     {
@@ -26,14 +27,14 @@ const steps = [
     {
         value: "3",
         day: "Day 30/60",
-        title: "Payment Details",
-        description: "Set up billing and payment methods",
+        title: "Biomarker retests",
+        description: "Protocol updated if markers haven't moved. No guessing.",
     },
     {
         value: "4",
         day: "Day 90",
-        title: "Complete Setup",
-        description: "Review and finish your account setup",
+        title: "New biological age score",
+        description: "Reversal confirmed in biology, not pain scores.",
     },
 ];
 export function ProtocolSection() {
@@ -50,7 +51,7 @@ export function ProtocolSection() {
                 </div>
 
             </div>
-            <Stepper defaultValue="1" className="w-full justify-center mx-auto mt-20 flex max-w-3xl">
+            <Stepper defaultValue="1" className="w-full hidden md:flex justify-center mx-auto mt-20 max-w-3xl">
                 <StepperList>
                     {steps.map((step) => (
                         <StepperItem key={step.value} value={step.value}>
@@ -79,6 +80,37 @@ export function ProtocolSection() {
                     </StepperContent>
                 ))}
             </Stepper>
+            <div className="h-full">
+                <Stepper defaultValue="1" className="w-full md:hidden justify-center mx-auto mt-20 max-w-80">
+                    <StepperList>
+                        {steps.map((step) => (
+                            <StepperItem key={step.value} value={step.value}>
+                                <StepperTrigger className="flex flex-col text-center justify-center items-center gap-3">
+ 
+                                    <StepperIndicator />
+                                </StepperTrigger>
+
+                                <StepperSeparator />
+                            </StepperItem>
+                        ))}
+                    </StepperList>
+                    {steps.map((step) => (
+                        <StepperContent
+                            key={step.value}
+                            value={step.value}
+                            className="flex flex-col items-center gap-4 border-[#D5BBEA]/60 rounded-[40px] border bg-card p-10 text-card-foreground"
+                        >
+                            <div className="flex flex-col items-center gap-4 text-center">
+                                <p className="text-md font-semibold text-black uppercase">
+                                    {step.day}
+                                </p>
+                                <h3 className="font-semibold text-2xl">{step.title}</h3>
+                                <p className="text-black/60">{step.description}</p>
+                            </div>
+                        </StepperContent>
+                    ))}
+                </Stepper>
+            </div>
             <div className="max-w-md md:max-w-3xl mx-auto mt-20 flex flex-col justify-center text-center px-8">
                 <h1
                     className="font-heading text-2xl text-black leading-tight md:text-3xl">
