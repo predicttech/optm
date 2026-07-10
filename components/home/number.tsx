@@ -67,7 +67,7 @@ export function NumberSection() {
 
                         </div>
                     </div>
-                    <Carousel className="h-full p-3 pt-0 md:pt-3 md:pl-0 w-full">
+                    <Carousel className="h-full p-3 pt-0 md:pt-3 md:pl-0 overflow-hidden w-full">
                         <CarouselContent>
                             <CarouselItem>
                                 <div className="flex rounded-xl flex-col h-full w-full bg-white aspect-square p-8">
@@ -77,9 +77,8 @@ export function NumberSection() {
                                     </h1>
                                     <p className="mt-10 text-lg leading-6 text-black">
                                         Ravi Mehta, 51
-                                    </p>
-
-                                    <p className="mt-4 text-sm leading-6 text-black/60">
+                                    </p> 
+                                    <p className="mt-4 max-w-60 text-sm leading-6 text-black/60">
                                         South Delhi · Osteoarthritis + metabolic syndrome
                                     </p> 
                                 </div>
@@ -94,14 +93,29 @@ export function NumberSection() {
                                         Ravi Mehta, 51
                                     </p>
 
-                                    <p className="mt-4 text-sm leading-6 text-black/60">
+                                    <p className="mt-4 max-w-60 text-sm leading-6 text-black/60">
+                                        South Delhi · Osteoarthritis + metabolic syndrome
+                                    </p> 
+                                </div>
+                            </CarouselItem>
+                            <CarouselItem>
+                                <div className="flex rounded-xl flex-col h-full w-full bg-white aspect-square p-8">
+                                    <h1
+                                        className="font-heading text-xl font-semibold text-black leading-tight md:text-3xl">
+                                        "When I was told I might need knee replacement surgery, I felt like I had run out of options. OPTM helped me understand my condition and guided me through a personalized recovery journey."
+                                    </h1>
+                                    <p className="mt-10 text-lg leading-6 text-black">
+                                        Ravi Mehta, 51
+                                    </p>
+
+                                    <p className="mt-4 max-w-60 text-sm leading-6 text-black/60">
                                         South Delhi · Osteoarthritis + metabolic syndrome
                                     </p> 
                                 </div>
                             </CarouselItem>
                             
                         </CarouselContent>
-                        <div className="absolute w-full flex -bottom-20 right-0 z-50 flex md:justify-end justify-center items-center gap-3">
+                        <div className="mt-3 w-full md:absolute flex bottom-6 right-6 z-50 flex md:justify-end justify-center items-center gap-3">
                             <CarouselPrevious className="static size-12 shadow-none translate-y-0" />
                             <CarouselNext className="static size-12 shadow-none translate-y-0" />
                         </div>

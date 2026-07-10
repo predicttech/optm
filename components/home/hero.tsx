@@ -19,7 +19,7 @@ export function HeroSection1() {
                 />
             </div>
             <GaugeDemo1 />
-            <div className="absolute block md:hidden inset-3 rounded-[30px] bg-black/40" />
+            <div className="absolute block md:hidden inset-3 rounded-[30px] bg-black/60" />
 
             <div className="relative z-10 flex h-full items-center">
                 <div className="container mx-auto mt-20">
@@ -73,10 +73,8 @@ export function HeroSection2() {
 
             <GaugeDemo2 />
 
-            <div className="absolute block  md:hidden inset-3 rounded-[30px] bg-white/40" />
-
-
-
+            <div className="absolute block  md:hidden inset-3 rounded-[30px] bg-white/60" />
+ 
             <div className="relative z-10 flex h-full items-center">
                 <div className="container mx-auto mt-20">
                     <div className="max-w-sm md:max-w-lg px-8">
@@ -131,7 +129,7 @@ export function HeroSection3() {
 
             <GaugeDemo3 />
 
-            <div className="absolute block md:hidden inset-3 rounded-[30px] bg-white/40" />
+            <div className="absolute block md:hidden inset-3 rounded-[30px] bg-white/60" />
 
 
 

@@ -99,7 +99,7 @@ export function FourStepSection() {
 
                     <CompareSlider
                         defaultValue={40}
-                        className="relative w-full aspect-[16/8] overflow-hidden rounded-none md:rounded-[30px]"
+                        className="relative hidden md:block w-full aspect-[16/8] overflow-hidden rounded-none md:rounded-[30px]"
                     >
                         <CompareSliderBefore>
                             <img
@@ -119,6 +119,35 @@ export function FourStepSection() {
                         <CompareSliderHandle />
                     </CompareSlider>
 
+                    <CompareSlider
+                        orientation="vertical"
+                        defaultValue={60}
+                        className="relative block md:hidden w-full aspect-[8/16] overflow-hidden rounded-none md:rounded-[30px]"
+                    >
+                        <CompareSliderBefore>
+                            <img
+                                src="/new/knee-pain-1-phone.jpg"
+                                alt="Before"
+                                className="w-full h-full object-cover"
+                            />
+                        </CompareSliderBefore>
+
+                        <CompareSliderAfter>
+                            <img
+                                src="/new/knee-pain-2-phone.jpg"
+                                alt="After"
+                                className="w-full h-full object-cover"
+                            />
+                        </CompareSliderAfter>
+                        <CompareSliderHandle />
+                    </CompareSlider>
+                    <div className="flex md:hidden border-x border-[#D5BBEA]/60 justify-center t">
+                        <img
+                            src="/new/ad.png"
+                            alt="Before"
+                            className="w-80 -mt-30 z-10 top-1/2 h-full object-contain"
+                        />
+                    </div>
                 </TabsContent>
                 <TabsContent value="2" className={"relative h-full -mt-3 w-full mx-auto max-w-7xl"}>
                     <CompareSlider
