@@ -8,6 +8,14 @@ import {
     HoverCardTrigger,
 } from "@/components/ui/hover-card"
 import {
+    Gauge,
+    GaugeIndicator,
+    GaugeLabel,
+    GaugeRange,
+    GaugeTrack,
+    GaugeValueText,
+} from "@/components/ui/gauge";
+import {
     CompareSlider,
     CompareSliderAfter,
     CompareSliderBefore,
@@ -18,6 +26,8 @@ import {
     PopoverContent,
     PopoverTrigger,
 } from "@/components/ui/popover";
+import { AnomaliesCard1 } from "./anomalies-card";
+import { Button } from "../ui/button";
 
 
 const biomarkers = [
@@ -65,12 +75,9 @@ export function FourStepSection() {
             <Tabs defaultValue="1">
                 <div className="relative w-full mx-auto max-w-5xl border border-b-0 py-10 mx-auto border-[#D5BBEA]/60 rounded-t-xl md:rounded-t-[30px]">
                     <div className="relative mt-10 flex flex-col h-full justify-center items-center">
-
                         <Badge>
-                        The OPTM Method
-
+                            The OPTM Method
                         </Badge>
-
 
                         <div className="max-w-md mt-8 md:max-w-3xl text-center px-8">
                             <h1
@@ -83,7 +90,6 @@ export function FourStepSection() {
                                 not a surgery referral.
                             </p>
                         </div>
-
                     </div>
                     <div className="mt-10">
                         <div className="overflow-x-auto mx-10 rounded-full">
@@ -102,17 +108,53 @@ export function FourStepSection() {
                         defaultValue={40}
                         className="relative hidden md:block w-full aspect-[16/8] overflow-hidden rounded-none md:rounded-[30px]"
                     >
+                        <div className="absolute left-0 right-0 z-1 h-full w-1/2 rounded-none md:rounded-[30px] bg-gradient-to-r from-[#133F26]/95 via-[#133F26]/60 to-transparent" />
+                        <div className="top-0 z-1 p-8 lg:max-w-100 max-w-80  absolute">
+                            <p className="mt-3 text-sm text-white/80">
+                                OrthoAGETM programme
+                            </p>
+                            <h1 className="font-heading pt-4 text-lg font-semibold text-white leading-tight md:text-2xl">
+                                Knee pain is a biological problem. Treat the biology.
+                            </h1>
+
+                            <p className="mt-3 text-sm text-white/80">
+                                Most knee pain protocols rely on imaging and pain scores. OPTM measures cartilage turnover, inflammatory load, muscle imbalance, and joint metabolic stress — then builds a reversal protocol around those numbers.
+                            </p>
+                        </div>
+
+                        <Gauge className="absolute md:hidden lg:block z-30 bottom-6 left-8" value={94} size={80} thickness={8}>
+                            <GaugeIndicator className="bg-white/10 rounded-full backdrop-blur-sm">
+                                <GaugeTrack className="bg-white" />
+                                <GaugeRange stroke="#D5BBEA" />
+                            </GaugeIndicator>
+                            <GaugeValueText className="text-white">
+                                98
+                            </GaugeValueText>
+
+                            <GaugeLabel>
+                                <div className="absolute left-24 w-44 top-2 text-left text-sm text-white">
+                                    of patients report significant pain reduction, driven by biology.
+                                </div>
+                            </GaugeLabel>
+                        </Gauge>
+
+
                         <CompareSliderBefore>
                             <img
-                                src="/new/knee-pain-1.jpg"
+                                src="/img/knee-pain-d-p.jpg"
                                 alt="Before"
                                 className="w-full h-full object-cover"
                             />
+                            <div className="flex absolute right-6 top-6 border-[#D5BBEA]/60 justify-center">
+                                <AnomaliesCard1 />
+                            </div>
+
+
                         </CompareSliderBefore>
 
                         <CompareSliderAfter>
                             <img
-                                src="/new/knee-pain-2.jpg"
+                                src="/img/knee-pain-d-r.jpg"
                                 alt="After"
                                 className="w-full h-full object-cover"
                             />
@@ -122,50 +164,142 @@ export function FourStepSection() {
 
                     <CompareSlider
                         orientation="vertical"
+                        interaction="drag"
                         defaultValue={60}
                         className="relative block md:hidden w-full aspect-[8/16] overflow-hidden rounded-none md:rounded-[30px]"
                     >
+                        <div className="absolute z-1 top-0 left-0 right-0 h-1/3 rounded-b-xl md:rounded-b-3xl bg-gradient-to-b from-[#133F26]/95 via-[#133F26]/60 to-transparent" />
+                        <div className="top-0 z-1 p-8 max-w-full absolute">
+                            <p className="mt-3  text-sm text-white/80">
+                                OrthoAGETM programme
+                            </p>
+                            <h1 className="font-heading pt-4  text-lg font-semibold text-white leading-tight md:text-xl">
+                                Knee pain is a biological problem. Treat the biology.
+                            </h1>
+
+                            <p className="mt-3 text-sm text-white/80">
+                                Most knee pain protocols rely on imaging and pain scores. OPTM measures cartilage turnover, inflammatory load, muscle imbalance, and joint metabolic stress — then builds a reversal protocol around those numbers.
+                            </p>
+
+                        </div>
+
                         <CompareSliderBefore>
                             <img
-                                src="/new/knee-pain-1-phone.jpg"
+                                src="/img/knee-pain-p-p.jpg"
                                 alt="Before"
                                 className="w-full h-full object-cover"
                             />
+                            <div className="flex absolute px-6 left-1/2 w-full -translate-x-1/2 -bottom-30 border-[#D5BBEA]/60 justify-center">
+                                <AnomaliesCard1 />
+                            </div>
                         </CompareSliderBefore>
 
                         <CompareSliderAfter>
                             <img
-                                src="/new/knee-pain-2-phone.jpg"
+                                src="/img/knee-pain-p-r.jpg"
                                 alt="After"
                                 className="w-full h-full object-cover"
                             />
                         </CompareSliderAfter>
                         <CompareSliderHandle />
                     </CompareSlider>
-                    <div className="flex md:hidden border-x border-[#D5BBEA]/60 justify-center t">
-                        <img
-                            src="/new/ad.png"
-                            alt="Before"
-                            className="w-80 -mt-30 z-10 top-1/2 h-full object-contain"
-                        />
-                    </div>
+
                 </TabsContent>
                 <TabsContent value="2" className={"relative h-full -mt-3 w-full mx-auto max-w-7xl"}>
+
                     <CompareSlider
                         defaultValue={40}
-                        className="relative w-full aspect-[16/8] overflow-hidden rounded-none md:rounded-[30px]"
+                        className="relative hidden md:block w-full aspect-[16/8] overflow-hidden rounded-none md:rounded-[30px]"
                     >
+                        <div className="absolute left-0 right-0 z-1 h-full w-1/2 rounded-none md:rounded-[30px] bg-gradient-to-r from-[#133F26]/95 via-[#133F26]/60 to-transparent" />
+                        <div className="top-0 z-1 p-8 lg:max-w-100 max-w-80  absolute">
+                            <p className="mt-3 text-sm text-white/80">
+                                LegAGETM + OrthoAGETM programme
+                            </p>
+                            <h1 className="font-heading pt-4 text-lg font-semibold text-white leading-tight md:text-2xl">
+                                Back pain has a molecular driver. Most clinics never look for it.
+                            </h1>
+
+                            <p className="mt-3 text-sm text-white/80">
+                                Disc degeneration, nerve sensitisation, and chronic spinal pain are not purely structural. Inflammatory cytokines degrade disc matrix biology and sensitise pain receptors simultaneously. OPTM identifies the dominant driver — and targets it directly.
+                            </p>
+                        </div>
+
+                        <Gauge className="absolute md:hidden lg:block z-30 bottom-6 left-8" value={94} size={80} thickness={8}>
+                            <GaugeIndicator className="bg-white/10 rounded-full backdrop-blur-sm">
+                                <GaugeTrack className="bg-white" />
+                                <GaugeRange stroke="#D5BBEA" />
+                            </GaugeIndicator>
+                            <GaugeValueText className="text-white">
+                                98
+                            </GaugeValueText>
+
+                            <GaugeLabel>
+                                <div className="absolute left-24 w-44 top-2 text-left text-sm text-white">
+                                    of patients report significant pain reduction, driven by biology.
+                                </div>
+                            </GaugeLabel>
+                        </Gauge>
+
+
                         <CompareSliderBefore>
                             <img
-                                src="/new/back-pain-1.jpg"
+                                src="/img/back-pain-d-p.jpg"
                                 alt="Before"
                                 className="w-full h-full object-cover"
                             />
+                            <div className="flex absolute right-6 top-6 border-[#D5BBEA]/60 justify-center">
+                                <AnomaliesCard1 />
+                            </div>
+
+
                         </CompareSliderBefore>
 
                         <CompareSliderAfter>
                             <img
-                                src="/new/back-pain-2.jpg"
+                                src="/img/back-pain-d-r.jpg"
+                                alt="After"
+                                className="w-full h-full object-cover"
+                            />
+                        </CompareSliderAfter>
+                        <CompareSliderHandle />
+                    </CompareSlider>
+
+                    <CompareSlider
+                        orientation="vertical"
+                        interaction="drag"
+                        defaultValue={60}
+                        className="relative block md:hidden w-full aspect-[8/16] overflow-hidden rounded-none md:rounded-[30px]"
+                    >
+                        <div className="absolute z-1 top-0 left-0 right-0 h-1/3 rounded-b-xl md:rounded-b-3xl bg-gradient-to-b from-[#133F26]/95 via-[#133F26]/60 to-transparent" />
+                        <div className="top-0 z-1 p-8 max-w-full absolute">
+                            <p className="mt-3  text-sm text-white/80">
+                                LegAGETM + OrthoAGETM programme
+                            </p>
+                            <h1 className="font-heading pt-4  text-lg font-semibold text-white leading-tight md:text-xl">
+                                Back pain has a molecular driver. Most clinics never look for it.
+                            </h1>
+
+                            <p className="mt-3 text-sm text-white/80">
+                                Disc degeneration, nerve sensitisation, and chronic spinal pain are not purely structural. Inflammatory cytokines degrade disc matrix biology and sensitise pain receptors simultaneously. OPTM identifies the dominant driver — and targets it directly.
+                            </p>
+
+                        </div>
+
+                        <CompareSliderBefore>
+                            <img
+                                src="/img/back-pain-p-p.jpg"
+                                alt="Before"
+                                className="w-full h-full object-cover"
+                            />
+                            <div className="flex absolute px-6 left-1/2 w-full -translate-x-1/2 -bottom-30 border-[#D5BBEA]/60 justify-center">
+                                <AnomaliesCard1 />
+                            </div>
+                        </CompareSliderBefore>
+
+                        <CompareSliderAfter>
+                            <img
+                                src="/img/back-pain-p-r.jpg"
                                 alt="After"
                                 className="w-full h-full object-cover"
                             />
@@ -175,21 +309,102 @@ export function FourStepSection() {
 
                 </TabsContent>
                 <TabsContent value="3" className={"relative h-full -mt-3 w-full mx-auto max-w-7xl"}>
+
                     <CompareSlider
                         defaultValue={40}
-                        className="relative w-full aspect-[16/8] overflow-hidden rounded-none md:rounded-[30px]"
+                        className="relative hidden md:block w-full aspect-[16/8] overflow-hidden rounded-none md:rounded-[30px]"
                     >
+                        <div className="absolute left-0 right-0 z-1 h-full w-1/2 rounded-none md:rounded-[30px] bg-gradient-to-r from-[#133F26]/95 via-[#133F26]/60 to-transparent" />
+                        <div className="top-0 z-1 p-8 lg:max-w-100 max-w-80  absolute">
+                            <p className="mt-3 text-sm text-white/80">
+                                MuscleAGETM programme
+                            </p>
+                            <h1 className="font-heading pt-4 text-lg font-semibold text-white leading-tight md:text-2xl">
+                                Your muscles have a biological age. Now you can measure it.
+                            </h1>
+
+                            <p className="mt-3 text-sm text-white/80">
+                                Sarcopenia, frailty, and functional decline begin years before they are clinically visible. MuscleAGE™ detects the molecular signature of muscle aging across ECM degradation, inflammatory burden, neurovascular decline, and hormonal shift — and builds a reversal protocol while there is still time to act.
+
+                            </p>
+                        </div>
+
+                        <Gauge className="absolute md:hidden lg:block z-30 bottom-6 left-8" value={94} size={80} thickness={8}>
+                            <GaugeIndicator className="bg-white/10 rounded-full backdrop-blur-sm">
+                                <GaugeTrack className="bg-white" />
+                                <GaugeRange stroke="#D5BBEA" />
+                            </GaugeIndicator>
+                            <GaugeValueText className="text-white">
+                                98
+                            </GaugeValueText>
+
+                            <GaugeLabel>
+                                <div className="absolute left-24 w-44 top-2 text-left text-sm text-white">
+                                    of patients report significant pain reduction, driven by biology.
+                                </div>
+                            </GaugeLabel>
+                        </Gauge>
+
+
                         <CompareSliderBefore>
                             <img
-                                src="/new/muscle-pain-1.jpg"
+                                src="/img/muscle-pain-d-p.jpg"
                                 alt="Before"
                                 className="w-full h-full object-cover"
                             />
+                            <div className="flex absolute right-6 top-6 border-[#D5BBEA]/60 justify-center">
+                                <AnomaliesCard1 />
+                            </div>
+
+
                         </CompareSliderBefore>
 
                         <CompareSliderAfter>
                             <img
-                                src="/new/muscle-pain-2.jpg"
+                                src="/img/muscle-pain-d-r.jpg"
+                                alt="After"
+                                className="w-full h-full object-cover"
+                            />
+                        </CompareSliderAfter>
+                        <CompareSliderHandle />
+                    </CompareSlider>
+
+                    <CompareSlider
+                        orientation="vertical"
+                        interaction="drag"
+                        defaultValue={60}
+                        className="relative block md:hidden w-full aspect-[8/16] overflow-hidden rounded-none md:rounded-[30px]"
+                    >
+                        <div className="absolute z-1 top-0 left-0 right-0 h-1/3 rounded-b-xl md:rounded-b-3xl bg-gradient-to-b from-[#133F26]/95 via-[#133F26]/60 to-transparent" />
+                        <div className="top-0 z-1 p-8 max-w-full absolute">
+                            <p className="mt-3  text-sm text-white/80">
+                                MuscleAGETM programme
+                            </p>
+                            <h1 className="font-heading pt-4  text-lg font-semibold text-white leading-tight md:text-xl">
+                                Your muscles have a biological age. Now you can measure it.
+                            </h1>
+
+                            <p className="mt-3 text-sm text-white/80">
+                                Sarcopenia, frailty, and functional decline begin years before they are clinically visible. MuscleAGE™ detects the molecular signature of muscle aging across ECM degradation, inflammatory burden, neurovascular decline, and hormonal shift — and builds a reversal protocol while there is still time to act.
+
+                            </p>
+
+                        </div>
+
+                        <CompareSliderBefore>
+                            <img
+                                src="/img/muscle-pain-p-p.jpg"
+                                alt="Before"
+                                className="w-full h-full object-cover"
+                            />
+                            <div className="flex absolute px-6 left-1/2 w-full -translate-x-1/2 -bottom-30 border-[#D5BBEA]/60 justify-center">
+                                <AnomaliesCard1 />
+                            </div>
+                        </CompareSliderBefore>
+
+                        <CompareSliderAfter>
+                            <img
+                                src="/img/muscle-pain-p-r.jpg"
                                 alt="After"
                                 className="w-full h-full object-cover"
                             />
@@ -199,21 +414,103 @@ export function FourStepSection() {
 
                 </TabsContent>
                 <TabsContent value="4" className={"relative h-full -mt-3 w-full mx-auto max-w-7xl"}>
+
                     <CompareSlider
                         defaultValue={40}
-                        className="relative w-full aspect-[16/8] overflow-hidden rounded-none md:rounded-[30px]"
+                        className="relative hidden md:block w-full aspect-[16/8] overflow-hidden rounded-none md:rounded-[30px]"
                     >
+                        <div className="absolute left-0 right-0 z-1 h-full w-1/2 rounded-none md:rounded-[30px] bg-gradient-to-r from-[#133F26]/95 via-[#133F26]/60 to-transparent" />
+                        <div className="top-0 z-1 p-8 lg:max-w-100 max-w-80  absolute">
+                            <p className="mt-3 text-sm text-white/80">
+                                MuscleAGETM programme
+                            </p>
+                            <h1 className="font-heading pt-4 text-lg font-semibold text-white leading-tight md:text-2xl">
+                                GLP-1 prescribed on muscle age. Not BMI alone.
+                            </h1>
+
+                            <p className="mt-3 text-sm text-white/80">
+                                Between 25–60% of weight lost on GLP-1 can come from lean mass. OPTM's proprietary MuscleAGE™ technology measures your muscle biological age before GLP-1 begins, predicts lean mass loss before it happens, and builds a protocol that ensures you lose fat — not function.
+
+                            </p>
+                        </div>
+
+                        <Gauge className="absolute md:hidden lg:block z-30 bottom-6 left-8" value={94} size={80} thickness={8}>
+                            <GaugeIndicator className="bg-white/10 rounded-full backdrop-blur-sm">
+                                <GaugeTrack className="bg-white" />
+                                <GaugeRange stroke="#D5BBEA" />
+                            </GaugeIndicator>
+                            <GaugeValueText className="text-white">
+                                98
+                            </GaugeValueText>
+
+                            <GaugeLabel>
+                                <div className="absolute left-24 w-44 top-2 text-left text-sm text-white">
+                                    of patients report significant pain reduction, driven by biology.
+                                </div>
+                            </GaugeLabel>
+                        </Gauge>
+
+
                         <CompareSliderBefore>
                             <img
-                                src="/new/obesity-pain-1.jpg"
+                                src="/img/glp-d-p.jpg"
                                 alt="Before"
                                 className="w-full h-full object-cover"
                             />
+                            <div className="flex absolute right-6 top-6 border-[#D5BBEA]/60 justify-center">
+                                <AnomaliesCard1 />
+                            </div>
+
+
                         </CompareSliderBefore>
 
                         <CompareSliderAfter>
                             <img
-                                src="/new/obesity-pain-2.jpg"
+                                src="/img/glp-d-r.jpg"
+                                alt="After"
+                                className="w-full h-full object-cover"
+                            />
+                        </CompareSliderAfter>
+                        <CompareSliderHandle />
+                    </CompareSlider>
+
+                    <CompareSlider
+                        orientation="vertical"
+                        interaction="drag"
+                        defaultValue={60}
+                        className="relative block md:hidden w-full aspect-[8/16] overflow-hidden rounded-none md:rounded-[30px]"
+                    >
+                        <div className="absolute z-1 top-0 left-0 right-0 h-1/3 rounded-b-xl md:rounded-b-3xl bg-gradient-to-b from-[#133F26]/95 via-[#133F26]/60 to-transparent" />
+                        <div className="top-0 z-1 p-8 max-w-full absolute">
+                            <p className="mt-3  text-sm text-white/80">
+                                MuscleAGETM programme
+                            </p>
+                            <h1 className="font-heading pt-4  text-lg font-semibold text-white leading-tight md:text-xl">
+                                GLP-1 prescribed on muscle age. Not BMI alone.
+                            </h1>
+
+                            <p className="mt-3 text-sm text-white/80">
+                                Between 25–60% of weight lost on GLP-1 can come from lean mass. OPTM's proprietary MuscleAGE™ technology measures your muscle biological age before GLP-1 begins, predicts lean mass loss before it happens, and builds a protocol that ensures you lose fat — not function.
+
+
+                            </p>
+
+                        </div>
+
+                        <CompareSliderBefore>
+                            <img
+                                src="/img/glp-p-p.jpg"
+                                alt="Before"
+                                className="w-full h-full object-cover"
+                            />
+                            <div className="flex absolute px-6 left-1/2 w-full -translate-x-1/2 -bottom-30 border-[#D5BBEA]/60 justify-center">
+                                <AnomaliesCard1 />
+                            </div>
+                        </CompareSliderBefore>
+
+                        <CompareSliderAfter>
+                            <img
+                                src="/img/glp-p-r.jpg"
                                 alt="After"
                                 className="w-full h-full object-cover"
                             />
@@ -223,7 +520,7 @@ export function FourStepSection() {
 
                 </TabsContent>
             </Tabs>
-            <div className="w-full border border-t-0 py-10 border-[#D5BBEA]/60 rounded-b-xl md:rounded-b-[30px] mx-auto max-w-5xl flex flex-wrap gap-1 justify-center mb-6">
+            <div className="w-full border border-t-0 py-10 border-[#D5BBEA]/60 rounded-b-xl md:rounded-b-[30px] mx-auto max-w-5xl flex flex-col gap-1 justify-center mb-6">
 
                 <div className="hidden md:flex flex-wrap gap-1 justify-center">
                     {biomarkers.map((item, index) => (
@@ -259,6 +556,12 @@ export function FourStepSection() {
                         </Popover>
                     </div>
                 ))}
+
+                <div className="mt-8 flex justify-center">
+                    <Button size="lg">
+                    Book Your AI Pain Assessment
+                    </Button>
+                </div>
             </div>
         </section>
     );

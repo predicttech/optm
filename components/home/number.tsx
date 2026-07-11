@@ -26,42 +26,42 @@ export function NumberSection() {
                 </div>
                 <div className="grid md:gap-3 rounded-3xl bg-primary max-w-5xl mt-10 md:grid-cols-2 ">
                     <div className="grid p-3 md:pr-0 gap-3 h-full w-full grid-cols-2">
-                        <div className="flex rounded-xl flex-col items-center justify-center h-full w-full bg-[#D5BBEA] text-center aspect-square  px-6">
+                        <div className="flex rounded-xl flex-col items-center justify-center h-full w-full bg-white text-center aspect-square  px-6">
                             <h1
-                                className="font-heading text-2xl font-semibold text-white leading-tight md:text-3xl">
+                                className="font-heading text-2xl font-semibold text-black leading-tight md:text-3xl">
                                 8 yrs
                             </h1>
-                            <p className="mt-4 text-md leading-6 text-white/80">
+                            <p className="mt-4 text-sm md:text-md text-black/80">
                                 average reduction in inflammatory biological age at 90 days
                             </p>
 
                         </div>
-                        <div className="flex rounded-xl flex-col items-center justify-center h-full w-full bg-[#D5BBEA] text-center aspect-square  px-6">
+                        <div className="flex rounded-xl flex-col items-center justify-center h-full w-full bg-white text-center aspect-square  px-6">
                             <h1
-                                className="font-heading text-2xl font-semibold text-white leading-tight md:text-3xl">
+                                className="font-heading text-2xl font-semibold text-black leading-tight md:text-3xl">
                                 93%
                             </h1>
-                            <p className="mt-4 text-md leading-6 text-white/80">
+                            <p className="mt-4 text-sm md:text-md  text-black/80">
                                 of patients report significant pain reduction at day 90
                             </p>
 
                         </div>
-                        <div className="flex rounded-xl flex-col items-center justify-center h-full w-full bg-[#D5BBEA] text-center aspect-square  px-6">
+                        <div className="flex rounded-xl flex-col items-center justify-center h-full w-full bg-white text-center aspect-square  px-6">
                             <h1
-                                className="font-heading text-2xl font-semibold text-white leading-tight md:text-3xl">
+                                className="font-heading text-2xl font-semibold text-black leading-tight md:text-3xl">
                                 ↓ 44%
                             </h1>
-                            <p className="mt-4 text-md leading-6 text-white/80">
+                            <p className="mt-4 text-sm md:text-md  text-black/80">
                                 average drop in CRP within 3 weeks of GLP-1
                             </p>
 
                         </div>
-                        <div className="flex rounded-xl flex-col items-center justify-center h-full w-full bg-[#D5BBEA] text-center aspect-square  px-6">
+                        <div className="flex rounded-xl flex-col items-center justify-center h-full w-full bg-white text-center aspect-square  px-6">
                             <h1
-                                className="font-heading text-2xl font-semibold text-white leading-tight md:text-3xl">
+                                className="font-heading text-2xl font-semibold text-black leading-tight md:text-3xl">
                                 3X
                             </h1>
-                            <p className="mt-4 text-md leading-6 text-white/80">
+                            <p className="mt-4 text-sm md:text-md  text-black/80">
                                 biomarker retests confirm biological reversal - not symptom relief
                             </p>
 
