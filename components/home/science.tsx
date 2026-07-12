@@ -49,13 +49,12 @@ export function ScienceSection() {
                                     <Badge>MuscleAGE™ · COASI</Badge>
 
                                     <h1 className="text-lg font-semibold">
-                                        Published in NIH-indexed peer-reviewed journal
+                                        The Composite OrthoAge Score Index (COASI) for Estimating Musculoskeletal Biological Age Acceleration in Older Adults
+
                                     </h1>
 
                                     <p className="text-sm">
-                                        243-participant case-control study. STROBE-compliant.
-                                        Ethics-approved (OPTM-RP-2024-018).
-                                        14 biomarkers across 5 domains.
+                                        COASI is a multidomain, biomarker-derived index estimating musculoskeletal biological age and its gap relative to chronological age. It may support early risk stratification; however, it remains exploratory and hypothesis-generating. Further longitudinal validation, external replication in diverse populations, and integration...
                                     </p>
                                 </div>
                                 <Button
@@ -91,8 +90,14 @@ export function ScienceSection() {
                             >
                                 <div className="flex h-full flex-col justify-between">
                                     <div className=" space-y-4">
+                                        <img
+                                            src="/logos/nih.png"
+                                            alt="After"
+                                            className="w-60 h-fit object-cover"
+                                        />
                                         <h2 className="text-xl font-semibold">
-                                            Study Details
+                                        Geriatr Gerontol Int
+                                        . 2026 Jun;26(6):e70608. doi: 10.1111/ggi.70608.
                                         </h2>
 
                                         <p className="text-sm">

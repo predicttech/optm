@@ -1,4 +1,5 @@
  
+import { Contact } from "@/components/email/form"
 import { ApproachSection } from "@/components/home/approach"
 import { ConditionsSection } from "@/components/home/conditions"
 import { ContactSection } from "@/components/home/contact"
@@ -27,8 +28,7 @@ export default function Page() {
         rotation={180}
         offsetY={-0.4}
       />
-      <CarouselHero/>
-       
+      <CarouselHero/> 
       <TrustSection />
       <MuscleAgeSection />
       <ProblemSection />
