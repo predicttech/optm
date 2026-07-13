@@ -193,8 +193,7 @@ export function ScienceSection() {
                                     <div className=" space-y-4">
 
                                         <h2 className="text-xl font-semibold">
-                                            Published in a peer-reviewed NIH-indexed journal and conducted under approved ethics protocols.
-
+                                        Published in a peer-reviewed journal
                                         </h2>
 
                                         
@@ -232,9 +231,9 @@ export function ScienceSection() {
 
 
                                     <img
-                                        src="/logos/nih.png"
+                                        src="/logos/PubMed.webp"
                                         alt="After"
-                                        className="w-60 h-fit object-cover"
+                                        className="w-32 h-fit object-cover"
                                     />
 
 
@@ -317,7 +316,7 @@ export function ScienceSection() {
                             <div className="p-6 justify-between flex flex-col h-full transition-all duration-600 group-hover:scale-[0.98]">
                                 <div className=" space-y-6">
                                     <Badge>
-                                        MuscleAGE™ · COASI
+                                    Bio-Musculo Index™ · LHD-KOA Diagnostic
                                     </Badge>
 
 
@@ -329,13 +328,13 @@ export function ScienceSection() {
 
 
                                     <h2 className="text-xl font-semibold">
-                                        Published in a peer-reviewed NIH-indexed journal and conducted under approved ethics protocols.
+                                    Published in a peer-reviewed journal
 
                                     </h2>
 
                                     <p className="text-sm">
-                                        Geriatr Gerontol Int. 2026  <br /> Jun;26(6):e70608.
-                                        <br /> doi: 10.1111/ggi.70608.
+                                    Ganguly A, Ganguly D. Med Sci (Basel). 2019;7(6):69. doi: 10.3390/medsci7060069
+
 
                                     </p>
                                 </div>
@@ -374,19 +373,191 @@ export function ScienceSection() {
                                     <div className=" space-y-4">
 
                                         <h2 className="text-xl font-semibold">
-                                            Published in a peer-reviewed NIH-indexed journal and conducted under approved ethics protocols.
+                                        Published in a peer-reviewed journal
 
                                         </h2>
 
                                         <p className="text-sm">
-                                            MuscleAGE was validated through a 243-participant case-control study using 14 biomarkers spanning inflammation, metabolism, body composition, physical performance, and biological ageing.
+                                        216-participant randomized study (108 with lumbar herniated disc and knee osteoarthritis, 108 without). Combined biomarker and anatomical-parameter protocol confirmed diagnosis at significantly lower cost than standard imaging (p&lt;0.0001).
 
-                                        </p>
+                                        </p> 
+                                    </div>
+                                    <div className="w-full flex flex-col gap-4">
+                                        <Button>
+                                            See report
+                                        </Button>
+                                        <Button
+                                            variant="outline"
+                                            className="md:hidden shadow-none"
+                                            onClick={() => setOpenCard(null)}
+                                        >
+                                            Close
+                                        </Button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </CarouselItem>
+                    <CarouselItem className="basis-1/1 pl-1 lg:basis-1/3">
+                        <div className="group relative overflow-hidden rounded-3xl border border-[#D5BBEA] bg-[#D5BBEA]/10 h-[400px]">
+                            {/* Default Content */}
+                            <div className="p-6 justify-between flex flex-col h-full transition-all duration-600 group-hover:scale-[0.98]">
+                                <div className=" space-y-6">
+                                    <Badge>
+                                    OPTM Method™ · Supplement Registry
+                                    </Badge>
+
+
+                                    <img
+                                        src="/logos/Minerva.png"
+                                        alt="After"
+                                        className="w-full h-fit object-cover"
+                                    />
+
+
+                                    <h2 className="text-xl font-semibold">
+                                    Published in Minerva Medica, co-authored by OPTM Research Institute
+
+
+                                    </h2>
+
+                                    <p className="text-sm">
+                                    Ganguly A, Ganguly D. Med Sci (Basel). 2019;7(6):69. doi: 10.3390/medsci7060069
+
+                                    </p>
+                                </div>
+                                <Button
+                                    variant={"outline"}
+                                    className="mt-4 shadow-none md:hidden w-full"
+                                    onClick={() =>
+                                        setOpenCard(openCard === 0 ? null : 0)
+                                    }
+                                >
+                                    {openCard === 0 ? "Hide Details" : "View Details"}
+                                </Button>
+                            </div>
+
+
+                            <div
+                                className={`
+        absolute inset-0
+        bg-[#D5BBEA]/20
+        backdrop-blur-md
+        p-6
+        transition-transform
+        duration-500
+        ease-out
+
+        md:translate-y-full
+        md:group-hover:translate-y-0
+
+        ${openCard === 0
+                                        ? "translate-y-0"
+                                        : "translate-y-full"
+                                    }
+    `}
+                            >
+                                <div className="flex h-full flex-col justify-between">
+                                    <div className=" space-y-4">
+
+                                        <h2 className="text-xl font-semibold">
+                                        Published in Minerva Medica, co-authored by OPTM Research Institute
+
+                                        </h2>
 
                                         <p className="text-sm">
-                                            Published in a peer-reviewed NIH-indexed journal
-                                            and conducted under approved ethics protocols.
-                                        </p>
+                                        56-patient, 4-week registry study. Curcumin-based supplement significantly improved pain, functional capacity, and oxidative stress markers versus standard care alone (P&lt;0.05).
+
+                                        </p> 
+                                    </div>
+                                    <div className="w-full flex flex-col gap-4">
+                                        <Button>
+                                            See report
+                                        </Button>
+                                        <Button
+                                            variant="outline"
+                                            className="md:hidden shadow-none"
+                                            onClick={() => setOpenCard(null)}
+                                        >
+                                            Close
+                                        </Button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </CarouselItem>
+                    <CarouselItem className="basis-1/1 pl-1 lg:basis-1/3">
+                        <div className="group relative overflow-hidden rounded-3xl border border-[#D5BBEA] bg-[#D5BBEA]/10 h-[400px]">
+                            {/* Default Content */}
+                            <div className="p-6 justify-between flex flex-col h-full transition-all duration-600 group-hover:scale-[0.98]">
+                                <div className=" space-y-6">
+                                    <Badge>
+                                    OPTM Method™ · Supplement Registry
+                                    </Badge>
+
+
+                                    <img
+                                        src="/logos/Minerva.png"
+                                        alt="After"
+                                        className="w-full h-fit object-cover"
+                                    />
+
+
+                                    <h2 className="text-xl font-semibold">
+                                    Published in Minerva Medica, co-authored by OPTM Research Institute
+
+                                    </h2>
+
+                                    <p className="text-sm">
+                                    Belcaro G, et al. (incl. Ganguly A). Minerva Med. 2018;109(2):88-94. doi: 10.23736/S0026-4806.17.05460-X. PMID: 29534559
+
+                                    </p>
+                                </div>
+                                <Button
+                                    variant={"outline"}
+                                    className="mt-4 shadow-none md:hidden w-full"
+                                    onClick={() =>
+                                        setOpenCard(openCard === 0 ? null : 0)
+                                    }
+                                >
+                                    {openCard === 0 ? "Hide Details" : "View Details"}
+                                </Button>
+                            </div>
+
+
+                            <div
+                                className={`
+        absolute inset-0
+        bg-[#D5BBEA]/20
+        backdrop-blur-md
+        p-6
+        transition-transform
+        duration-500
+        ease-out
+
+        md:translate-y-full
+        md:group-hover:translate-y-0
+
+        ${openCard === 0
+                                        ? "translate-y-0"
+                                        : "translate-y-full"
+                                    }
+    `}
+                            >
+                                <div className="flex h-full flex-col justify-between">
+                                    <div className=" space-y-4">
+
+                                        <h2 className="text-xl font-semibold">
+                                        Published in Minerva Medica, co-authored by OPTM Research Institute
+
+                                        </h2>
+
+                                        <p className="text-sm">
+                                        56-patient, 4-week registry study. Curcumin-based supplement significantly improved pain, functional capacity, and oxidative stress markers versus standard care alone (P&lt;0.05).
+
+                                        </p> 
                                     </div>
                                     <div className="w-full flex flex-col gap-4">
                                         <Button>
