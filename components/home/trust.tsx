@@ -1,7 +1,6 @@
-import { CheckmarkBadge01Icon, SentIcon, Time03Icon } from '@hugeicons/core-free-icons'
-import { HugeiconsIcon } from '@hugeicons/react'
+ 
 
-import Image from "next/image"; 
+import Image from "next/image";
 
 export function TrustSection() {
     return (
@@ -12,35 +11,35 @@ export function TrustSection() {
                     alt="Hero"
                     width={200}
                     height={200}
-                    className="object-contain grayscale h-full w-20"
+                    className="object-contain   h-full w-20"
                 />
                 <h3 className="font-medium">Clinically proven</h3>
                 <p className="text-sm w-32">FDA-approved therapies</p>
             </div>
             <div className="flex flex-col space-y-2 justify-center items-center">
                 <div className='flex flex-col w-full h-full justify-center items-center'>
-                    
+
                     <div className='flex -space-x-3 justify-center items-center'>
-                    <Image
-                        src="/new/wiley.png"
-                        alt="Hero"
-                        width={100}
-                        height={100}
-                        className="object-contain grayscale h-auto w-20 border rounded-full"
-                    />
+                        <Image
+                            src="/new/wiley.png"
+                            alt="Hero"
+                            width={100}
+                            height={100}
+                            className="object-contain   h-auto w-20 border rounded-full"
+                        />
                         <Image
                             src="/new/nature.jpg"
                             alt="Hero"
                             width={100}
                             height={100}
-                            className="object-contain grayscale rounded-full h-14 w-14"
+                            className="object-contain   rounded-full h-14 w-14"
                         />
                         <Image
                             src="/new/aging.png"
                             alt="Hero"
                             width={100}
                             height={100}
-                            className="object-contain grayscale h-auto w-16 border rounded-full"
+                            className="object-contain   h-auto w-16 border rounded-full"
                         />
                     </div>
                 </div>
@@ -53,7 +52,7 @@ export function TrustSection() {
                     alt="Hero"
                     width={200}
                     height={200}
-                    className="object-contain grayscale h-full w-20"
+                    className="object-contain   h-full w-20"
                 />
                 <h3 className="font-medium">34 years</h3>
                 <p className="text-sm w-24">Research & Development</p>
@@ -64,7 +63,7 @@ export function TrustSection() {
                     alt="Hero"
                     width={200}
                     height={200}
-                    className="object-contain grayscale h-full w-28"
+                    className="object-contain   h-full w-28"
                 />
                 <h3 className="font-medium">MuscleAGE™</h3>
                 <p className="text-sm w-32">World's first muscle age blood test</p>

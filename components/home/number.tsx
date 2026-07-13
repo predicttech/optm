@@ -1,4 +1,4 @@
-import { cn } from "@/lib/utils";
+
 import { Badge } from "../ui/badge";
 import {
     Carousel,
@@ -7,20 +7,22 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel"
+import Image from "next/image";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
 export function NumberSection() {
     return (
         <section className="relative py-20 m-3">
 
             <div className="relative flex flex-col h-full space-y-6 justify-center items-center">
-                <Badge>
-                    What we treat?
+                <Badge size={"sm"}>
+                    What We Treat?
                 </Badge>
 
                 <div className="max-w-md md:max-w-3xl text-center px-8">
                     <h1
                         className="font-heading text-2xl font-semibold text-black leading-tight md:text-3xl">
-                        If it hurts, we probably <br /> have a number for it
+                        If It Hurts, We Probably <br /> Have A Number For It.
                     </h1>
 
                 </div>
@@ -77,10 +79,10 @@ export function NumberSection() {
                                     </h1>
                                     <p className="mt-10 text-lg leading-6 text-black">
                                         Ravi Mehta, 51
-                                    </p> 
+                                    </p>
                                     <p className="mt-4 max-w-60 text-sm leading-6 text-black/60">
                                         South Delhi · Osteoarthritis + metabolic syndrome
-                                    </p> 
+                                    </p>
                                 </div>
                             </CarouselItem>
                             <CarouselItem>
@@ -89,13 +91,20 @@ export function NumberSection() {
                                         className="font-heading text-xl font-semibold text-black leading-tight md:text-3xl">
                                         "When I was told I might need knee replacement surgery, I felt like I had run out of options. OPTM helped me understand my condition and guided me through a personalized recovery journey."
                                     </h1>
-                                    <p className="mt-10 text-lg leading-6 text-black">
-                                        Ravi Mehta, 51
-                                    </p>
+                                    <div className="mt-6 items-center flex gap-3">
+                                        <Avatar size="lg">
+                                            <AvatarImage src="/new/doctor.png" />
+                                            <AvatarFallback>CN</AvatarFallback>
+                                        </Avatar>
+
+                                        <p className="text-lg leading-6 text-black">
+                                            Ravi Mehta, 51
+                                        </p>
+                                    </div>
 
                                     <p className="mt-4 max-w-60 text-sm leading-6 text-black/60">
                                         South Delhi · Osteoarthritis + metabolic syndrome
-                                    </p> 
+                                    </p>
                                 </div>
                             </CarouselItem>
                             <CarouselItem>
@@ -104,16 +113,23 @@ export function NumberSection() {
                                         className="font-heading text-xl font-semibold text-black leading-tight md:text-3xl">
                                         "When I was told I might need knee replacement surgery, I felt like I had run out of options. OPTM helped me understand my condition and guided me through a personalized recovery journey."
                                     </h1>
-                                    <p className="mt-10 text-lg leading-6 text-black">
-                                        Ravi Mehta, 51
-                                    </p>
+                                    <div className="mt-6 items-center flex gap-3">
+                                        <Avatar size="lg">
+                                            <AvatarImage src="/new/doctor.png" />
+                                            <AvatarFallback>CN</AvatarFallback>
+                                        </Avatar>
+
+                                        <p className="text-lg leading-6 text-black">
+                                            Ravi Mehta, 51
+                                        </p>
+                                    </div>
 
                                     <p className="mt-4 max-w-60 text-sm leading-6 text-black/60">
                                         South Delhi · Osteoarthritis + metabolic syndrome
-                                    </p> 
+                                    </p>
                                 </div>
                             </CarouselItem>
-                            
+
                         </CarouselContent>
                         <div className="mt-3 w-full md:absolute flex bottom-6 right-6 z-50 flex md:justify-end justify-center items-center gap-3">
                             <CarouselPrevious className="static size-12 shadow-none translate-y-0" />
@@ -122,7 +138,7 @@ export function NumberSection() {
                     </Carousel>
 
                 </div>
-            </div> 
+            </div>
         </section>
     );
 }

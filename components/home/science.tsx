@@ -17,7 +17,7 @@ export function ScienceSection() {
         <section className="relative py-20 pb-40 m-3">
 
             <div className="relative mx-auto flex max-w-5xl flex-col h-full space-y-6">
-                <Badge>
+                <Badge size={"sm"}>
                     The science
                 </Badge>
 
@@ -45,16 +45,28 @@ export function ScienceSection() {
                         <div className="group relative overflow-hidden rounded-3xl border border-[#D5BBEA] bg-[#D5BBEA]/10 h-[400px]">
                             {/* Default Content */}
                             <div className="p-6 justify-between flex flex-col h-full transition-all duration-600 group-hover:scale-[0.98]">
-                                <div className=" space-y-4">
-                                    <Badge>MuscleAGE™ · COASI</Badge>
+                                <div className=" space-y-6">
+                                    <Badge>
+                                        MuscleAGE™ · COASI
+                                    </Badge>
 
-                                    <h1 className="text-lg font-semibold">
-                                        The Composite OrthoAge Score Index (COASI) for Estimating Musculoskeletal Biological Age Acceleration in Older Adults
 
-                                    </h1>
+                                    <img
+                                        src="/logos/nih.png"
+                                        alt="After"
+                                        className="w-60 h-fit object-cover"
+                                    />
+
+
+                                    <h2 className="text-xl font-semibold">
+                                        Published in a peer-reviewed NIH-indexed journal and conducted under approved ethics protocols.
+
+                                    </h2>
 
                                     <p className="text-sm">
-                                        COASI is a multidomain, biomarker-derived index estimating musculoskeletal biological age and its gap relative to chronological age. It may support early risk stratification; however, it remains exploratory and hypothesis-generating. Further longitudinal validation, external replication in diverse populations, and integration...
+                                        Geriatr Gerontol Int. 2026  <br /> Jun;26(6):e70608.
+                                        <br /> doi: 10.1111/ggi.70608.
+
                                     </p>
                                 </div>
                                 <Button
@@ -90,26 +102,105 @@ export function ScienceSection() {
                             >
                                 <div className="flex h-full flex-col justify-between">
                                     <div className=" space-y-4">
-                                        <img
-                                            src="/logos/nih.png"
-                                            alt="After"
-                                            className="w-60 h-fit object-cover"
-                                        />
+
                                         <h2 className="text-xl font-semibold">
-                                        Geriatr Gerontol Int
-                                        . 2026 Jun;26(6):e70608. doi: 10.1111/ggi.70608.
+                                            Published in a peer-reviewed NIH-indexed journal and conducted under approved ethics protocols.
+
                                         </h2>
 
                                         <p className="text-sm">
-                                            MuscleAGE™ was validated through a 243-participant
-                                            case-control study using 14 biomarkers spanning
-                                            inflammation, metabolism, body composition,
-                                            physical performance, and biological ageing.
-                                        </p>
+                                            MuscleAGE was validated through a 243-participant case-control study using 14 biomarkers spanning inflammation, metabolism, body composition, physical performance, and biological ageing.
 
+                                        </p> 
+                                    </div>
+                                    <div className="w-full flex flex-col gap-4">
+                                        <Button>
+                                            See report
+                                        </Button>
+                                        <Button
+                                            variant="outline"
+                                            className="md:hidden shadow-none"
+                                            onClick={() => setOpenCard(null)}
+                                        >
+                                            Close
+                                        </Button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </CarouselItem>
+                    <CarouselItem className="basis-1/1 pl-1 lg:basis-1/3">
+                        <div className="group relative overflow-hidden rounded-3xl border border-[#D5BBEA] bg-[#D5BBEA]/10 h-[400px]">
+                            {/* Default Content */}
+                            <div className="p-6 justify-between flex flex-col h-full transition-all duration-600 group-hover:scale-[0.98]">
+                                <div className=" space-y-6">
+                                    <Badge>
+                                    Bio-Musculo Index™ · Diagnostic Protocol
+                                    </Badge>
+
+
+                                    <img
+                                        src="/logos/nih.png"
+                                        alt="After"
+                                        className="w-60 h-fit object-cover"
+                                    />
+
+
+                                    <h2 className="text-xl font-semibold">
+                                    Published in a peer-reviewed journal
+
+                                    </h2>
+
+                                    <p className="text-sm">
+                                    Ganguly A. Caspian J Intern Med. 2019;10(1):25-35. doi: 10.22088/cjim.10.1.25. PMID: 30858938
+
+
+                                    </p>
+                                </div>
+                                <Button
+                                    variant={"outline"}
+                                    className="mt-4 shadow-none md:hidden w-full"
+                                    onClick={() =>
+                                        setOpenCard(openCard === 0 ? null : 0)
+                                    }
+                                >
+                                    {openCard === 0 ? "Hide Details" : "View Details"}
+                                </Button>
+                            </div>
+
+
+                            <div
+                                className={`
+        absolute inset-0
+        bg-[#D5BBEA]/20
+        backdrop-blur-md
+        p-6
+        transition-transform
+        duration-500
+        ease-out
+
+        md:translate-y-full
+        md:group-hover:translate-y-0
+
+        ${openCard === 0
+                                        ? "translate-y-0"
+                                        : "translate-y-full"
+                                    }
+    `}
+                            >
+                                <div className="flex h-full flex-col justify-between">
+                                    <div className=" space-y-4">
+
+                                        <h2 className="text-xl font-semibold">
+                                            Published in a peer-reviewed NIH-indexed journal and conducted under approved ethics protocols.
+
+                                        </h2>
+
+                                        
                                         <p className="text-sm">
-                                            Published in a peer-reviewed NIH-indexed journal
-                                            and conducted under approved ethics protocols.
+                                        297 patients with osteoarthritic disorders vs. 315 without, cross-sectional study. CRP, CK-MM, and AldoA evaluated as diagnostic biomarkers. Diagnostic accuracy (AUC) of 0.91 for AldoA.
+
                                         </p>
                                     </div>
                                     <div className="w-full flex flex-col gap-4">
@@ -132,41 +223,89 @@ export function ScienceSection() {
                     <CarouselItem className="basis-1/1 pl-1 lg:basis-1/3">
                         <div className="group relative overflow-hidden rounded-3xl border border-[#D5BBEA] bg-[#D5BBEA]/10 h-[400px]">
                             {/* Default Content */}
-                            <div className="p-6 space-y-4 transition-all duration-600 group-hover:scale-[0.98]">
-                                <Badge>MuscleAGE™ · COASI</Badge>
+                            <div className="p-6 justify-between flex flex-col h-full transition-all duration-600 group-hover:scale-[0.98]">
+                                <div className=" space-y-6">
+                                    <Badge>
+                                    OPTM Method™ · Treatment Protocol
 
-                                <h1 className="text-lg font-semibold">
-                                    Published in NIH-indexed peer-reviewed journal
-                                </h1>
+                                    </Badge>
 
-                                <p className="text-sm">
-                                    243-participant case-control study. STROBE-compliant.
-                                    Ethics-approved (OPTM-RP-2024-018).
-                                    14 biomarkers across 5 domains.
-                                </p>
-                            </div>
 
-                            {/* Hover Details */}
-                            <div className="absolute inset-0 translate-y-full bg-[#D5BBEA]/20 backdrop-blur-md p-6 transition-transform duration-600 ease-out group-hover:translate-y-0">
-                                <div className="flex h-full flex-col justify-center space-y-4">
+                                    <img
+                                        src="/logos/nih.png"
+                                        alt="After"
+                                        className="w-60 h-fit object-cover"
+                                    />
+
+
                                     <h2 className="text-xl font-semibold">
-                                        Study Details
+                                    Published in a peer-reviewed, PubMed-indexed journal
                                     </h2>
 
                                     <p className="text-sm">
-                                        MuscleAGE™ was validated through a 243-participant
-                                        case-control study using 14 biomarkers spanning
-                                        inflammation, metabolism, body composition,
-                                        physical performance, and biological ageing.
-                                    </p>
+                                    Ganguly A. Caspian J Intern Med. 2019;10(2):183-196. PMID: 31363397
 
-                                    <p className="text-sm">
-                                        Published in a peer-reviewed NIH-indexed journal
-                                        and conducted under approved ethics protocols.
+
                                     </p>
-                                    <Button>
-                                        See report
-                                    </Button>
+                                </div>
+                                <Button
+                                    variant={"outline"}
+                                    className="mt-4 shadow-none md:hidden w-full"
+                                    onClick={() =>
+                                        setOpenCard(openCard === 0 ? null : 0)
+                                    }
+                                >
+                                    {openCard === 0 ? "Hide Details" : "View Details"}
+                                </Button>
+                            </div>
+
+
+                            <div
+                                className={`
+        absolute inset-0
+        bg-[#D5BBEA]/20
+        backdrop-blur-md
+        p-6
+        transition-transform
+        duration-500
+        ease-out
+
+        md:translate-y-full
+        md:group-hover:translate-y-0
+
+        ${openCard === 0
+                                        ? "translate-y-0"
+                                        : "translate-y-full"
+                                    }
+    `}
+                            >
+                                <div className="flex h-full flex-col justify-between">
+                                    <div className=" space-y-4">
+
+                                        <h2 className="text-xl font-semibold">
+                                        Published in a peer-reviewed, PubMed-indexed journal
+
+                                        </h2>
+
+                                        <p className="text-sm">
+                                        153-patient study, average age 59.9 years. Topical phytotherapeutic protocol normalized elevated CK-MM and AldoA within 6 weeks (p&lt;0.0001), with significant improvement across VAS, WOMAC, and KOOS scores.
+
+                                        </p>
+
+                                       
+                                    </div>
+                                    <div className="w-full flex flex-col gap-4">
+                                        <Button>
+                                            See report
+                                        </Button>
+                                        <Button
+                                            variant="outline"
+                                            className="md:hidden shadow-none"
+                                            onClick={() => setOpenCard(null)}
+                                        >
+                                            Close
+                                        </Button>
+                                    </div>
                                 </div>
 
                             </div>
@@ -175,84 +314,92 @@ export function ScienceSection() {
                     <CarouselItem className="basis-1/1 pl-1 lg:basis-1/3">
                         <div className="group relative overflow-hidden rounded-3xl border border-[#D5BBEA] bg-[#D5BBEA]/10 h-[400px]">
                             {/* Default Content */}
-                            <div className="p-6 space-y-4 transition-all duration-600 group-hover:scale-[0.98]">
-                                <Badge>MuscleAGE™ · COASI</Badge>
+                            <div className="p-6 justify-between flex flex-col h-full transition-all duration-600 group-hover:scale-[0.98]">
+                                <div className=" space-y-6">
+                                    <Badge>
+                                        MuscleAGE™ · COASI
+                                    </Badge>
 
-                                <h1 className="text-lg font-semibold">
-                                    Published in NIH-indexed peer-reviewed journal
-                                </h1>
 
-                                <p className="text-sm">
-                                    243-participant case-control study. STROBE-compliant.
-                                    Ethics-approved (OPTM-RP-2024-018).
-                                    14 biomarkers across 5 domains.
-                                </p>
-                            </div>
+                                    <img
+                                        src="/logos/nih.png"
+                                        alt="After"
+                                        className="w-60 h-fit object-cover"
+                                    />
 
-                            {/* Hover Details */}
-                            <div className="absolute inset-0 translate-y-full bg-[#D5BBEA]/20 backdrop-blur-md p-6 transition-transform duration-600 ease-out group-hover:translate-y-0">
-                                <div className="flex h-full flex-col justify-center space-y-4">
+
                                     <h2 className="text-xl font-semibold">
-                                        Study Details
+                                        Published in a peer-reviewed NIH-indexed journal and conducted under approved ethics protocols.
+
                                     </h2>
 
                                     <p className="text-sm">
-                                        MuscleAGE™ was validated through a 243-participant
-                                        case-control study using 14 biomarkers spanning
-                                        inflammation, metabolism, body composition,
-                                        physical performance, and biological ageing.
-                                    </p>
+                                        Geriatr Gerontol Int. 2026  <br /> Jun;26(6):e70608.
+                                        <br /> doi: 10.1111/ggi.70608.
 
-                                    <p className="text-sm">
-                                        Published in a peer-reviewed NIH-indexed journal
-                                        and conducted under approved ethics protocols.
                                     </p>
-                                    <Button>
-                                        See report
-                                    </Button>
                                 </div>
-
-                            </div>
-                        </div>
-                    </CarouselItem>
-                    <CarouselItem className="basis-1/1 pl-1 lg:basis-1/3">
-                        <div className="group relative overflow-hidden rounded-3xl border border-[#D5BBEA] bg-[#D5BBEA]/10 h-[400px]">
-                            {/* Default Content */}
-                            <div className="p-6 space-y-4 transition-all duration-600 group-hover:scale-[0.98]">
-                                <Badge>MuscleAGE™ · COASI</Badge>
-
-                                <h1 className="text-lg font-semibold">
-                                    Published in NIH-indexed peer-reviewed journal
-                                </h1>
-
-                                <p className="text-sm">
-                                    243-participant case-control study. STROBE-compliant.
-                                    Ethics-approved (OPTM-RP-2024-018).
-                                    14 biomarkers across 5 domains.
-                                </p>
+                                <Button
+                                    variant={"outline"}
+                                    className="mt-4 shadow-none md:hidden w-full"
+                                    onClick={() =>
+                                        setOpenCard(openCard === 0 ? null : 0)
+                                    }
+                                >
+                                    {openCard === 0 ? "Hide Details" : "View Details"}
+                                </Button>
                             </div>
 
-                            {/* Hover Details */}
-                            <div className="absolute inset-0 translate-y-full bg-[#D5BBEA]/20 backdrop-blur-md p-6 transition-transform duration-600 ease-out group-hover:translate-y-0">
-                                <div className="flex h-full flex-col justify-center space-y-4">
-                                    <h2 className="text-xl font-semibold">
-                                        Study Details
-                                    </h2>
 
-                                    <p className="text-sm">
-                                        MuscleAGE™ was validated through a 243-participant
-                                        case-control study using 14 biomarkers spanning
-                                        inflammation, metabolism, body composition,
-                                        physical performance, and biological ageing.
-                                    </p>
+                            <div
+                                className={`
+        absolute inset-0
+        bg-[#D5BBEA]/20
+        backdrop-blur-md
+        p-6
+        transition-transform
+        duration-500
+        ease-out
 
-                                    <p className="text-sm">
-                                        Published in a peer-reviewed NIH-indexed journal
-                                        and conducted under approved ethics protocols.
-                                    </p>
-                                    <Button>
-                                        See report
-                                    </Button>
+        md:translate-y-full
+        md:group-hover:translate-y-0
+
+        ${openCard === 0
+                                        ? "translate-y-0"
+                                        : "translate-y-full"
+                                    }
+    `}
+                            >
+                                <div className="flex h-full flex-col justify-between">
+                                    <div className=" space-y-4">
+
+                                        <h2 className="text-xl font-semibold">
+                                            Published in a peer-reviewed NIH-indexed journal and conducted under approved ethics protocols.
+
+                                        </h2>
+
+                                        <p className="text-sm">
+                                            MuscleAGE was validated through a 243-participant case-control study using 14 biomarkers spanning inflammation, metabolism, body composition, physical performance, and biological ageing.
+
+                                        </p>
+
+                                        <p className="text-sm">
+                                            Published in a peer-reviewed NIH-indexed journal
+                                            and conducted under approved ethics protocols.
+                                        </p>
+                                    </div>
+                                    <div className="w-full flex flex-col gap-4">
+                                        <Button>
+                                            See report
+                                        </Button>
+                                        <Button
+                                            variant="outline"
+                                            className="md:hidden shadow-none"
+                                            onClick={() => setOpenCard(null)}
+                                        >
+                                            Close
+                                        </Button>
+                                    </div>
                                 </div>
 
                             </div>

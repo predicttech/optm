@@ -76,14 +76,14 @@ export function FourStepSection() {
             <Tabs defaultValue="1">
                 <div className="relative w-full mx-auto max-w-5xl border border-b-0 py-10 mx-auto border-[#D5BBEA]/60 rounded-t-xl md:rounded-t-[30px]">
                     <div className="relative mt-10 flex flex-col h-full justify-center items-center">
-                        <Badge>
+                        <Badge size={"sm"}>
                             The OPTM Method
                         </Badge>
 
                         <div className="max-w-md mt-8 md:max-w-3xl text-center px-8">
                             <h1
                                 className="font-heading text-2xl font-semibold text-black leading-tight md:text-3xl">
-                                The OPTM Method. <br /> Four steps. No guesswork.
+                                The OPTM Method. <br /> Four Steps. No Guesswork.
                             </h1>
 
                             <p className="mt-6 text-sm leading-6 text-black/60">
@@ -142,7 +142,7 @@ export function FourStepSection() {
 
                         <CompareSliderBefore>
                             <img
-                                src="/img/knee-pain-d-p.jpg"
+                                src="/img/knee-pain-dp.jpg"
                                 alt="Before"
                                 className="w-full h-full object-cover"
                             />
@@ -155,7 +155,7 @@ export function FourStepSection() {
 
                         <CompareSliderAfter>
                             <img
-                                src="/img/knee-pain-d-r.jpg"
+                                src="/img/knee-pain-dr.jpg"
                                 alt="After"
                                 className="w-full h-full object-cover"
                             />
@@ -186,7 +186,7 @@ export function FourStepSection() {
 
                         <CompareSliderBefore>
                             <img
-                                src="/img/knee-pain-p-p.jpg"
+                                src="/img/knee-pain-pp.jpg"
                                 alt="Before"
                                 className="w-full h-full object-cover"
                             />
@@ -197,7 +197,7 @@ export function FourStepSection() {
 
                         <CompareSliderAfter>
                             <img
-                                src="/img/knee-pain-p-r.jpg"
+                                src="/img/knee-pain-pr.jpg"
                                 alt="After"
                                 className="w-full h-full object-cover"
                             />
@@ -245,7 +245,7 @@ export function FourStepSection() {
 
                         <CompareSliderBefore>
                             <img
-                                src="/img/back-pain-d-p.jpg"
+                                src="/img/back-pain-dp.jpg"
                                 alt="Before"
                                 className="w-full h-full object-cover"
                             />
@@ -258,7 +258,7 @@ export function FourStepSection() {
 
                         <CompareSliderAfter>
                             <img
-                                src="/img/back-pain-d-r.jpg"
+                                src="/img/back-pain-dr.jpg"
                                 alt="After"
                                 className="w-full h-full object-cover"
                             />
@@ -289,7 +289,7 @@ export function FourStepSection() {
 
                         <CompareSliderBefore>
                             <img
-                                src="/img/back-pain-p-p.jpg"
+                                src="/img/back-pain-pp.jpg"
                                 alt="Before"
                                 className="w-full h-full object-cover"
                             />
@@ -300,7 +300,7 @@ export function FourStepSection() {
 
                         <CompareSliderAfter>
                             <img
-                                src="/img/back-pain-p-r.jpg"
+                                src="/img/back-pain-pr.jpg"
                                 alt="After"
                                 className="w-full h-full object-cover"
                             />
@@ -349,7 +349,7 @@ export function FourStepSection() {
 
                         <CompareSliderBefore>
                             <img
-                                src="/img/muscle-pain-d-p.jpg"
+                                src="/img/muscle-pain-dp.jpg"
                                 alt="Before"
                                 className="w-full h-full object-cover"
                             />
@@ -362,7 +362,7 @@ export function FourStepSection() {
 
                         <CompareSliderAfter>
                             <img
-                                src="/img/muscle-pain-d-r.jpg"
+                                src="/img/muscle-pain-dr.jpg"
                                 alt="After"
                                 className="w-full h-full object-cover"
                             />
@@ -394,7 +394,7 @@ export function FourStepSection() {
 
                         <CompareSliderBefore>
                             <img
-                                src="/img/muscle-pain-p-p.jpg"
+                                src="/img/muscle-pain-pp.jpg"
                                 alt="Before"
                                 className="w-full h-full object-cover"
                             />
@@ -405,7 +405,7 @@ export function FourStepSection() {
 
                         <CompareSliderAfter>
                             <img
-                                src="/img/muscle-pain-p-r.jpg"
+                                src="/img/muscle-pain-pr.jpg"
                                 alt="After"
                                 className="w-full h-full object-cover"
                             />
@@ -454,7 +454,7 @@ export function FourStepSection() {
 
                         <CompareSliderBefore>
                             <img
-                                src="/img/glp-d-p.jpg"
+                                src="/img/glp-dp.jpg"
                                 alt="Before"
                                 className="w-full h-full object-cover"
                             />
@@ -467,7 +467,7 @@ export function FourStepSection() {
 
                         <CompareSliderAfter>
                             <img
-                                src="/img/glp-d-r.jpg"
+                                src="/img/glp-dr.jpg"
                                 alt="After"
                                 className="w-full h-full object-cover"
                             />
@@ -500,7 +500,7 @@ export function FourStepSection() {
 
                         <CompareSliderBefore>
                             <img
-                                src="/img/glp-p-p.jpg"
+                                src="/img/glp-pp.jpg"
                                 alt="Before"
                                 className="w-full h-full object-cover"
                             />
@@ -511,7 +511,7 @@ export function FourStepSection() {
 
                         <CompareSliderAfter>
                             <img
-                                src="/img/glp-p-r.jpg"
+                                src="/img/glp-pr.jpg"
                                 alt="After"
                                 className="w-full h-full object-cover"
                             />

@@ -27,14 +27,14 @@ export function MuscleAgeSection() {
                                 repeat: Infinity,
                                 ease: "easeInOut",
                             }}
-                            className="absolute pl-10 h-fit w-80"
+                            className="absolute h-fit pb-8 w-44"
                         >
                             <Image
-                                src="/new/muscle.png"
+                                src="/img/muscle.png"
                                 alt="Hero"
                                 width={200}
                                 height={200}
-                                className="object-contain h-full w-full"
+                                className="object-contain rotate-40 h-full w-full"
                             />
                         </motion.div>
                     </div>

@@ -6,7 +6,7 @@ export function ProblemSection() {
         <section className="relative py-20">
 
             <div className="relative flex flex-col h-full space-y-6 justify-center items-center">
-                <Badge>
+                <Badge size={"sm"}>
                 Why does Pain Return?
 
                 </Badge>

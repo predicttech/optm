@@ -23,7 +23,7 @@ export function ApproachSection() {
                 <div className="max-w-md md:max-w-3xl text-center px-8">
                     <h1
                         className="font-heading text-2xl font-semibold text-white leading-tight md:text-3xl">
-                        Our approach
+                        Our Approach
                     </h1>
                 </div>
             </div>
@@ -31,9 +31,9 @@ export function ApproachSection() {
             <div className="mt-20 hidden md:flex grid gap-2 mx-auto max-w-5xl">
                 <Card className="relative  bg-transparent shadow-none ring-0 mx-auto w-full max-w-sm pt-0">
                     <img
-                        src="/new/approach-3.jpg"
+                        src="/img/doctor-patient.jpg"
                         alt="Event cover"
-                        className="relative border border-[#D5BBEA] rounded-3xl z-20 w-full object-cover"
+                        className="relative border border-[#D5BBEA] h-50 rounded-3xl z-20 w-full object-cover"
                     />
                     <CardHeader>
                         <CardTitle className="text-white text-xl font-semibold">
@@ -46,9 +46,9 @@ export function ApproachSection() {
                 </Card>
                 <Card className="relative  bg-transparent shadow-none ring-0 mx-auto w-full max-w-sm pt-0">
                     <img
-                        src="/new/approach-2.jpg"
+                        src="/img/harvesting.avif"
                         alt="Event cover"
-                        className="relative border border-[#D5BBEA] rounded-3xl z-20 w-full object-cover"
+                        className="relative border border-[#D5BBEA] h-50 rounded-3xl z-20 w-full object-cover"
                     />
                     <CardHeader>
                         <CardTitle className="text-white text-xl font-semibold">
@@ -63,7 +63,7 @@ export function ApproachSection() {
                     <img
                         src="/new/approach-1.jpg"
                         alt="Event cover"
-                        className="relative border border-[#D5BBEA] rounded-3xl z-20 w-full object-cover"
+                        className="relative border border-[#D5BBEA] h-50 rounded-3xl z-20 w-full object-cover"
                     />
                     <CardHeader>
                         <CardTitle className="text-white text-xl font-semibold">

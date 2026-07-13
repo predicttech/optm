@@ -11,16 +11,16 @@ export function DoctorsSection() {
     return (
         <section className="relative py-20 m-3"> 
             <div className="relative mx-auto flex max-w-5xl flex-col h-full space-y-6">
-                <Badge>
-                    Clinical team
+                <Badge size={"sm"}>
+                    Clinical Team
                 </Badge>
 
                 <div className="max-w-md md:max-w-3xl">
                     <h1
                         className="font-heading text-2xl font-semibold text-black leading-tight md:text-3xl">
-                        Specialists who
+                        Specialists Who
                         <br />
-                        treat the whole system.
+                        Treat The Whole System.
                     </h1>
                     <p className="mt-6 text-sm leading-6 text-black/60">
                         Pain, metabolism, movement, and plant medicine — each specialist owns one domain. Every patient protocol is designed by all of them together. No siloed treatment.

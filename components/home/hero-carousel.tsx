@@ -14,15 +14,30 @@ import {
 import { HeroSection1, HeroSection2, HeroSection3 } from "./hero";
 import { cn } from "@/lib/utils";
 import Autoplay from "embla-carousel-autoplay";
+import { Pause, Play } from "lucide-react";
 
 export function CarouselHero() {
     const [api, setApi] = React.useState<CarouselApi>();
     const [current, setCurrent] = React.useState(0);
     const [count, setCount] = React.useState(0);
+    const [isPlaying, setIsPlaying] = React.useState(true);
+
+    const toggleAutoplay = () => {
+        if (plugin.current.isPlaying()) {
+            plugin.current.stop();
+            setIsPlaying(false);
+        } else {
+            plugin.current.play();
+            setIsPlaying(true);
+        }
+    };
 
     const plugin = React.useRef(
-        Autoplay({ delay: 7000, stopOnInteraction: true })
-    )
+        Autoplay({
+            delay: 7000,
+            stopOnInteraction: true,
+        })
+    );
 
     React.useEffect(() => {
         if (!api) return;
@@ -72,21 +87,23 @@ export function CarouselHero() {
                 <CarouselNext className="static size-12 shadow-none translate-y-0" />
             </div>
 
-            {/* Indicators */}
-            <div className="absolute bottom-10 left-1/2 z-50 flex -translate-x-1/2 gap-2">
-                {Array.from({ length: count }).map((_, index) => (
-                    <button
-                        key={index}
-                        onClick={() => api?.scrollTo(index)}
-                        className={cn(
-                            "h-2 rounded-full transition-all duration-300",
-                            current === index
-                                ? "w-8 bg-white"
-                                : "w-2 bg-white/40 hover:bg-white/70"
-                        )}
-                        aria-label={`Go to slide ${index + 1}`}
-                    />
-                ))}
+            <div className="absolute bottom-8 right-8 z-50 hidden items-center gap-3 md:flex">
+                <button
+                    onClick={toggleAutoplay}
+                    className="flex size-12 items-center justify-center rounded-full border border-white/30 bg-black/30 text-white backdrop-blur transition hover:bg-black/50"
+                    aria-label={isPlaying ? "Pause autoplay" : "Play autoplay"}
+                >
+                    {isPlaying ? (
+                        // Pause Icon
+                        <Pause strokeWidth={1} className="size-4"/>
+                    ) : (
+                        // Play Icon
+                        <Play strokeWidth={1} className="size-4"/>
+                    )}
+                </button>
+
+                <CarouselPrevious className="static size-12 translate-y-0 shadow-none" />
+                <CarouselNext className="static size-12 translate-y-0 shadow-none" />
             </div>
         </Carousel>
     );
