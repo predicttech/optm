@@ -31,10 +31,8 @@ export function HeroSection1() {
                         </h1>
 
                         <p className="mt-6 max-w-sm text-sm leading-6 text-white/60">
-                            Using proprietary MuscleAGE™ biomarker technology,
-                            plant medicine, and GLP-1 therapy, OPTM reverses
-                            pain, muscle degeneration, and metabolic decline at
-                            the source—not the symptom.
+                        Most pain care tests only what's visible on a scan. OPTM tests 40+ biomarkers across five biological systems to find what's actually driving your pain before it becomes structural damage.
+
                         </p>
 
                         <div className="mt-8">

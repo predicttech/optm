@@ -1,16 +1,15 @@
  
-import { Contact } from "@/components/email/form"
 import { ApproachSection } from "@/components/home/approach"
 import { ConditionsSection } from "@/components/home/conditions"
 import { ContactSection } from "@/components/home/contact"
 import { DoctorsSection } from "@/components/home/doctor"
 import { FourStepSection } from "@/components/home/four-step"
 import { CarouselHero } from "@/components/home/hero-carousel"
-import { MuscleAgeSection } from "@/components/home/muscleage"
-import { NumberSection } from "@/components/home/number"
+import { MuscleAgeSection } from "@/components/home/muscleage" 
 import { ProblemSection } from "@/components/home/problem"
 import { ProtocolSection } from "@/components/home/protocol"
 import { ScienceSection } from "@/components/home/science"
+import { TestimonialsSection } from "@/components/home/testimonials"
 import { TrustSection } from "@/components/home/trust"
 import { Dithering } from "@paper-design/shaders-react"
 
@@ -36,11 +35,10 @@ export default function Page() {
       <ConditionsSection/>
       <ProtocolSection/>
       <ApproachSection/>
-      <NumberSection/>
+      <TestimonialsSection/> 
       <ScienceSection/>
       <DoctorsSection/>
-      <ContactSection/>
-
+      <ContactSection/> 
     </div>
   )
 }

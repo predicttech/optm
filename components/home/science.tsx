@@ -111,7 +111,7 @@ export function ScienceSection() {
                                         <p className="text-sm">
                                             MuscleAGE was validated through a 243-participant case-control study using 14 biomarkers spanning inflammation, metabolism, body composition, physical performance, and biological ageing.
 
-                                        </p> 
+                                        </p>
                                     </div>
                                     <div className="w-full flex flex-col gap-4">
                                         <Button>
@@ -136,7 +136,7 @@ export function ScienceSection() {
                             <div className="p-6 justify-between flex flex-col h-full transition-all duration-600 group-hover:scale-[0.98]">
                                 <div className=" space-y-6">
                                     <Badge>
-                                    Bio-Musculo Index™ · Diagnostic Protocol
+                                        Bio-Musculo Index™ · Diagnostic Protocol
                                     </Badge>
 
 
@@ -148,12 +148,12 @@ export function ScienceSection() {
 
 
                                     <h2 className="text-xl font-semibold">
-                                    Published in a peer-reviewed journal
+                                        Published in a peer-reviewed journal
 
                                     </h2>
 
                                     <p className="text-sm">
-                                    Ganguly A. Caspian J Intern Med. 2019;10(1):25-35. doi: 10.22088/cjim.10.1.25. PMID: 30858938
+                                        Ganguly A. Caspian J Intern Med. 2019;10(1):25-35. doi: 10.22088/cjim.10.1.25. PMID: 30858938
 
 
                                     </p>
@@ -193,12 +193,12 @@ export function ScienceSection() {
                                     <div className=" space-y-4">
 
                                         <h2 className="text-xl font-semibold">
-                                        Published in a peer-reviewed journal
+                                            Published in a peer-reviewed journal
                                         </h2>
 
-                                        
+
                                         <p className="text-sm">
-                                        297 patients with osteoarthritic disorders vs. 315 without, cross-sectional study. CRP, CK-MM, and AldoA evaluated as diagnostic biomarkers. Diagnostic accuracy (AUC) of 0.91 for AldoA.
+                                            297 patients with osteoarthritic disorders vs. 315 without, cross-sectional study. CRP, CK-MM, and AldoA evaluated as diagnostic biomarkers. Diagnostic accuracy (AUC) of 0.91 for AldoA.
 
                                         </p>
                                     </div>
@@ -225,7 +225,7 @@ export function ScienceSection() {
                             <div className="p-6 justify-between flex flex-col h-full transition-all duration-600 group-hover:scale-[0.98]">
                                 <div className=" space-y-6">
                                     <Badge>
-                                    OPTM Method™ · Treatment Protocol
+                                        OPTM Method™ · Treatment Protocol
 
                                     </Badge>
 
@@ -238,11 +238,11 @@ export function ScienceSection() {
 
 
                                     <h2 className="text-xl font-semibold">
-                                    Published in a peer-reviewed, PubMed-indexed journal
+                                        Published in a peer-reviewed, PubMed-indexed journal
                                     </h2>
 
                                     <p className="text-sm">
-                                    Ganguly A. Caspian J Intern Med. 2019;10(2):183-196. PMID: 31363397
+                                        Ganguly A. Caspian J Intern Med. 2019;10(2):183-196. PMID: 31363397
 
 
                                     </p>
@@ -282,16 +282,16 @@ export function ScienceSection() {
                                     <div className=" space-y-4">
 
                                         <h2 className="text-xl font-semibold">
-                                        Published in a peer-reviewed, PubMed-indexed journal
+                                            Published in a peer-reviewed, PubMed-indexed journal
 
                                         </h2>
 
                                         <p className="text-sm">
-                                        153-patient study, average age 59.9 years. Topical phytotherapeutic protocol normalized elevated CK-MM and AldoA within 6 weeks (p&lt;0.0001), with significant improvement across VAS, WOMAC, and KOOS scores.
+                                            153-patient study, average age 59.9 years. Topical phytotherapeutic protocol normalized elevated CK-MM and AldoA within 6 weeks (p&lt;0.0001), with significant improvement across VAS, WOMAC, and KOOS scores.
 
                                         </p>
 
-                                       
+
                                     </div>
                                     <div className="w-full flex flex-col gap-4">
                                         <Button>
@@ -316,7 +316,7 @@ export function ScienceSection() {
                             <div className="p-6 justify-between flex flex-col h-full transition-all duration-600 group-hover:scale-[0.98]">
                                 <div className=" space-y-6">
                                     <Badge>
-                                    Bio-Musculo Index™ · LHD-KOA Diagnostic
+                                        Bio-Musculo Index™ · LHD-KOA Diagnostic
                                     </Badge>
 
 
@@ -328,102 +328,13 @@ export function ScienceSection() {
 
 
                                     <h2 className="text-xl font-semibold">
-                                    Published in a peer-reviewed journal
-
-                                    </h2>
-
-                                    <p className="text-sm">
-                                    Ganguly A, Ganguly D. Med Sci (Basel). 2019;7(6):69. doi: 10.3390/medsci7060069
-
-
-                                    </p>
-                                </div>
-                                <Button
-                                    variant={"outline"}
-                                    className="mt-4 shadow-none md:hidden w-full"
-                                    onClick={() =>
-                                        setOpenCard(openCard === 0 ? null : 0)
-                                    }
-                                >
-                                    {openCard === 0 ? "Hide Details" : "View Details"}
-                                </Button>
-                            </div>
-
-
-                            <div
-                                className={`
-        absolute inset-0
-        bg-[#D5BBEA]/20
-        backdrop-blur-md
-        p-6
-        transition-transform
-        duration-500
-        ease-out
-
-        md:translate-y-full
-        md:group-hover:translate-y-0
-
-        ${openCard === 0
-                                        ? "translate-y-0"
-                                        : "translate-y-full"
-                                    }
-    `}
-                            >
-                                <div className="flex h-full flex-col justify-between">
-                                    <div className=" space-y-4">
-
-                                        <h2 className="text-xl font-semibold">
                                         Published in a peer-reviewed journal
 
-                                        </h2>
-
-                                        <p className="text-sm">
-                                        216-participant randomized study (108 with lumbar herniated disc and knee osteoarthritis, 108 without). Combined biomarker and anatomical-parameter protocol confirmed diagnosis at significantly lower cost than standard imaging (p&lt;0.0001).
-
-                                        </p> 
-                                    </div>
-                                    <div className="w-full flex flex-col gap-4">
-                                        <Button>
-                                            See report
-                                        </Button>
-                                        <Button
-                                            variant="outline"
-                                            className="md:hidden shadow-none"
-                                            onClick={() => setOpenCard(null)}
-                                        >
-                                            Close
-                                        </Button>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </CarouselItem>
-                    <CarouselItem className="basis-1/1 pl-1 lg:basis-1/3">
-                        <div className="group relative overflow-hidden rounded-3xl border border-[#D5BBEA] bg-[#D5BBEA]/10 h-[400px]">
-                            {/* Default Content */}
-                            <div className="p-6 justify-between flex flex-col h-full transition-all duration-600 group-hover:scale-[0.98]">
-                                <div className=" space-y-6">
-                                    <Badge>
-                                    OPTM Method™ · Supplement Registry
-                                    </Badge>
-
-
-                                    <img
-                                        src="/logos/Minerva.png"
-                                        alt="After"
-                                        className="w-full h-fit object-cover"
-                                    />
-
-
-                                    <h2 className="text-xl font-semibold">
-                                    Published in Minerva Medica, co-authored by OPTM Research Institute
-
-
                                     </h2>
 
                                     <p className="text-sm">
-                                    Ganguly A, Ganguly D. Med Sci (Basel). 2019;7(6):69. doi: 10.3390/medsci7060069
+                                        Ganguly A, Ganguly D. Med Sci (Basel). 2019;7(6):69. doi: 10.3390/medsci7060069
+
 
                                     </p>
                                 </div>
@@ -462,14 +373,14 @@ export function ScienceSection() {
                                     <div className=" space-y-4">
 
                                         <h2 className="text-xl font-semibold">
-                                        Published in Minerva Medica, co-authored by OPTM Research Institute
+                                            Published in a peer-reviewed journal
 
                                         </h2>
 
                                         <p className="text-sm">
-                                        56-patient, 4-week registry study. Curcumin-based supplement significantly improved pain, functional capacity, and oxidative stress markers versus standard care alone (P&lt;0.05).
+                                            216-participant randomized study (108 with lumbar herniated disc and knee osteoarthritis, 108 without). Combined biomarker and anatomical-parameter protocol confirmed diagnosis at significantly lower cost than standard imaging (p&lt;0.0001).
 
-                                        </p> 
+                                        </p>
                                     </div>
                                     <div className="w-full flex flex-col gap-4">
                                         <Button>
@@ -494,7 +405,7 @@ export function ScienceSection() {
                             <div className="p-6 justify-between flex flex-col h-full transition-all duration-600 group-hover:scale-[0.98]">
                                 <div className=" space-y-6">
                                     <Badge>
-                                    OPTM Method™ · Supplement Registry
+                                        OPTM Method™ · Supplement Registry
                                     </Badge>
 
 
@@ -506,12 +417,13 @@ export function ScienceSection() {
 
 
                                     <h2 className="text-xl font-semibold">
-                                    Published in Minerva Medica, co-authored by OPTM Research Institute
+                                        Published in Minerva Medica, co-authored by OPTM Research Institute
+
 
                                     </h2>
 
                                     <p className="text-sm">
-                                    Belcaro G, et al. (incl. Ganguly A). Minerva Med. 2018;109(2):88-94. doi: 10.23736/S0026-4806.17.05460-X. PMID: 29534559
+                                        Ganguly A, Ganguly D. Med Sci (Basel). 2019;7(6):69. doi: 10.3390/medsci7060069
 
                                     </p>
                                 </div>
@@ -550,18 +462,188 @@ export function ScienceSection() {
                                     <div className=" space-y-4">
 
                                         <h2 className="text-xl font-semibold">
-                                        Published in Minerva Medica, co-authored by OPTM Research Institute
+                                            Published in Minerva Medica, co-authored by OPTM Research Institute
 
                                         </h2>
 
                                         <p className="text-sm">
-                                        56-patient, 4-week registry study. Curcumin-based supplement significantly improved pain, functional capacity, and oxidative stress markers versus standard care alone (P&lt;0.05).
+                                            56-patient, 4-week registry study. Curcumin-based supplement significantly improved pain, functional capacity, and oxidative stress markers versus standard care alone (P&lt;0.05).
 
-                                        </p> 
+                                        </p>
                                     </div>
                                     <div className="w-full flex flex-col gap-4">
                                         <Button>
                                             See report
+                                        </Button>
+                                        <Button
+                                            variant="outline"
+                                            className="md:hidden shadow-none"
+                                            onClick={() => setOpenCard(null)}
+                                        >
+                                            Close
+                                        </Button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </CarouselItem>
+                    <CarouselItem className="basis-1/1 pl-1 lg:basis-1/3">
+                        <div className="group relative overflow-hidden rounded-3xl border border-[#D5BBEA] bg-[#D5BBEA]/10 h-[400px]">
+                            {/* Default Content */}
+                            <div className="p-6 justify-between flex flex-col h-full transition-all duration-600 group-hover:scale-[0.98]">
+                                <div className=" space-y-6">
+                                    <Badge>
+                                        OPTM Method™ · Supplement Registry
+                                    </Badge>
+
+
+                                    <img
+                                        src="/logos/Minerva.png"
+                                        alt="After"
+                                        className="w-full h-fit object-cover"
+                                    />
+
+
+                                    <h2 className="text-xl font-semibold">
+                                        Published in Minerva Medica, co-authored by OPTM Research Institute
+
+                                    </h2>
+
+                                    <p className="text-sm">
+                                        Belcaro G, et al. (incl. Ganguly A). Minerva Med. 2018;109(2):88-94. doi: 10.23736/S0026-4806.17.05460-X. PMID: 29534559
+
+                                    </p>
+                                </div>
+                                <Button
+                                    variant={"outline"}
+                                    className="mt-4 shadow-none md:hidden w-full"
+                                    onClick={() =>
+                                        setOpenCard(openCard === 0 ? null : 0)
+                                    }
+                                >
+                                    {openCard === 0 ? "Hide Details" : "View Details"}
+                                </Button>
+                            </div>
+
+
+                            <div
+                                className={`
+        absolute inset-0
+        bg-[#D5BBEA]/20
+        backdrop-blur-md
+        p-6
+        transition-transform
+        duration-500
+        ease-out
+
+        md:translate-y-full
+        md:group-hover:translate-y-0
+
+        ${openCard === 0
+                                        ? "translate-y-0"
+                                        : "translate-y-full"
+                                    }
+    `}
+                            >
+                                <div className="flex h-full flex-col justify-between">
+                                    <div className=" space-y-4">
+
+                                        <h2 className="text-xl font-semibold">
+                                            Published in Minerva Medica, co-authored by OPTM Research Institute
+
+                                        </h2>
+
+                                        <p className="text-sm">
+                                            56-patient, 4-week registry study. Curcumin-based supplement significantly improved pain, functional capacity, and oxidative stress markers versus standard care alone (P&lt;0.05).
+
+                                        </p>
+                                    </div>
+                                    <div className="w-full flex flex-col gap-4">
+                                        <Button>
+                                            See report
+                                        </Button>
+                                        <Button
+                                            variant="outline"
+                                            className="md:hidden shadow-none"
+                                            onClick={() => setOpenCard(null)}
+                                        >
+                                            Close
+                                        </Button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </CarouselItem>
+                    <CarouselItem className="basis-1/1 pl-1 lg:basis-1/3">
+                        <div className="group relative overflow-hidden rounded-3xl border border-[#D5BBEA] bg-[#D5BBEA]/10 h-[400px]">
+                            {/* Default Content */}
+                            <div className="p-6 justify-between flex flex-col h-full transition-all duration-600 group-hover:scale-[0.98]">
+                                <div className=" space-y-6">
+                                    <Badge>
+                                        LEGAGE™
+                                    </Badge>
+ 
+                                    <h2 className="text-xl font-semibold">
+                                        Early Knee Detection
+
+                                    </h2>
+
+                                    <p className="text-sm">
+                                        Research exploring multidomain gait and
+                                        inter-limb asymmetry for identifying early knee osteoarthritis.
+
+                                    </p>
+                                </div>
+                                <Button
+                                    variant={"outline"}
+                                    className="mt-4 shadow-none md:hidden w-full"
+                                    onClick={() =>
+                                        setOpenCard(openCard === 0 ? null : 0)
+                                    }
+                                >
+                                    {openCard === 0 ? "Hide Details" : "View Details"}
+                                </Button>
+                            </div>
+
+
+                            <div
+                                className={`
+        absolute inset-0
+        bg-[#D5BBEA]/20
+        backdrop-blur-md
+        p-6
+        transition-transform
+        duration-500
+        ease-out
+
+        md:translate-y-full
+        md:group-hover:translate-y-0
+
+        ${openCard === 0
+                                        ? "translate-y-0"
+                                        : "translate-y-full"
+                                    }
+    `}
+                            >
+                                <div className="flex h-full flex-col justify-between">
+                                    <div className=" space-y-4">
+
+                                        <h2 className="text-xl font-semibold">
+                                            Early Knee Detection
+
+                                        </h2>
+
+                                        <p className="text-sm">
+                                            Research exploring multidomain gait and
+                                            inter-limb asymmetry for identifying early knee osteoarthritis.
+
+                                        </p>
+                                    </div>
+                                    <div className="w-full flex flex-col gap-4">
+                                        <Button>
+                                        Read Publication
                                         </Button>
                                         <Button
                                             variant="outline"

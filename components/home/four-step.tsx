@@ -129,12 +129,13 @@ export function FourStepSection() {
                                 <GaugeRange stroke="#D5BBEA" />
                             </GaugeIndicator>
                             <GaugeValueText className="text-white">
-                                98
+                                93%
                             </GaugeValueText>
 
                             <GaugeLabel>
                                 <div className="absolute left-24 w-44 top-2 text-left text-sm text-white">
-                                    of patients report significant pain reduction, driven by biology.
+                                    of patients report significant pain reduction at Day 90.
+                                    Based on OPTM clinical outcomes data, n=1,260 patients across 5 published trials.
                                 </div>
                             </GaugeLabel>
                         </Gauge>
@@ -232,12 +233,14 @@ export function FourStepSection() {
                                 <GaugeRange stroke="#D5BBEA" />
                             </GaugeIndicator>
                             <GaugeValueText className="text-white">
-                                98
+                                93%
                             </GaugeValueText>
 
                             <GaugeLabel>
                                 <div className="absolute left-24 w-44 top-2 text-left text-sm text-white">
-                                    of patients report significant pain reduction, driven by biology.
+                                of patients report significant pain reduction at Day 90.
+ Based on OPTM clinical outcomes data, n=1,260 patients across 5 published trials.
+
                                 </div>
                             </GaugeLabel>
                         </Gauge>
@@ -336,12 +339,13 @@ export function FourStepSection() {
                                 <GaugeRange stroke="#D5BBEA" />
                             </GaugeIndicator>
                             <GaugeValueText className="text-white">
-                                98
+                                93%
                             </GaugeValueText>
 
                             <GaugeLabel>
                                 <div className="absolute left-24 w-44 top-2 text-left text-sm text-white">
-                                    of patients report significant pain reduction, driven by biology.
+                                of patients report significant pain reduction at Day 90.
+ Based on OPTM clinical outcomes data, n=1,260 patients across 5 published trials.
                                 </div>
                             </GaugeLabel>
                         </Gauge>
@@ -441,12 +445,14 @@ export function FourStepSection() {
                                 <GaugeRange stroke="#D5BBEA" />
                             </GaugeIndicator>
                             <GaugeValueText className="text-white">
-                                98
+                                93
                             </GaugeValueText>
 
                             <GaugeLabel>
                                 <div className="absolute left-24 w-44 top-2 text-left text-sm text-white">
-                                    of patients report significant pain reduction, driven by biology.
+                                of patients report significant pain reduction at Day 90.
+ Based on OPTM clinical outcomes data, n=1,260 patients across 5 published trials.
+
                                 </div>
                             </GaugeLabel>
                         </Gauge>

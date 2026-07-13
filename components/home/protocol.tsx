@@ -111,22 +111,7 @@ export function ProtocolSection() {
                     ))}
                 </Stepper>
             </div>
-            <div className="max-w-md md:max-w-3xl mx-auto mt-20 flex flex-col justify-center text-center px-8">
-                <h1
-                    className="font-heading text-2xl text-black leading-tight md:text-3xl">
-                    "I was told I needed a knee replacement.
-                    OPTM measured instead. Forty-two days later, I was climbing stairs again without any pain."
-                </h1>
-
-                <h1
-                    className="font-heading text-md mt-10 text-black leading-tight md:text-xl">
-                    Ravi Mehta, 51
-                </h1>
-
-                <p className="mt-6 text-sm leading-6 text-black/60">
-                    South Delhi · Osteoarthritis + metabolic syndrome
-                </p>
-            </div>
+             
         </section>
     );
 }

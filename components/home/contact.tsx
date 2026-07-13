@@ -97,17 +97,17 @@ export function ContactSection() {
   return (
     <section className="relative py-20 m-3">
       <div className="relative flex flex-col h-full space-y-6 justify-center items-center">
-        <Badge size={"sm"}>Delhi NCR · Start this week</Badge>
+        <Badge size={"sm"}>Start Today</Badge>
 
         <div className="max-w-md md:max-w-3xl text-center px-8">
           <h1 className="font-heading text-2xl font-semibold text-black leading-tight md:text-3xl">
-            Find Out Your <br /> Biological Age. Start This Week.
+            Don't Just
+            Manage Pain.
           </h1>
 
           <p className="mt-6 text-sm leading-6 text-black/60">
-            Book your MuscleAGE™, OrthoAGE™ or LegAGE™ panel at our South Delhi
-            clinic. Results in 48 hours. Your protocol starts the same week.
-            Board-certified specialists review everything.
+          Understand why it keeps coming back.
+
           </p>
         </div>
 
