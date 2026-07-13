@@ -4,30 +4,23 @@ import Link from 'next/link'
 import Logo from '../logo'
 
 const enterpriseLinks = [
-    { href: '#', label: 'Knee & joint pain' },
-    { href: '#', label: 'Back & spine pain' },
-    { href: '#', label: 'Obesity & GLP-1' },
-    { href: '#', label: 'Muscle longevity' },
+    { href: 'https://cal.com/predict/30min', label: 'Book a test' },
+
 ]
 
 const productLinks = [
-    { href: '#', label: 'MuscleAGE™ test' },
-    { href: '#', label: 'OrthoAGE™ test' },
-    { href: '#', label: 'Plant formulation' },
-    { href: '#', label: 'GLP-1 therapy' },
+    { href: '#', label: '+91 95559 55595' },
+
 ]
 
 const docsLinks = [
-    { href: '#', label: 'The research' },
-    { href: '#', label: 'Published studies' },
-    { href: '#', label: 'Clinical outcomes' },
-    { href: '#', label: 'Our team' },
+    { href: '#', label: 'South Delhi' },
 ]
 
 const communityLinks = [
-    { href: '#', label: 'Book a test' },
-    { href: '#', label: '+91 98100 00000' },
-    { href: '#', label: 'South Delhi' },
+
+
+
     { href: '#', label: 'Mon–Sat, 9am–7pm' },
 ]
 
@@ -58,11 +51,11 @@ export function Footer() {
                         India's first biomarker-driven pain & metabolic clinic.
                     </p>
                 </div>
-                <div className="grid grid-cols-2 gap-6 sm:grid-cols-4">
+                <div className="grid grid-cols-2 gap-6 text-center sm:grid-cols-4">
                     {footerLinks.map((linksGroup, index) => (
                         <div key={index}>
-                            <span className="font-medium">{linksGroup.name}</span>
-                            <ul className="mt-4 list-inside space-y-4">
+
+                            <ul className="list-inside space-y-4">
                                 {linksGroup.links.map((link, index) => (
                                     <li key={index}>
                                         <Link
@@ -76,11 +69,12 @@ export function Footer() {
                         </div>
                     ))}
                     <div>
-                        <span className="text-sm font-medium">Community</span>
-                        <ul className="mt-4 list-inside space-y-4">
+
+                        <ul className="list-inside space-y-4">
                             {communityLinks.map((link, index) => (
                                 <li key={index}>
                                     <Link
+                                        target='_blank'
                                         href={link.href}
                                         className="hover:text-primary text-black/60 text-sm duration-150">
                                         {link.label}
@@ -92,25 +86,9 @@ export function Footer() {
                 </div>
                 <div className="my-4 border-y py-4 flex flex-wrap justify-between gap-6 text-sm">
                     <div className='flex gap-6'>
+                       
                         <Link
-                            href="#"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label="X/Twitter"
-                            className="text-black/60 hover:text-primary block">
-                            <svg
-                                className="size-6"
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="1em"
-                                height="1em"
-                                viewBox="0 0 24 24">
-                                <path
-                                    fill="currentColor"
-                                    d="M10.488 14.651L15.25 21h7l-7.858-10.478L20.93 3h-2.65l-5.117 5.886L8.75 3h-7l7.51 10.015L2.32 21h2.65zM16.25 19L5.75 5h2l10.5 14z"></path>
-                            </svg>
-                        </Link>
-                        <Link
-                            href="#"
+                            href="https://www.linkedin.com/company/optm-health-care"
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="LinkedIn"
@@ -127,7 +105,7 @@ export function Footer() {
                             </svg>
                         </Link>
                         <Link
-                            href="#"
+                            href="https://www.facebook.com/OPTMHealthCare"
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="Facebook"
@@ -144,7 +122,7 @@ export function Footer() {
                             </svg>
                         </Link>
                         <Link
-                            href="#"
+                            href="https://www.instagram.com/optmpainfree/"
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="Instagram"

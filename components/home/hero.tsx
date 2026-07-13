@@ -4,6 +4,7 @@ import Image from "next/image";
 import { GaugeDemo1, GaugeDemo2, GaugeDemo3 } from "./gauge-demo";
 import { HugeiconsIcon } from "@hugeicons/react";
 import { Location06Icon } from "@hugeicons/core-free-icons";
+import Link from "next/link";
 
 
 export function HeroSection1() {
@@ -37,9 +38,11 @@ export function HeroSection1() {
                         </p>
 
                         <div className="mt-8">
-                            <Button size="lg">
-                                Book Your Assessment
-                            </Button>
+                            <Link href={"https://cal.com/predict/30min"} target="_blank">
+                                <Button size="lg">
+                                    Book Your Assessment
+                                </Button>
+                            </Link>
                         </div>
 
                         <div className="flex gap-3 max-w-60  items-center pt-40">
@@ -74,7 +77,7 @@ export function HeroSection2() {
             <GaugeDemo2 />
 
             <div className="absolute block  md:hidden inset-3 rounded-[30px] bg-white/60" />
- 
+
             <div className="relative z-10 flex h-full items-center">
                 <div className="container mx-auto mt-20">
                     <div className="max-w-sm md:max-w-lg px-8">
@@ -93,9 +96,11 @@ export function HeroSection2() {
                         </p>
 
                         <div className="mt-8">
-                            <Button size="lg">
-                                Book Your Assessment
-                            </Button>
+                        <Link href={"https://cal.com/predict/30min"} target="_blank">
+                                <Button size="lg">
+                                    Book Your Assessment
+                                </Button>
+                            </Link>
                         </div>
 
                         <div className="flex gap-3 max-w-60  items-center pt-40">
@@ -148,9 +153,11 @@ export function HeroSection3() {
                         </p>
 
                         <div className="mt-8">
-                            <Button size="lg">
-                                Book Your Assessment
-                            </Button>
+                        <Link href={"https://cal.com/predict/30min"} target="_blank">
+                                <Button size="lg">
+                                    Book Your Assessment
+                                </Button>
+                            </Link>
                         </div>
 
                         <div className="flex gap-3 max-w-60  items-center pt-40">

@@ -58,10 +58,12 @@ export default function Header() {
                                 </Link>
                             ))}
                         </nav>
+                        <Link href={"https://cal.com/predict/30min"} target="_blank">
+                            <Button>
+                                Book a test
+                            </Button>
+                        </Link>
 
-                        <Button>
-                            Book a test
-                        </Button>
                     </div>
 
                 </div>

@@ -28,6 +28,7 @@ import {
 } from "@/components/ui/popover";
 import { AnomaliesCard1 } from "./anomalies-card";
 import { Button } from "../ui/button";
+import Link from "next/link";
 
 
 const biomarkers = [
@@ -558,9 +559,11 @@ export function FourStepSection() {
                 ))}
 
                 <div className="mt-8 flex justify-center">
-                    <Button size="lg">
-                    Book Your AI Pain Assessment
-                    </Button>
+                    <Link href={"https://cal.com/predict/30min"} target="_blank">
+                        <Button size="lg">
+                            Book Your Assessment
+                        </Button>
+                    </Link>
                 </div>
             </div>
         </section>

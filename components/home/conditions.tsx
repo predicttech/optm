@@ -7,6 +7,7 @@ import {
     MarqueeItem,
 } from "@/components/ui/marquee";
 import { Badge } from "../ui/badge";
+import Image from "next/image";
 
 const tricks1 = [
     { title: "Knee Pain" },
@@ -29,9 +30,9 @@ const tricks1 = [
     { title: "Heel Pain" },
     { title: "Plantar Fasciitis" },
     { title: "Tennis Elbow" },
-  ];
-  
-  const tricks2 = [
+];
+
+const tricks2 = [
     { title: "Golfer's Elbow" },
     { title: "Rotator Cuff Injury" },
     { title: "ACL Injury" },
@@ -52,7 +53,21 @@ const tricks1 = [
     { title: "Mobility Issues" },
     { title: "Balance Problems" },
     { title: "Age-Related Weakness" },
-  ];
+];
+
+const images1 = [
+    "/img/1.webp",
+    "/img/2.jpg",
+    "/img/3.png",
+    "/img/4.jpg",
+];
+
+const images2 = [
+    "/img/5.jpeg",
+    "/img/6.jpeg",
+    "/img/7.webp",
+    "/img/knee-pain-d-p.jpg",
+];
 
 export function ConditionsSection() {
     return (
@@ -63,36 +78,78 @@ export function ConditionsSection() {
                     Conditions We Treat
                 </h1>
             </div>
-            <Marquee 
+            <Marquee
                 pauseOnHover
                 pauseOnKeyboard
             >
                 <MarqueeContent>
-                    {tricks1.map((trick) => (
-                        <MarqueeItem key={trick.title}>
-                            <Badge variant={"outline"} className="py-6 text-md border-[#D5BBEA] rounded-full px-10">
-                                {trick.title}
-                            </Badge> 
-                        </MarqueeItem>
-                    ))}
+                    {tricks1.flatMap((trick, index) => {
+                        const items = [
+                            <MarqueeItem key={trick.title}>
+                                <Badge
+                                    variant="outline"
+                                    className=" h-12 cursor-pointer text-md border-[#D5BBEA] rounded-full px-10"
+                                >
+                                    {trick.title}
+                                </Badge>
+                            </MarqueeItem>,
+                        ];
+
+                        if ((index + 1) % 2 === 0) {
+                            items.push(
+                                <MarqueeItem key={`img-${index}`}>
+                                    <Image
+                                        src={images1[Math.floor(index / 2) % images1.length]}
+                                        alt="Condition"
+                                        width={80}
+                                        height={80}
+                                        className="h-12 cursor-pointer border-[#D5BBEA] border rounded-full w-full object-cover"
+                                    />
+                                </MarqueeItem>
+                            );
+                        }
+
+                        return items;
+                    })}
                 </MarqueeContent>
                 <MarqueeEdge side="left" />
                 <MarqueeEdge side="right" />
             </Marquee>
-            <Marquee 
-            className="pt-4"
-            dir="rtl"
+            <Marquee
+                className="pt-4"
+                dir="rtl"
                 pauseOnHover
                 pauseOnKeyboard
             >
                 <MarqueeContent>
-                    {tricks2.map((trick) => (
-                        <MarqueeItem key={trick.title}>
-                            <Badge variant={"outline"} className="py-6 text-md border-[#D5BBEA] rounded-full px-10">
-                                {trick.title}
-                            </Badge> 
-                        </MarqueeItem>
-                    ))}
+                    {tricks2.flatMap((trick, index) => {
+                        const items = [
+                            <MarqueeItem key={trick.title}>
+                                <Badge
+                                    variant="outline"
+                                    className=" h-12 cursor-pointer text-md border-[#D5BBEA] rounded-full px-10"
+                                >
+                                    {trick.title}
+                                </Badge>
+                            </MarqueeItem>,
+                        ];
+
+                        if ((index + 1) % 2 === 0) {
+                            items.push(
+                                <MarqueeItem key={`img-${index}`}>
+                                    <Image
+                                        src={images2[Math.floor(index / 2) % images2.length]}
+                                        alt="Condition"
+                                        width={80}
+                                        height={80}
+                                        className="h-12 cursor-pointer border-[#D5BBEA] border rounded-full w-full object-cover"
+                                    />
+                                </MarqueeItem>
+                            );
+                        }
+
+                        return items;
+                    })}
                 </MarqueeContent>
                 <MarqueeEdge side="left" />
                 <MarqueeEdge side="right" />
