@@ -1,4 +1,4 @@
- 
+
 
 import Image from "next/image";
 
@@ -7,14 +7,14 @@ export function TrustSection() {
         <section className="md:flex grid grid-cols-2 my-10 md:justify-between gap-y-10 gap-x-4 md:gap-10 lg:mx-auto max-w-5xl text-center p-3 md:px-16">
             <div className="flex flex-col space-y-2 justify-center items-center">
                 <Image
-                    src="/new/fda.jpg"
+                    src="/new/pub-med.jpg"
                     alt="Hero"
                     width={200}
                     height={200}
-                    className="object-contain   h-full w-20"
+                    className="object-contain h-full w-28"
                 />
-                <h3 className="font-medium">Clinically proven</h3>
-                <p className="text-sm w-32">FDA-approved therapies</p>
+                <h3 className="font-medium">34+ </h3>
+                <p className="text-sm w-40">Years of Research Built into Biological Insight.</p>
             </div>
             <div className="flex flex-col space-y-2 justify-center items-center">
                 <div className='flex flex-col w-full h-full justify-center items-center'>
@@ -43,8 +43,9 @@ export function TrustSection() {
                         />
                     </div>
                 </div>
-                <h3 className="font-medium">Published</h3>
-                <p className="text-sm w-32">Nature · Aging · Wiley</p>
+                <h3 className="font-medium">Wiley · Nature · Aging  </h3>
+                <p className="text-sm w-32">Peer-reviewed research.
+                </p>
             </div>
             <div className="flex flex-col space-y-2 justify-center items-center">
                 <Image
@@ -54,19 +55,19 @@ export function TrustSection() {
                     height={200}
                     className="object-contain   h-full w-20"
                 />
-                <h3 className="font-medium">34 years</h3>
-                <p className="text-sm w-24">Research & Development</p>
+                <h3 className="font-medium">120+ </h3>
+                <p className="text-sm w-50"> Published Studies in Research & Development.                </p>
             </div>
             <div className="flex flex-col space-y-2 justify-center items-center">
                 <Image
-                    src="/new/pub-med.jpg"
+                    src="/logos/muscle-logo.jpg"
                     alt="Hero"
                     width={200}
                     height={200}
-                    className="object-contain   h-full w-28"
+                    className="object-contain   h-full w-16"
                 />
                 <h3 className="font-medium">MuscleAGE™</h3>
-                <p className="text-sm w-32">World's first muscle age blood test</p>
+                <p className="text-sm w-40">Advanced Muscle Biomarker Intelligence.                </p>
             </div>
 
         </section>

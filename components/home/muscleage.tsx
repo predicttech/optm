@@ -11,7 +11,7 @@ import { motion } from "framer-motion";
 
 export function MuscleAgeSection() {
     return (
-        <section className="relative m-3 ">
+        <section id="muscle-age" className="relative m-3 ">
             <div className="relative p-3 border mx-auto border-[#D5BBEA]/60 rounded-xl md:rounded-[30px] max-w-5xl">
                 <div className="relative flex flex-col h-full justify-center items-center">
 
@@ -64,13 +64,12 @@ export function MuscleAgeSection() {
                         <div className="absolute bottom-0 left-0 right-0 h-1/2 rounded-b-xl md:rounded-b-3xl bg-gradient-to-t from-[#133F26]/95 via-[#133F26]/60 to-transparent" />
                         <div className="bottom-0 p-8 absolute">
                             <h1 className="font-heading text-lg font-semibold text-white leading-tight md:text-xl">
-                                Your Muscles Have Their Own Age.
+                            One blood sample <br/> to estimate your Muscle Age.
                             </h1>
 
                             <p className="mt-3 text-sm text-white/80">
-                                It isn't always the same as your birth age.
-                                The Bio-Musculo Index™ uses one blood sample to estimate your Muscle Age, offering insights into muscle health, recovery, and overall wellbeing.
-
+                            It isn't always the same as your chronological age.
+                                The Bio-Musculo Index™ offers insights into muscle health, recovery, and overall wellbeing.
                             </p>
                         </div>
                     </div>
@@ -92,7 +91,7 @@ export function MuscleAgeSection() {
                                 </Badge>
                             </AccordionTrigger>
                             <AccordionContent>
-                                Osteocalcin, Vitamin D, and PTH reveal the biological processes driving bone loss and impaired bone remodeling
+                                Osteocalcin, Vitamin D, and PTH reveal the biological processes driving bone loss and impaired bone remodeling.
 
                             </AccordionContent>
                         </AccordionItem>
@@ -104,7 +103,7 @@ export function MuscleAgeSection() {
                                 </Badge>
                             </AccordionTrigger>
                             <AccordionContent>
-                                PINP and CTX-II show whether your body is building bone faster than it's breaking down — or losing the race.
+                                PINP and CTX-II show whether your body is building bone faster than it's breaking down - or losing the race.
                             </AccordionContent>
                         </AccordionItem>
                         <AccordionItem value="integrity">
@@ -114,7 +113,7 @@ export function MuscleAgeSection() {
                                 </Badge>
                             </AccordionTrigger>
                             <AccordionContent>
-                                CK-MM and MDA measure real muscle breakdown and oxidative stress — the earliest sign of degeneration.
+                                CK-MM and MDA measure real muscle breakdown and oxidative stress - the earliest sign of degeneration.
                             </AccordionContent>
                         </AccordionItem>
                         <AccordionItem value="blood">

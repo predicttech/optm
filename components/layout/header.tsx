@@ -7,9 +7,9 @@ import Logo from "../logo";
 import { cn } from "@/lib/utils";
 
 const navLinks = [
-    { name: "The OPTM Method", href: "#the-optm-method" },
+    { name: "Our Platform", href: "#the-optm-method" },
     { name: "Conditions We Treat", href: "#conditions-we-treat" },
-    { name: "Our Approach", href: "#our-approach" },
+    { name: "What We Measure", href: "#what-we-measure" },
     { name: "The Science", href: "#the-science" },
 ];
 
@@ -36,7 +36,7 @@ export default function Header() {
                     className={cn(
                         "mx-auto mt-2 transition-all duration-300 flex h-12 container items-center shadow-[inset_0_1px_4px_rgba(255,255,255,0.3),inset_0_0_0_1px_rgba(255,255,255,0.2),inset_0_-2px_8px_rgba(255,255,255,0.2),0_6px_10px_rgba(0,0,0,0.05)] bg-primary/80 backdrop-blur-sm justify-between px-2 rounded-full",
                         isScrolled &&
-                        " max-w-3xl"
+                        " max-w-4xl"
                     )}
                 >
 
@@ -60,7 +60,7 @@ export default function Header() {
                         </nav>
                         <Link href={"https://cal.com/predict/30min"} target="_blank">
                             <Button>
-                                Book a test
+                            Book Your Assessment
                             </Button>
                         </Link>
 

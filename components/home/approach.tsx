@@ -23,7 +23,8 @@ export function ApproachSection() {
                 <div className="max-w-md md:max-w-3xl text-center px-8">
                     <h1
                         className="font-heading text-2xl font-semibold text-white leading-tight md:text-3xl">
-                        Our Approach
+                        The Protocol
+
                     </h1>
                 </div>
             </div>
@@ -37,10 +38,13 @@ export function ApproachSection() {
                     />
                     <CardHeader>
                         <CardTitle className="text-white text-xl font-semibold">
-                            The 4-Step Protocol
+                            Measure
                         </CardTitle>
+                        <CardDescription className="font-medium text-md text-white/80">
+                            One blood sample. 40+ biomarkers.
+                        </CardDescription>
                         <CardDescription className="text-white/80">
-                            Our systematic approach moves patients from guesswork to proven outcomes through Assessment, Personalised Protocol formulation, Biomarker Monitoring, and Outcome Reporting.
+                            A single blood sample measures biological signals across five systems to understand the hidden drivers of pain.
                         </CardDescription>
                     </CardHeader>
                 </Card>
@@ -52,10 +56,15 @@ export function ApproachSection() {
                     />
                     <CardHeader>
                         <CardTitle className="text-white text-xl font-semibold">
-                            Advanced Phytotherapy
+                            Decode
                         </CardTitle>
+                        <CardDescription className="font-medium text-md text-white/80">
+                            AI-powered biological intelligence.
+
+                        </CardDescription>
                         <CardDescription className="text-white/80">
-                            We utilize targeted, plant-based phytotherapy to address the biological drivers of pain. This intervention is so effective that it boasts a 100% medication-stopped statistic, allowing many to stop their NSAIDs from Day 1.
+                            AI transforms biomarker data into your Bio-Musculo Index™, MuscleAGE™, OrthoAGE™ and KneeAGE™, revealing how your biology is changing.
+
                         </CardDescription>
                     </CardHeader>
                 </Card>
@@ -67,11 +76,14 @@ export function ApproachSection() {
                     />
                     <CardHeader>
                         <CardTitle className="text-white text-xl font-semibold">
-                            MuscleAGE™ & <br />
-                            Bio-Musculo Index
+                            Recover
                         </CardTitle>
+                        <CardDescription className="font-medium text-md text-white/80">
+                            A plan built around your biology.
+
+                        </CardDescription>
                         <CardDescription className="text-white/80">
-                            Recovery shouldn't be a feeling; it should be a number. We track your biological muscle age versus your chronological age, monitoring the real-time reduction of inflammation markers (like IL-6) from Day 1 to Day 60 to optimize longevity.
+                            Your personalised recovery programme combines targeted interventions, continuous monitoring and measurable progress not guesswork.
                         </CardDescription>
                     </CardHeader>
                 </Card>
@@ -134,7 +146,7 @@ export function ApproachSection() {
                     <CarouselPrevious className="static size-12 shadow-none translate-y-0" />
                     <CarouselNext className="static size-12 shadow-none translate-y-0" />
                 </div>
-            </Carousel> 
+            </Carousel>
         </section>
     );
 }

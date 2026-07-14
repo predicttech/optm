@@ -104,11 +104,7 @@ export function ContactSection() {
             Don't Just
             Manage Pain.
           </h1>
-
-          <p className="mt-6 text-sm leading-6 text-black/60">
-          Understand why it keeps coming back.
-
-          </p>
+ 
         </div>
 
         <div className="grid w-full md:grid-cols-2 md:gap-3 rounded-3xl bg-[#D5BBEA] max-w-5xl mt-10">

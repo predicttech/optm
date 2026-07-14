@@ -233,7 +233,7 @@ export function GaugeDemo3() {
   return (
     <div className="hidden md:block">
       <motion.div
-        className="absolute left-1/3 top-1/3 translate-x-[400%] translate-y-1/2"
+        className="absolute left-1/3 top-1/3 translate-x-[330%] translate-y-1/2"
         animate={{ y: [0, 10, 0] }}
         transition={{
           duration: 3,
@@ -254,7 +254,7 @@ export function GaugeDemo3() {
         </Gauge>
       </motion.div>
       <motion.div
-        className="absolute right-1/4 bottom-1/4 -translate-y-1/2"
+        className="absolute right-1/5 bottom-1/4 -translate-y-1/2"
         animate={{ y: [0, 10, 0] }}
         transition={{
           duration: 3,

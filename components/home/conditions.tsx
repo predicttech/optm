@@ -72,7 +72,7 @@ const images2 = [
 export function ConditionsSection() {
     return (
         <section id="conditions-we-treat">
-            <div className="mt-20">
+            <div className="my-20">
                 <div className="max-w-md my-20 flex flex-col justify-center mx-auto md:max-w-3xl text-center px-8">
                     <h1
                         className="font-heading text-2xl font-semibold text-black leading-tight md:text-3xl">

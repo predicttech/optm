@@ -146,7 +146,7 @@ export function Footer() {
                     </Link>
                 </div>
                 <div className="text-center text-xs text-black/60 py-3">
-                    <span>© 2025 OPTM Health Pvt. Ltd. · Delhi NCR, India · Not a substitute for medical advice. Always consult your physician before beginning any new health protocol.</span>
+                    <span>© 2026 OPTM Health Pvt. Ltd.</span>
                 </div>
             </div>
         </footer>

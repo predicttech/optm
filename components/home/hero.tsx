@@ -27,18 +27,18 @@ export function HeroSection1() {
                     <div className="max-w-sm md:max-w-lg px-8">
                         <h1
                             className="font-heading text-4xl font-semibold text-white leading-tight md:text-5xl">
-                            Pain that keeps coming back ends here at optm.
+                            Pain that keeps coming back <br /> ends here at optm.
                         </h1>
 
                         <p className="mt-6 max-w-sm text-sm leading-6 text-white/60">
-                        Most pain care tests only what's visible on a scan. OPTM tests 40+ biomarkers across five biological systems to find what's actually driving your pain before it becomes structural damage.
+                            Most pain care tests only what's visible on a scan. optm tests 40+ biomarkers across five biological systems to find what's actually driving your pain before it becomes structural damage.
 
                         </p>
 
                         <div className="mt-8">
-                            <Link href={"https://cal.com/predict/30min"} target="_blank">
+                            <Link href={"#muscle-age"}>
                                 <Button size="lg">
-                                    Book Your Assessment
+                                    Discover Your Biological Age
                                 </Button>
                             </Link>
                         </div>
@@ -81,7 +81,7 @@ export function HeroSection2() {
                     <div className="max-w-sm md:max-w-lg px-8">
                         <h1
                             className="font-heading text-4xl font-semibold leading-tight text-black md:text-5xl">
-                            What If <br />
+                            What If<br />
                             Your Pain Isn't the Real Problem?
 
                         </h1>
@@ -90,13 +90,13 @@ export function HeroSection2() {
                             Most treatments focus on where you feel pain.
                             <br />
 
-                            At OPTM, we start by understanding why it exists.
+                            At optm, we start by understanding why it exists.
                         </p>
 
                         <div className="mt-8">
-                        <Link href={"https://cal.com/predict/30min"} target="_blank">
+                            <Link href={"#muscle-age"}>
                                 <Button size="lg">
-                                    Book Your Assessment
+                                    Discover Your Biological Age
                                 </Button>
                             </Link>
                         </div>
@@ -147,13 +147,13 @@ export function HeroSection3() {
                         </h1>
 
                         <p className="mt-6 max-w-sm text-sm leading-6 text-black/60">
-                            OPTM helps you understand how your muscles, metabolism, and overall health are connected, so every decision starts with deeper insight.
+                            optm helps you understand how your muscles, metabolism, and overall health are connected, so every decision starts with deeper insight.
                         </p>
 
                         <div className="mt-8">
-                        <Link href={"https://cal.com/predict/30min"} target="_blank">
+                            <Link href={"#muscle-age"}>
                                 <Button size="lg">
-                                    Book Your Assessment
+                                    Discover Your Biological Age
                                 </Button>
                             </Link>
                         </div>
