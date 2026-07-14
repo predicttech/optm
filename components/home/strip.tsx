@@ -7,7 +7,6 @@ export function StripSection() {
             <p className="text-sm text-center font-medium max-w-60 md:max-w-full">
                 India's first biomarker-driven pain & metabolic clinic. 
             </p> 
-        </section>
-
+        </section> 
     );
 }
