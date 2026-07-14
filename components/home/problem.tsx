@@ -14,7 +14,7 @@ export function ProblemSection() {
                 <div className="max-w-md md:max-w-3xl text-center px-8">
                     <h1
                         className="font-heading text-2xl font-semibold text-black leading-tight md:text-3xl">
-                        Pain Is a Symptom. <br/> The Root Cause Often Goes Undetected.
+                        Pain Is A Symptom. <br/> The Root Cause Often Goes Undetected.
 
                     </h1>
 

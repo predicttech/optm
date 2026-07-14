@@ -14,7 +14,7 @@ import { useState } from "react";
 export function ScienceSection() {
     const [openCard, setOpenCard] = useState<number | null>(null);
     return (
-        <section className="relative py-20 pb-40 m-3">
+        <section id="the-science" className="relative py-20 pb-40 m-3">
 
             <div className="relative mx-auto flex max-w-5xl flex-col h-full space-y-6">
                 <Badge size={"sm"}>

@@ -7,7 +7,7 @@ import Header from "@/components/layout/header";
 import { euclid, idGrotesk } from "@/lib/fonts";
 import { StripSection } from "@/components/home/strip";
 import { Footer } from "@/components/layout/footer";
-import { Toaster } from "@/components/ui/sonner";
+import { Toaster } from "@/components/ui/sonner"; 
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' })
 
@@ -25,16 +25,16 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={cn("antialiased", fontMono.variable, "font-sans", inter.variable, euclid.variable, idGrotesk.variable )}
+      className={cn("antialiased", fontMono.variable, "font-sans", inter.variable, euclid.variable, idGrotesk.variable)}
     >
-      <body className="bg-white dark:bg-black"> 
-        <ThemeProvider>
-          <StripSection/>
-          <Header />
-          {children}
-          <Toaster />
-          <Footer/>
-          </ThemeProvider>
+      <body className="bg-white dark:bg-black">
+          <ThemeProvider>
+            <StripSection />
+            <Header />
+            {children}
+            <Toaster />
+            <Footer />
+          </ThemeProvider> 
       </body>
     </html>
   )

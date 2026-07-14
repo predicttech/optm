@@ -16,7 +16,7 @@ import {
 
 export function ApproachSection() {
     return (
-        <section className="relative bg-primary py-20">
+        <section id="our-approach" className="relative bg-primary py-20">
 
             <div className="relative flex flex-col h-full space-y-6 justify-center items-center">
 

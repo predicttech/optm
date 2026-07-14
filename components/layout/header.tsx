@@ -7,10 +7,10 @@ import Logo from "../logo";
 import { cn } from "@/lib/utils";
 
 const navLinks = [
-    { name: "Home", href: "/" },
-    { name: "About", href: "/#" },
-    { name: "Services", href: "/#" },
-    { name: "Contact", href: "/#" },
+    { name: "The OPTM Method", href: "#the-optm-method" },
+    { name: "Conditions We Treat", href: "#conditions-we-treat" },
+    { name: "Our Approach", href: "#our-approach" },
+    { name: "The Science", href: "#the-science" },
 ];
 
 export default function Header() {

@@ -72,7 +72,7 @@ const biomarkers = [
 
 export function FourStepSection() {
     return (
-        <section className="relative m-3">
+        <section id="the-optm-method" className="relative m-3">
             <Tabs defaultValue="1">
                 <div className="relative w-full mx-auto max-w-5xl border border-b-0 py-10 mx-auto border-[#D5BBEA]/60 rounded-t-xl md:rounded-t-[30px]">
                     <div className="relative mt-10 flex flex-col h-full justify-center items-center">
@@ -133,7 +133,7 @@ export function FourStepSection() {
                             </GaugeValueText>
 
                             <GaugeLabel>
-                                <div className="absolute left-24 w-44 top-2 text-left text-sm text-white">
+                                <div className="absolute left-24 w-60 top-2 text-left text-xs text-white">
                                     of patients report significant pain reduction at Day 90.
                                     Based on OPTM clinical outcomes data, n=1,260 patients across 5 published trials.
                                 </div>
@@ -237,10 +237,9 @@ export function FourStepSection() {
                             </GaugeValueText>
 
                             <GaugeLabel>
-                                <div className="absolute left-24 w-44 top-2 text-left text-sm text-white">
-                                of patients report significant pain reduction at Day 90.
- Based on OPTM clinical outcomes data, n=1,260 patients across 5 published trials.
-
+                            <div className="absolute left-24 w-60 top-2 text-left text-xs text-white">
+                                    of patients report significant pain reduction at Day 90.
+                                    Based on OPTM clinical outcomes data, n=1,260 patients across 5 published trials.
                                 </div>
                             </GaugeLabel>
                         </Gauge>
@@ -343,9 +342,9 @@ export function FourStepSection() {
                             </GaugeValueText>
 
                             <GaugeLabel>
-                                <div className="absolute left-24 w-44 top-2 text-left text-sm text-white">
-                                of patients report significant pain reduction at Day 90.
- Based on OPTM clinical outcomes data, n=1,260 patients across 5 published trials.
+                            <div className="absolute left-24 w-60 top-2 text-left text-xs text-white">
+                                    of patients report significant pain reduction at Day 90.
+                                    Based on OPTM clinical outcomes data, n=1,260 patients across 5 published trials.
                                 </div>
                             </GaugeLabel>
                         </Gauge>
@@ -449,10 +448,9 @@ export function FourStepSection() {
                             </GaugeValueText>
 
                             <GaugeLabel>
-                                <div className="absolute left-24 w-44 top-2 text-left text-sm text-white">
-                                of patients report significant pain reduction at Day 90.
- Based on OPTM clinical outcomes data, n=1,260 patients across 5 published trials.
-
+                            <div className="absolute left-24 w-60 top-2 text-left text-xs text-white">
+                                    of patients report significant pain reduction at Day 90.
+                                    Based on OPTM clinical outcomes data, n=1,260 patients across 5 published trials.
                                 </div>
                             </GaugeLabel>
                         </Gauge>

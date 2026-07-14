@@ -39,7 +39,7 @@ export function TestimonialsSection() {
 
                                     <div className="flex gap-4 items-center">
                                         <Avatar className={"h-24 w-24"}>
-                                            <AvatarImage src="/new/doctor.png" />
+                                            <AvatarImage src="/avatar/avatar-1.jpg" />
                                             <AvatarFallback>CN</AvatarFallback>
                                         </Avatar>
                                         <div className="">
@@ -113,7 +113,7 @@ export function TestimonialsSection() {
 
                                     <div className="flex gap-4 items-center">
                                         <Avatar className={"h-24 w-24"}>
-                                            <AvatarImage src="/new/doctor.png" />
+                                            <AvatarImage src="/avatar/avatar-3.jpg" />
                                             <AvatarFallback>CN</AvatarFallback>
                                         </Avatar>
                                         <div className="">
@@ -186,7 +186,7 @@ export function TestimonialsSection() {
 
                                     <div className="flex gap-4 items-center">
                                         <Avatar className={"h-24 w-24"}>
-                                            <AvatarImage src="/new/doctor.png" />
+                                            <AvatarImage src="/avatar/avatar-2.jpg" />
                                             <AvatarFallback>CN</AvatarFallback>
                                         </Avatar>
                                         <div className="">

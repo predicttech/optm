@@ -71,89 +71,91 @@ const images2 = [
 
 export function ConditionsSection() {
     return (
-        <div className="mt-20">
-            <div className="max-w-md my-20 flex flex-col justify-center mx-auto md:max-w-3xl text-center px-8">
-                <h1
-                    className="font-heading text-2xl font-semibold text-black leading-tight md:text-3xl">
-                    Conditions We Treat
-                </h1>
+        <section id="conditions-we-treat">
+            <div className="mt-20">
+                <div className="max-w-md my-20 flex flex-col justify-center mx-auto md:max-w-3xl text-center px-8">
+                    <h1
+                        className="font-heading text-2xl font-semibold text-black leading-tight md:text-3xl">
+                        Conditions We Treat
+                    </h1>
+                </div>
+                <Marquee
+                    pauseOnHover
+                    pauseOnKeyboard
+                >
+                    <MarqueeContent>
+                        {tricks1.flatMap((trick, index) => {
+                            const items = [
+                                <MarqueeItem key={trick.title}>
+                                    <Badge
+                                        variant="outline"
+                                        className=" h-12 cursor-pointer text-md border-[#D5BBEA] rounded-full px-10"
+                                    >
+                                        {trick.title}
+                                    </Badge>
+                                </MarqueeItem>,
+                            ];
+
+                            if ((index + 1) % 2 === 0) {
+                                items.push(
+                                    <MarqueeItem key={`img-${index}`}>
+                                        <Image
+                                            src={images1[Math.floor(index / 2) % images1.length]}
+                                            alt="Condition"
+                                            width={80}
+                                            height={80}
+                                            className="h-12 cursor-pointer border-[#D5BBEA] border rounded-full w-full object-cover"
+                                        />
+                                    </MarqueeItem>
+                                );
+                            }
+
+                            return items;
+                        })}
+                    </MarqueeContent>
+                    <MarqueeEdge side="left" />
+                    <MarqueeEdge side="right" />
+                </Marquee>
+                <Marquee
+                    className="pt-4"
+                    dir="rtl"
+                    pauseOnHover
+                    pauseOnKeyboard
+                >
+                    <MarqueeContent>
+                        {tricks2.flatMap((trick, index) => {
+                            const items = [
+                                <MarqueeItem key={trick.title}>
+                                    <Badge
+                                        variant="outline"
+                                        className=" h-12 cursor-pointer text-md border-[#D5BBEA] rounded-full px-10"
+                                    >
+                                        {trick.title}
+                                    </Badge>
+                                </MarqueeItem>,
+                            ];
+
+                            if ((index + 1) % 2 === 0) {
+                                items.push(
+                                    <MarqueeItem key={`img-${index}`}>
+                                        <Image
+                                            src={images2[Math.floor(index / 2) % images2.length]}
+                                            alt="Condition"
+                                            width={80}
+                                            height={80}
+                                            className="h-12 cursor-pointer border-[#D5BBEA] border rounded-full w-full object-cover"
+                                        />
+                                    </MarqueeItem>
+                                );
+                            }
+
+                            return items;
+                        })}
+                    </MarqueeContent>
+                    <MarqueeEdge side="left" />
+                    <MarqueeEdge side="right" />
+                </Marquee>
             </div>
-            <Marquee
-                pauseOnHover
-                pauseOnKeyboard
-            >
-                <MarqueeContent>
-                    {tricks1.flatMap((trick, index) => {
-                        const items = [
-                            <MarqueeItem key={trick.title}>
-                                <Badge
-                                    variant="outline"
-                                    className=" h-12 cursor-pointer text-md border-[#D5BBEA] rounded-full px-10"
-                                >
-                                    {trick.title}
-                                </Badge>
-                            </MarqueeItem>,
-                        ];
-
-                        if ((index + 1) % 2 === 0) {
-                            items.push(
-                                <MarqueeItem key={`img-${index}`}>
-                                    <Image
-                                        src={images1[Math.floor(index / 2) % images1.length]}
-                                        alt="Condition"
-                                        width={80}
-                                        height={80}
-                                        className="h-12 cursor-pointer border-[#D5BBEA] border rounded-full w-full object-cover"
-                                    />
-                                </MarqueeItem>
-                            );
-                        }
-
-                        return items;
-                    })}
-                </MarqueeContent>
-                <MarqueeEdge side="left" />
-                <MarqueeEdge side="right" />
-            </Marquee>
-            <Marquee
-                className="pt-4"
-                dir="rtl"
-                pauseOnHover
-                pauseOnKeyboard
-            >
-                <MarqueeContent>
-                    {tricks2.flatMap((trick, index) => {
-                        const items = [
-                            <MarqueeItem key={trick.title}>
-                                <Badge
-                                    variant="outline"
-                                    className=" h-12 cursor-pointer text-md border-[#D5BBEA] rounded-full px-10"
-                                >
-                                    {trick.title}
-                                </Badge>
-                            </MarqueeItem>,
-                        ];
-
-                        if ((index + 1) % 2 === 0) {
-                            items.push(
-                                <MarqueeItem key={`img-${index}`}>
-                                    <Image
-                                        src={images2[Math.floor(index / 2) % images2.length]}
-                                        alt="Condition"
-                                        width={80}
-                                        height={80}
-                                        className="h-12 cursor-pointer border-[#D5BBEA] border rounded-full w-full object-cover"
-                                    />
-                                </MarqueeItem>
-                            );
-                        }
-
-                        return items;
-                    })}
-                </MarqueeContent>
-                <MarqueeEdge side="left" />
-                <MarqueeEdge side="right" />
-            </Marquee>
-        </div>
+        </section>
     );
 }
