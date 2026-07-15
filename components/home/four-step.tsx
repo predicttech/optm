@@ -19,7 +19,7 @@ import {
 } from "@/components/ui/popover";
 import { AnomaliesCard1, AnomaliesCard12, AnomaliesCard2, AnomaliesCard22, AnomaliesCard3, AnomaliesCard32, AnomaliesCard4, AnomaliesCard42 } from "./anomalies-card";
 
-import { ProtocolSection1 } from "./protocol";
+import { ProtocolSection1, ProtocolSection2, ProtocolSection3, ProtocolSection4 } from "./protocol";
 
 
 const biomarkers = [
@@ -70,28 +70,24 @@ export function FourStepSection() {
                         <Badge size={"sm"}>
                             optm Platform
                         </Badge>
-
                         <div className="max-w-md mt-8 md:max-w-3xl text-center px-8">
                             <h1
                                 className="font-heading text-2xl font-semibold text-black leading-tight md:text-3xl">
                                 The optm Method. <br /> One Platform. Multiple Recovery Pathways.
                             </h1>
-
                             <p className="mt-6 text-sm leading-6 text-black/60">
                                 An evidence-based protocol - not generic physio,
                                 not a surgery referral.
                             </p>
                         </div>
                     </div>
-                    <div className="mt-10">
-                        <div className="overflow-x-auto mx-10 rounded-full">
-                            <TabsList className="mx-auto flex w-max md:w-fit gap-2 whitespace-nowrap">
-                                <TabsTrigger value="1">Knee</TabsTrigger>
-                                <TabsTrigger value="2">Neck & Back</TabsTrigger>
-                                <TabsTrigger value="3">Muscle longevity</TabsTrigger>
-                                <TabsTrigger value="4">Obesity & GLP-1</TabsTrigger>
-                            </TabsList>
-                        </div>
+                    <div className="sticky top-20 z-20 bg-white/80 backdrop-blur-sm pt-6 overflow-x-auto mx-10 rounded-full">
+                        <TabsList className="mx-auto flex w-max md:w-fit gap-2 whitespace-nowrap">
+                            <TabsTrigger value="1">Knee</TabsTrigger>
+                            <TabsTrigger value="2">Neck & Back</TabsTrigger>
+                            <TabsTrigger value="3">Muscle longevity</TabsTrigger>
+                            <TabsTrigger value="4">Obesity & GLP-1</TabsTrigger>
+                        </TabsList>
                     </div>
                 </div>
                 <TabsContent value="1" className={"relative h-full -mt-3 w-full mx-auto max-w-7xl"}>
@@ -555,13 +551,13 @@ export function FourStepSection() {
                     <ProtocolSection1 />
                 </TabsContent>
                 <TabsContent value="2" className={"relative h-full -mt-3 w-full mx-auto max-w-7xl"}>
-                <ProtocolSection1 />
+                    <ProtocolSection2 />
                 </TabsContent>
                 <TabsContent value="3" className={"relative h-full -mt-3 w-full mx-auto max-w-7xl"}>
-                <ProtocolSection1 />
+                    <ProtocolSection3 />
                 </TabsContent>
                 <TabsContent value="4" className={"relative h-full -mt-3 w-full mx-auto max-w-7xl"}>
-                <ProtocolSection1 />
+                    <ProtocolSection4 />
                 </TabsContent>
             </Tabs>
         </section>

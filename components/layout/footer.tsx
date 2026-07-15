@@ -4,23 +4,30 @@ import Link from 'next/link'
 import Logo from '../logo'
 
 const enterpriseLinks = [
-    { href: 'https://cal.com/predict/30min', label: 'Book a test' },
-
+    { href: '/conditions/knee-pain', label: 'Knee & joint pain' },
+    { href: '/conditions/back-pain', label: 'Back & spine pain' },
+    { href: '/conditions/osteoarthritis', label: 'Osteoarthritis' },
+    { href: '/conditions/muscle-weakness', label: 'Muscle Weekness' },
 ]
 
 const productLinks = [
-    { href: '#', label: '+91 95559 55595' },
-
+    { href: '/biomarkers/aldolase-a', label: 'Aldolase A' },
+    { href: '/biomarkers/crp', label: 'CRP' },
+    { href: '/biomarkers/mda', label: 'MDA' },
+    { href: '/biomarkers/vitamin-d', label: 'Vitamin D' },
 ]
 
 const docsLinks = [
-    { href: '#', label: 'South Delhi' },
+    { label: "Our Platform", href: "#the-optm-method" },
+    { label: "Conditions We Treat", href: "#conditions-we-treat" },
+    { label: "Our Approach", href: "#our-approach" },
+    { label: "The Science", href: "#the-science" },
 ]
 
 const communityLinks = [
-
-
-
+    { href: 'https://cal.com/predict/30min', label: 'Book a test' },
+    { href: '#', label: '+91 95559 55595' },
+    { href: '#', label: 'South Delhi' },
     { href: '#', label: 'Mon–Sat, 9am–7pm' },
 ]
 
@@ -51,7 +58,7 @@ export function Footer() {
                         India's first biomarker-driven pain & metabolic clinic.
                     </p>
                 </div>
-                <div className="grid grid-cols-2 gap-6 text-center sm:grid-cols-4">
+                <div className="grid grid-cols-2 gap-6 text-left sm:grid-cols-4">
                     {footerLinks.map((linksGroup, index) => (
                         <div key={index}>
 
@@ -85,8 +92,7 @@ export function Footer() {
                     </div>
                 </div>
                 <div className="my-4 border-y py-4 flex flex-wrap justify-between gap-6 text-sm">
-                    <div className='flex gap-6'>
-                       
+                    <div className='flex gap-6'> 
                         <Link
                             href="https://www.linkedin.com/company/optm-health-care"
                             target="_blank"

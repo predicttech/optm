@@ -12,7 +12,27 @@ import {
 import { Button } from "@/components/ui/button"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs" 
 import { ConditionsList } from "@/components/docs/conditions-list"
-import { conditionsSource } from "./lib/source"
+import { BiomarkersList } from "@/components/docs/biomarkers-list"
+import { biomarkersSource, conditionsSource } from "./lib/source"
+
+function getBiomarkersFolder() {
+  return conditionsSource.pageTree;
+}
+  
+function BiomarkersListWrapper({ variant }: { variant?: "all" | "new" }) {
+    const componentsFolder = getBiomarkersFolder()
+  
+    if (!componentsFolder) {
+      return null
+    }
+  
+    return (
+      <BiomarkersList
+      root={biomarkersSource.pageTree}
+      variant={variant}
+    />
+    )
+  }
  
 function getConditionsFolder() {
   return conditionsSource.pageTree;
@@ -303,6 +323,7 @@ export const mdxComponents = {
   AccordionItem,
   AccordionTrigger,
   ConditionsList: ConditionsListWrapper,
+  BiomarkersList: BiomarkersListWrapper,
   Link: ({ className, ...props }: React.ComponentProps<typeof Link>) => (
     <Link
       className={cn("font-medium underline underline-offset-4", className)}

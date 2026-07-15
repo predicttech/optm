@@ -19,7 +19,7 @@ export function MuscleAgeSection() {
 
                         <div className="mb-8 absolute" />
 
-                        <video className="rounded-xl w-40 h-30 object-cover"
+                        <video className="rounded-xl rotate-90 w-40 h-30 object-cover"
                             autoPlay
                             muted
                             loop >

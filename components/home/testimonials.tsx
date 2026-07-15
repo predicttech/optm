@@ -38,16 +38,13 @@ export function TestimonialsSection() {
                                 <div className="grid md:grid-cols-[52%_48%] h-full w-full gap-3 md:gap-6 rounded-xl bg-white p-8 md:p-10">
                                     <div className="flex h-full w-full flex-col ">
                                         <div className="flex gap-4 items-center">
-                                            <Avatar className={"h-24 w-24"}>
-                                                <AvatarImage src="/avatar/avatar-1.jpg" />
-                                                <AvatarFallback>CN</AvatarFallback>
-                                            </Avatar>
+
                                             <div className="">
                                                 <p className="text-lg font-medium text-black">
-                                                    Priya, 44
+                                                    Mr. Manish Agarwal
                                                 </p>
                                                 <p className="mt-1 text-sm text-black/60">
-                                                    Chronic Knee Pain • 6 Years
+                                                    Chronic Knee Pain • 10 Years
                                                 </p>
                                             </div>
                                         </div>
@@ -56,10 +53,9 @@ export function TestimonialsSection() {
 
                                         {/* Headline */}
                                         <div>
-                                            <h2 className="font-heading text-2xl font-semibold text-black">
-                                                "My pain wasn't permanent.
-                                                <br />
-                                                It was measurable."
+                                            <h2 className="font-heading text-lg lg:text-xl font-semibold text-black">
+                                                "Pain had slowly taken away my freedom to move.
+                                                At optm, they treated the biology behind my pain-not just the symptoms."
                                             </h2>
                                         </div>
 
@@ -69,8 +65,8 @@ export function TestimonialsSection() {
                                                 <p className="text-xs uppercase tracking-wide text-black/50">
                                                     MuscleAGE™
                                                 </p>
-                                                <p className="mt-2 text-2xl font-semibold text-black">
-                                                    71 <span className="text-black/40">→</span> 58
+                                                <p className="mt-2 text-sm lg:text-lg font-semibold text-black">
+                                                    76 → 61
                                                 </p>
                                             </div>
 
@@ -78,8 +74,8 @@ export function TestimonialsSection() {
                                                 <p className="text-xs uppercase tracking-wide text-black/50">
                                                     Pain Score
                                                 </p>
-                                                <p className="mt-2 text-2xl font-semibold text-black">
-                                                    8/10 <span className="text-black/40">→</span> 2/10
+                                                <p className="mt-2 text-sm lg:text-lg font-semibold text-black">
+                                                    8/10 → 3/10
                                                 </p>
                                             </div>
 
@@ -87,7 +83,7 @@ export function TestimonialsSection() {
                                                 <p className="text-xs uppercase tracking-wide text-black/50">
                                                     Program
                                                 </p>
-                                                <p className="mt-2 text-2xl font-semibold text-black">
+                                                <p className="mt-2 text-sm lg:text-lg font-semibold text-black">
                                                     12 Weeks
                                                 </p>
                                             </div>
@@ -100,93 +96,9 @@ export function TestimonialsSection() {
                                             </p>
 
                                             <div className="space-y-2 text-sm text-black/80">
-                                                <div>✓ Elevated CRP</div>
-                                                <div>✓ Stage 1 Sarcopenia</div>
-                                                <div>✓ Low Vitamin D</div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <video className="h-auto rounded-xl w-80 aspect-[9/16] object-contain"
-                                        autoPlay
-                                        controls
-                                        muted
-                                        loop >
-                                        <source src="/insta/manish.mp4" type="video/mp4" />
-                                    </video>
-
-                                </div>
-                            </CarouselItem>
-                             
-                            <CarouselItem className="lg:basis-1/2">
-                                <div className="grid md:grid-cols-[52%_48%] h-full w-full gap-3 md:gap-6 rounded-xl bg-white p-8 md:p-10">
-                                    <div className="flex h-full w-full flex-col ">
-                                        <div className="flex gap-4 items-center">
-                                            <Avatar className={"h-24 w-24"}>
-                                                <AvatarImage src="/avatar/avatar-1.jpg" />
-                                                <AvatarFallback>CN</AvatarFallback>
-                                            </Avatar>
-                                            <div className="">
-                                                <p className="text-lg font-medium text-black">
-                                                    Priya, 44
-                                                </p>
-                                                <p className="mt-1 text-sm text-black/60">
-                                                    Chronic Knee Pain • 6 Years
-                                                </p>
-                                            </div>
-                                        </div>
-
-                                        <Separator className={"my-6"} />
-
-                                        {/* Headline */}
-                                        <div>
-                                            <h2 className="font-heading text-2xl font-semibold text-black">
-                                                "My pain wasn't permanent.
-                                                <br />
-                                                It was measurable."
-                                            </h2>
-                                        </div>
-
-                                        {/* Metrics */}
-                                        <div className="mt-8 flex flex-wrap gap-6">
-                                            <div>
-                                                <p className="text-xs uppercase tracking-wide text-black/50">
-                                                    MuscleAGE™
-                                                </p>
-                                                <p className="mt-2 text-2xl font-semibold text-black">
-                                                    71 <span className="text-black/40">→</span> 58
-                                                </p>
-                                            </div>
-
-                                            <div>
-                                                <p className="text-xs uppercase tracking-wide text-black/50">
-                                                    Pain Score
-                                                </p>
-                                                <p className="mt-2 text-2xl font-semibold text-black">
-                                                    8/10 <span className="text-black/40">→</span> 2/10
-                                                </p>
-                                            </div>
-
-                                            <div>
-                                                <p className="text-xs uppercase tracking-wide text-black/50">
-                                                    Program
-                                                </p>
-                                                <p className="mt-2 text-2xl font-semibold text-black">
-                                                    12 Weeks
-                                                </p>
-                                            </div>
-                                        </div>
-
-                                        {/* Findings */}
-                                        <div className="mt-8 rounded-lg w-fit bg-neutral-50 p-5">
-                                            <p className="mb-3 text-sm font-semibold text-black">
-                                                Key Findings
-                                            </p>
-
-                                            <div className="space-y-2 text-sm text-black/80">
-                                                <div>✓ Elevated CRP</div>
-                                                <div>✓ Stage 1 Sarcopenia</div>
-                                                <div>✓ Low Vitamin D</div>
+                                                <div>✓ Muscle Infrastructure Failure</div>
+                                                <div>✓ Spinal Compensation & Postural Imbalance</div>
+                                                <div>✓ Compounding Damage (Disc / Nerve / Joint)</div>
                                             </div>
                                         </div>
                                     </div>
@@ -206,16 +118,13 @@ export function TestimonialsSection() {
                                 <div className="grid md:grid-cols-[52%_48%] h-full w-full gap-3 md:gap-6 rounded-xl bg-white p-8 md:p-10">
                                     <div className="flex h-full w-full flex-col ">
                                         <div className="flex gap-4 items-center">
-                                            <Avatar className={"h-24 w-24"}>
-                                                <AvatarImage src="/avatar/avatar-1.jpg" />
-                                                <AvatarFallback>CN</AvatarFallback>
-                                            </Avatar>
+
                                             <div className="">
                                                 <p className="text-lg font-medium text-black">
-                                                    Priya, 44
+                                                    Mrs. Sengupta
                                                 </p>
                                                 <p className="mt-1 text-sm text-black/60">
-                                                    Chronic Knee Pain • 6 Years
+                                                    Chronic Knee Pain • 7 Years
                                                 </p>
                                             </div>
                                         </div>
@@ -224,10 +133,10 @@ export function TestimonialsSection() {
 
                                         {/* Headline */}
                                         <div>
-                                            <h2 className="font-heading text-2xl font-semibold text-black">
-                                                "My pain wasn't permanent.
-                                                <br />
-                                                It was measurable."
+                                            <h2 className="font-heading text-lg lg:text-xl font-semibold text-black">
+                                                "I had been living with pain for years.
+                                                At optm, I finally understood the reason behind it—and today, I can move with confidence again."
+
                                             </h2>
                                         </div>
 
@@ -237,8 +146,8 @@ export function TestimonialsSection() {
                                                 <p className="text-xs uppercase tracking-wide text-black/50">
                                                     MuscleAGE™
                                                 </p>
-                                                <p className="mt-2 text-2xl font-semibold text-black">
-                                                    71 <span className="text-black/40">→</span> 58
+                                                <p className="mt-2 text-sm lg:text-lg font-semibold text-black">
+                                                    73 → 59
                                                 </p>
                                             </div>
 
@@ -246,8 +155,8 @@ export function TestimonialsSection() {
                                                 <p className="text-xs uppercase tracking-wide text-black/50">
                                                     Pain Score
                                                 </p>
-                                                <p className="mt-2 text-2xl font-semibold text-black">
-                                                    8/10 <span className="text-black/40">→</span> 2/10
+                                                <p className="mt-2 text-sm lg:text-lg font-semibold text-black">
+                                                    8/10 → 2/10
                                                 </p>
                                             </div>
 
@@ -255,7 +164,7 @@ export function TestimonialsSection() {
                                                 <p className="text-xs uppercase tracking-wide text-black/50">
                                                     Program
                                                 </p>
-                                                <p className="mt-2 text-2xl font-semibold text-black">
+                                                <p className="mt-2 text-sm lg:text-lg font-semibold text-black">
                                                     12 Weeks
                                                 </p>
                                             </div>
@@ -280,7 +189,7 @@ export function TestimonialsSection() {
                                         controls
                                         muted
                                         loop >
-                                        <source src="/insta/manish.mp4" type="video/mp4" />
+                                        <source src="/insta/2.mp4" type="video/mp4" />
                                     </video>
 
                                 </div>
@@ -290,16 +199,13 @@ export function TestimonialsSection() {
                                 <div className="grid md:grid-cols-[52%_48%] h-full w-full gap-3 md:gap-6 rounded-xl bg-white p-8 md:p-10">
                                     <div className="flex h-full w-full flex-col ">
                                         <div className="flex gap-4 items-center">
-                                            <Avatar className={"h-24 w-24"}>
-                                                <AvatarImage src="/avatar/avatar-1.jpg" />
-                                                <AvatarFallback>CN</AvatarFallback>
-                                            </Avatar>
+
                                             <div className="">
                                                 <p className="text-lg font-medium text-black">
-                                                    Priya, 44
+                                                    Mrs. Laxmi subraniam, 69 years old
                                                 </p>
                                                 <p className="mt-1 text-sm text-black/60">
-                                                    Chronic Knee Pain • 6 Years
+                                                    Chronic Knee Pain • 12 Years
                                                 </p>
                                             </div>
                                         </div>
@@ -308,10 +214,10 @@ export function TestimonialsSection() {
 
                                         {/* Headline */}
                                         <div>
-                                            <h2 className="font-heading text-2xl font-semibold text-black">
-                                                "My pain wasn't permanent.
-                                                <br />
-                                                It was measurable."
+                                            <h2 className="font-heading text-lg lg:text-xl font-semibold text-black">
+                                                "My scans showed damaged knees, but optm looked beyond the scans.
+                                                By treating the biology behind my pain, they helped me regain movement without letting pain control my life."
+
                                             </h2>
                                         </div>
 
@@ -321,8 +227,8 @@ export function TestimonialsSection() {
                                                 <p className="text-xs uppercase tracking-wide text-black/50">
                                                     MuscleAGE™
                                                 </p>
-                                                <p className="mt-2 text-2xl font-semibold text-black">
-                                                    71 <span className="text-black/40">→</span> 58
+                                                <p className="mt-2 text-sm lg:text-lg font-semibold text-black">
+                                                    77 → 62
                                                 </p>
                                             </div>
 
@@ -330,8 +236,8 @@ export function TestimonialsSection() {
                                                 <p className="text-xs uppercase tracking-wide text-black/50">
                                                     Pain Score
                                                 </p>
-                                                <p className="mt-2 text-2xl font-semibold text-black">
-                                                    8/10 <span className="text-black/40">→</span> 2/10
+                                                <p className="mt-2 text-sm lg:text-lg font-semibold text-black">
+                                                    9/10 → 2/10
                                                 </p>
                                             </div>
 
@@ -339,8 +245,8 @@ export function TestimonialsSection() {
                                                 <p className="text-xs uppercase tracking-wide text-black/50">
                                                     Program
                                                 </p>
-                                                <p className="mt-2 text-2xl font-semibold text-black">
-                                                    12 Weeks
+                                                <p className="mt-2 text-sm lg:text-lg font-semibold text-black">
+                                                    16 Weeks
                                                 </p>
                                             </div>
                                         </div>
@@ -352,9 +258,9 @@ export function TestimonialsSection() {
                                             </p>
 
                                             <div className="space-y-2 text-sm text-black/80">
-                                                <div>✓ Elevated CRP</div>
-                                                <div>✓ Stage 1 Sarcopenia</div>
-                                                <div>✓ Low Vitamin D</div>
+                                                <div>✓ Elevated Inflammatory Markers</div>
+                                                <div>✓ Early Muscle Degeneration</div>
+                                                <div>✓ Impaired Joint Function</div>
                                             </div>
                                         </div>
                                     </div>
@@ -364,19 +270,21 @@ export function TestimonialsSection() {
                                         controls
                                         muted
                                         loop >
-                                        <source src="/insta/manish.mp4" type="video/mp4" />
+                                        <source src="/insta/3.mp4" type="video/mp4" />
                                     </video>
 
                                 </div>
                             </CarouselItem>
+ 
 
 
-                        </CarouselContent> 
-                            <div className="absolute -bottom-20 z-50 left-1/2 flex -translate-x-1/2 items-center gap-3">
-                                <CarouselPrevious className="static size-12 translate-y-0 shadow-none" />
-                                <CarouselNext className="static size-12 translate-y-0 shadow-none" />
-                            </div>
-                         
+
+                        </CarouselContent>
+                        <div className="absolute -bottom-20 z-50 left-1/2 flex -translate-x-1/2 items-center gap-3">
+                            <CarouselPrevious className="static size-12 translate-y-0 shadow-none" />
+                            <CarouselNext className="static size-12 translate-y-0 shadow-none" />
+                        </div>
+
                     </Carousel>
 
                 </div>

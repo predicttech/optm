@@ -149,7 +149,7 @@ export function ScienceSection() {
                                         </ul>
                                     </div>
                                     <div className="w-full flex flex-col gap-4">
-                                    <Link href={"https://onlinelibrary.wiley.com/doi/abs/10.1111/ggi.70608"} target="_blank">
+                                        <Link href={"https://onlinelibrary.wiley.com/doi/abs/10.1111/ggi.70608"} target="_blank">
                                             <Button>
                                                 Read Publication
                                             </Button>
@@ -212,7 +212,7 @@ export function ScienceSection() {
                                         </ul>
                                     </div>
                                     <div className="w-full flex flex-col gap-4">
-                                    <Link href={"https://pmc.ncbi.nlm.nih.gov/articles/PMC6619472/"} target="_blank">
+                                        <Link href={"https://pmc.ncbi.nlm.nih.gov/articles/PMC6619472/"} target="_blank">
                                             <Button>
                                                 Read Publication
                                             </Button>
@@ -228,8 +228,8 @@ export function ScienceSection() {
                                 </div>
                             </div>
                         </div>
-                    </CarouselItem> 
-                    
+                    </CarouselItem>
+
                     <CarouselItem className="basis-1/1 pl-1 lg:basis-1/3">
                         <div className="group relative overflow-hidden rounded-3xl border border-[#D5BBEA] bg-[#D5BBEA]/10 h-[350px]">
                             {/* Default Content */}
@@ -275,7 +275,7 @@ export function ScienceSection() {
                                         </ul>
                                     </div>
                                     <div className="w-full flex flex-col gap-4">
-                                    <Link href={"https://pubmed.ncbi.nlm.nih.gov/29534559/"} target="_blank">
+                                        <Link href={"https://pubmed.ncbi.nlm.nih.gov/29534559/"} target="_blank">
                                             <Button>
                                                 Read Publication
                                             </Button>
@@ -338,7 +338,7 @@ export function ScienceSection() {
                                         </ul>
                                     </div>
                                     <div className="w-full flex flex-col gap-4">
-                                        
+
                                         <Button
                                             variant="outline"
                                             className="md:hidden shadow-none"
@@ -397,7 +397,7 @@ export function ScienceSection() {
                                         </ul>
                                     </div>
                                     <div className="w-full flex flex-col gap-4">
-                                        
+
                                         <Button
                                             variant="outline"
                                             className="md:hidden shadow-none"
@@ -411,9 +411,9 @@ export function ScienceSection() {
                         </div>
                     </CarouselItem>
 
-                    
 
-                    
+
+
 
                 </CarouselContent>
                 <div className="absolute w-full flex -bottom-20 right-0 z-50 flex md:justify-end justify-center items-center gap-3">

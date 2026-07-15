@@ -34,7 +34,7 @@ export function ApproachSection() {
                     <img
                         src="/img/doctor-patient.jpg"
                         alt="Event cover"
-                        className="relative   h-50 rounded-3xl z-20 w-full object-cover"
+                        className="relative h-50 rounded-3xl z-20 w-full object-cover"
                     />
                     <CardHeader>
                         <CardTitle className="text-white text-xl font-semibold">
@@ -45,11 +45,11 @@ export function ApproachSection() {
                         </CardDescription>
                     </CardHeader>
                 </Card>
-                <Card className="relative  bg-transparent shadow-none ring-0 mx-auto w-full max-w-sm pt-0">
+                <Card className="relative bg-transparent shadow-none ring-0 mx-auto w-full max-w-sm pt-0">
                     <img
                         src="/img/phyto.png"
                         alt="Event cover"
-                        className="relative    h-50 rounded-3xl z-20 w-full object-cover"
+                        className="relative h-50 rounded-3xl z-20 w-full object-cover"
                     />
                     <CardHeader>
                         <CardTitle className="text-white text-xl font-semibold">
@@ -60,7 +60,7 @@ export function ApproachSection() {
                         </CardDescription>
                     </CardHeader>
                 </Card>
-                <Card className="relative  bg-transparent shadow-none ring-0 mx-auto w-full max-w-sm pt-0">
+                <Card className="relative bg-transparent shadow-none ring-0 mx-auto w-full max-w-sm pt-0">
                     <img
                         src="/new/approach-1.jpg"
                         alt="Event cover"
@@ -82,9 +82,9 @@ export function ApproachSection() {
                     <CarouselItem>
                         <Card className="relative  bg-transparent shadow-none ring-0 mx-auto w-full max-w-sm pt-0">
                             <img
-                                src="/new/approach-3.jpg"
+                                src="/img/doctor-patient.jpg"
                                 alt="Event cover"
-                                className="relative border border-[#D5BBEA] rounded-3xl z-20 w-full object-cover"
+                                className="relative h-50 rounded-3xl z-20 w-full object-cover"
                             />
                             <CardHeader>
                                 <CardTitle className="text-white text-xl font-semibold">
@@ -99,10 +99,10 @@ export function ApproachSection() {
                     <CarouselItem>
                         <Card className="relative  bg-transparent shadow-none ring-0 mx-auto w-full max-w-sm pt-0">
                             <img
-                                src="/new/approach-2.jpg"
+                                src="/img/phyto.png"
                                 alt="Event cover"
-                                className="relative border border-[#D5BBEA] rounded-3xl z-20 w-full object-cover"
-                            />
+                        className="relative h-50 rounded-3xl z-20 w-full object-cover"
+                    />
                             <CardHeader>
                                 <CardTitle className="text-white text-xl font-semibold">
                                     Advanced Phytotherapy
@@ -117,7 +117,7 @@ export function ApproachSection() {
                         <img
                             src="/new/approach-1.jpg"
                             alt="Event cover"
-                            className="relative border border-[#D5BBEA] rounded-3xl z-20 w-full object-cover"
+                            className="relative h-50 rounded-3xl z-20 w-full object-cover"
                         />
                         <CardHeader>
                             <CardTitle className="text-white text-xl font-semibold">
