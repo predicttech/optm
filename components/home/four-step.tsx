@@ -1,11 +1,11 @@
- 
+
 import { Badge } from "../ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import {
     HoverCard,
     HoverCardContent,
     HoverCardTrigger,
-} from "@/components/ui/hover-card" 
+} from "@/components/ui/hover-card"
 import {
     CompareSlider,
     CompareSliderAfter,
@@ -17,10 +17,10 @@ import {
     PopoverContent,
     PopoverTrigger,
 } from "@/components/ui/popover";
-import { AnomaliesCard1, AnomaliesCard2, AnomaliesCard3 } from "./anomalies-card";
+import { AnomaliesCard1, AnomaliesCard12, AnomaliesCard2, AnomaliesCard22, AnomaliesCard3, AnomaliesCard32, AnomaliesCard4, AnomaliesCard42 } from "./anomalies-card";
 import { Button } from "../ui/button";
 import Link from "next/link";
-import { GLPGraph } from "./glp-graph";
+import { ProtocolSection1 } from "./protocol";
 
 
 const biomarkers = [
@@ -143,6 +143,9 @@ export function FourStepSection() {
                                 alt="After"
                                 className="w-full h-full object-cover"
                             />
+                            <div className="flex absolute right-6 top-6 border-[#D5BBEA]/60 justify-center">
+                                <AnomaliesCard12 />
+                            </div>
                         </CompareSliderAfter>
                         <CompareSliderHandle />
                     </CompareSlider>
@@ -187,6 +190,9 @@ export function FourStepSection() {
                                 alt="After"
                                 className="w-full h-full object-cover"
                             />
+                            <div className="flex absolute px-6 left-1/2 w-full -translate-x-1/2 -bottom-30 border-[#D5BBEA]/60 justify-center">
+                                <AnomaliesCard12 />
+                            </div>
                         </CompareSliderAfter>
                         <CompareSliderHandle />
                     </CompareSlider>
@@ -241,6 +247,9 @@ export function FourStepSection() {
                                 alt="After"
                                 className="w-full h-full object-cover"
                             />
+                            <div className="flex absolute right-6 top-6 border-[#D5BBEA]/60 justify-center">
+                                <AnomaliesCard22 />
+                            </div>
                         </CompareSliderAfter>
                         <CompareSliderHandle />
                     </CompareSlider>
@@ -285,6 +294,9 @@ export function FourStepSection() {
                                 alt="After"
                                 className="w-full h-full object-cover"
                             />
+                            <div className="flex absolute px-6 left-1/2 w-full -translate-x-1/2 -bottom-30 border-[#D5BBEA]/60 justify-center">
+                                <AnomaliesCard22 />
+                            </div>
                         </CompareSliderAfter>
                         <CompareSliderHandle />
                     </CompareSlider>
@@ -318,6 +330,7 @@ export function FourStepSection() {
                                 alt="After"
                                 className="w-60 h-full object-contain"
                             />
+
                         </div>
 
 
@@ -327,10 +340,10 @@ export function FourStepSection() {
                                 alt="Before"
                                 className="w-full h-full object-cover"
                             />
-                            <div className="flex absolute right-6 top-6 border-[#D5BBEA]/60 justify-center">
-                                <AnomaliesCard3 />
-                            </div>
 
+                            <div className="flex absolute right-6 top-6 border-[#D5BBEA]/60 justify-center">
+                                <AnomaliesCard2 />
+                            </div>
 
                         </CompareSliderBefore>
 
@@ -340,6 +353,9 @@ export function FourStepSection() {
                                 alt="After"
                                 className="w-full h-full object-cover"
                             />
+                            <div className="flex absolute right-6 top-6 border-[#D5BBEA]/60 justify-center">
+                                <AnomaliesCard32 />
+                            </div>
                         </CompareSliderAfter>
                         <CompareSliderHandle />
                     </CompareSlider>
@@ -383,6 +399,9 @@ export function FourStepSection() {
                                 alt="After"
                                 className="w-full h-full object-cover"
                             />
+                            <div className="flex absolute px-6 left-1/2 w-full -translate-x-1/2 -bottom-30 border-[#D5BBEA]/60 justify-center">
+                                <AnomaliesCard32 />
+                            </div>
                         </CompareSliderAfter>
                         <CompareSliderHandle />
                     </CompareSlider>
@@ -426,7 +445,7 @@ export function FourStepSection() {
                                 className="w-full h-full object-cover"
                             />
                             <div className="flex absolute right-6 top-6 border-[#D5BBEA]/60 justify-center">
-                                <AnomaliesCard1 />
+                                <AnomaliesCard4 />
                             </div>
 
 
@@ -438,6 +457,9 @@ export function FourStepSection() {
                                 alt="After"
                                 className="w-full h-full object-cover"
                             />
+                            <div className="flex absolute right-6 top-6 border-[#D5BBEA]/60 justify-center">
+                                <AnomaliesCard42 />
+                            </div>
                         </CompareSliderAfter>
                         <CompareSliderHandle />
                     </CompareSlider>
@@ -474,7 +496,7 @@ export function FourStepSection() {
                                 className="w-full h-full object-cover"
                             />
                             <div className="flex absolute px-6 left-1/2 w-full -translate-x-1/2 -bottom-30 border-[#D5BBEA]/60 justify-center">
-                                <AnomaliesCard1 />
+                                <AnomaliesCard4 />
                             </div>
                         </CompareSliderBefore>
 
@@ -484,51 +506,65 @@ export function FourStepSection() {
                                 alt="After"
                                 className="w-full h-full object-cover"
                             />
+                            <div className="flex absolute px-6 left-1/2 w-full -translate-x-1/2 -bottom-30 border-[#D5BBEA]/60 justify-center">
+                                <AnomaliesCard42 />
+                            </div>
                         </CompareSliderAfter>
                         <CompareSliderHandle />
                     </CompareSlider>
 
                 </TabsContent>
-            </Tabs>
-            <div className="w-full border border-t-0 py-10 border-[#D5BBEA]/60 rounded-b-xl md:rounded-b-[30px] mx-auto max-w-5xl flex flex-col gap-1 justify-center mb-6">
 
-                <div className="hidden flex-wrap gap-1 justify-center">
-                    {biomarkers.map((item, index) => (
-                        <HoverCard key={index}>
-                            <HoverCardTrigger delay={40} className={"cursor-pointer"}>
-                                <Badge variant="outline" className="cursor-pointer">
-                                    {item.title}
-                                </Badge>
-                            </HoverCardTrigger>
-                            <HoverCardContent>
-                                <p className="text-sm">{item.description}</p>
-                            </HoverCardContent>
-                        </HoverCard>
+                <div className="w-full border -mt-2 border-t-0 py-10 border-[#D5BBEA]/60 rounded-b-xl md:rounded-b-[30px] mx-auto max-w-5xl flex flex-wrap gap-1 justify-center mb-6">
+
+                    <div className="hidden md:flex flex-wrap gap-1 justify-center">
+                        {biomarkers.map((item, index) => (
+                            <HoverCard key={index}>
+                                <HoverCardTrigger delay={40} className={"cursor-pointer"}>
+                                    <Badge variant="outline" className="cursor-pointer">
+                                        {item.title}
+                                    </Badge>
+                                </HoverCardTrigger>
+                                <HoverCardContent>
+                                    <p className="text-sm">{item.description}</p>
+                                </HoverCardContent>
+                            </HoverCard>
+                        ))}
+                    </div>
+                    {biomarkers.map((item) => (
+                        <div key={item.title} className="md:hidden">
+                            <Popover>
+                                <PopoverTrigger>
+                                    <Badge
+                                        variant="outline"
+                                        className="cursor-pointer"
+                                    >
+                                        {item.title}
+                                    </Badge>
+                                </PopoverTrigger>
+
+                                <PopoverContent className="w-60 shadow-none">
+                                    <p className="text-sm text-black/60">
+                                        {item.description}
+                                    </p>
+                                </PopoverContent>
+                            </Popover>
+                        </div>
                     ))}
                 </div>
-                {biomarkers.map((item) => (
-                    <div key={item.title} className="hidden">
-                        <Popover>
-                            <PopoverTrigger>
-                                <Badge
-                                    variant="outline"
-                                    className="cursor-pointer"
-                                >
-                                    {item.title}
-                                </Badge>
-                            </PopoverTrigger>
-
-                            <PopoverContent className="w-60 shadow-none">
-                                <p className="text-sm text-black/60">
-                                    {item.description}
-                                </p>
-                            </PopoverContent>
-                        </Popover>
-                    </div>
-                ))}
-
-
-            </div>
+                <TabsContent value="1" className={"relative h-full -mt-3 w-full mx-auto max-w-7xl"}>
+                    <ProtocolSection1 />
+                </TabsContent>
+                <TabsContent value="2" className={"relative h-full -mt-3 w-full mx-auto max-w-7xl"}>
+                <ProtocolSection1 />
+                </TabsContent>
+                <TabsContent value="3" className={"relative h-full -mt-3 w-full mx-auto max-w-7xl"}>
+                <ProtocolSection1 />
+                </TabsContent>
+                <TabsContent value="4" className={"relative h-full -mt-3 w-full mx-auto max-w-7xl"}>
+                <ProtocolSection1 />
+                </TabsContent>
+            </Tabs>
         </section>
     );
 }

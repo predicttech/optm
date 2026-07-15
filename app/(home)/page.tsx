@@ -4,14 +4,11 @@ import { ConditionsSection } from "@/components/home/conditions"
 import { ContactSection } from "@/components/home/contact"
 import { DoctorsSection } from "@/components/home/doctor"
 import { FourStepSection } from "@/components/home/four-step" 
-import { CarouselHero } from "@/components/home/hero-carousel"
-import { MeasureSection } from "@/components/home/measure"
+import { CarouselHero } from "@/components/home/hero-carousel"  
 import { MuscleAgeSection } from "@/components/home/muscleage" 
-import { ProblemSection } from "@/components/home/problem"
-import { ProtocolSection } from "@/components/home/protocol"
+import { ProblemSection } from "@/components/home/problem" 
 import { ScienceSection } from "@/components/home/science"
-import { TestimonialsSection } from "@/components/home/testimonials"
-import { TreatSection } from "@/components/home/treat"
+import { TestimonialsSection } from "@/components/home/testimonials" 
 import { TrustSection } from "@/components/home/trust"
 import { Dithering } from "@paper-design/shaders-react"
 
@@ -31,14 +28,11 @@ export default function Page() {
       />
       <CarouselHero/> 
       <TrustSection />
-      <MuscleAgeSection />
-      <MeasureSection/>
-      <TreatSection/>
+      <MuscleAgeSection /> 
       <ProblemSection /> 
-      <FourStepSection />
-      <ConditionsSection/>
-       
-      <ApproachSection/>
+      <FourStepSection /> 
+      <ConditionsSection/> 
+      <ApproachSection/> 
       <TestimonialsSection/> 
       <ScienceSection/>
       <DoctorsSection/>

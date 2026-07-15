@@ -162,7 +162,7 @@ export function GaugeDemo2() {
 
           <GaugeValueText>{biologicalValue}</GaugeValueText>
 
-          <GaugeLabel  >Biological</GaugeLabel>
+          <GaugeLabel>Muscle Age</GaugeLabel>
         </Gauge>
       </motion.div>
       <motion.div
