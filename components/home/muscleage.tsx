@@ -15,28 +15,18 @@ export function MuscleAgeSection() {
             <div className="relative p-3 border mx-auto border-[#D5BBEA]/60 rounded-xl md:rounded-[30px] max-w-5xl">
                 <div className="relative flex flex-col h-full justify-center items-center">
 
-                    <div className="relative flex flex-col justify-center mt-10 items-center h-40 w-80">
+                    <div className="relative flex flex-col justify-center my-10 items-center h-40 w-80">
 
-                        <div className="border border-[#D5BBEA]/60  rounded-xl md:rounded-3xl mb-8 absolute h-32 w-32" />
-                        <motion.div
-                            animate={{
-                                y: [0, -10, 0],
-                            }}
-                            transition={{
-                                duration: 3,
-                                repeat: Infinity,
-                                ease: "easeInOut",
-                            }}
-                            className="absolute h-fit pl-8 w-80"
-                        >
-                            <Image
-                                src="/new/muscle.png"
-                                alt="Hero"
-                                width={200}
-                                height={200}
-                                className="object-contain   h-full w-full"
-                            />
-                        </motion.div>
+                        <div className="mb-8 absolute" />
+
+                        <video className="rounded-xl w-40 h-30 object-cover"
+                            autoPlay
+                            muted
+                            loop >
+                            <source src="/img/muscle-1.mp4" type="video/mp4" />
+                        </video>
+
+
                     </div>
 
                     <div className="max-w-md md:max-w-3xl text-center px-8">
@@ -64,11 +54,11 @@ export function MuscleAgeSection() {
                         <div className="absolute bottom-0 left-0 right-0 h-1/2 rounded-b-xl md:rounded-b-3xl bg-gradient-to-t from-[#133F26]/95 via-[#133F26]/60 to-transparent" />
                         <div className="bottom-0 p-8 absolute">
                             <h1 className="font-heading text-lg font-semibold text-white leading-tight md:text-xl">
-                            One blood sample <br/> to estimate your Muscle Age.
+                                One blood sample <br /> to estimate your Muscle Age.
                             </h1>
 
                             <p className="mt-3 text-sm text-white/80">
-                            It isn't always the same as your chronological age.
+                                It isn't always the same as your chronological age.
                                 The Bio-Musculo Index™ offers insights into muscle health, recovery, and overall wellbeing.
                             </p>
                         </div>

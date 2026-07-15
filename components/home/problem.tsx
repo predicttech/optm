@@ -47,7 +47,7 @@ export function ProblemSection() {
                             />
                         </div>
                         <p className="mt-6 text-sm leading-6 text-black/60">
-                            Urban Indian adults have uncontrolled metabolic inflammation — the same cytokines driving insulin resistance are degrading cartilage simultaneously.
+                            Urban Indian adults have uncontrolled metabolic inflammation - the same cytokines driving insulin resistance are degrading cartilage simultaneously.
                         </p>
                     </div>
 

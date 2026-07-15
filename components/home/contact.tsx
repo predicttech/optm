@@ -111,7 +111,7 @@ export function ContactSection() {
           {/* Image */}
           <div className="grid p-3 md:pr-0 gap-3 h-full w-full">
             <Image
-              src="/new/contact.jpg"
+              src="/img/happy-contact.png"
               alt="Doctor"
               width={500}
               height={500}

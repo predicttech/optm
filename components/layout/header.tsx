@@ -9,7 +9,7 @@ import { cn } from "@/lib/utils";
 const navLinks = [
     { name: "Our Platform", href: "#the-optm-method" },
     { name: "Conditions We Treat", href: "#conditions-we-treat" },
-    { name: "What We Measure", href: "#what-we-measure" },
+    { name: "Our Approach", href: "#our-approach" },
     { name: "The Science", href: "#the-science" },
 ];
 

@@ -34,7 +34,7 @@ export function ApproachSection() {
                     <img
                         src="/img/doctor-patient.jpg"
                         alt="Event cover"
-                        className="relative border border-[#D5BBEA] h-50 rounded-3xl z-20 w-full object-cover"
+                        className="relative   h-50 rounded-3xl z-20 w-full object-cover"
                     />
                     <CardHeader>
                         <CardTitle className="text-white text-xl font-semibold">
@@ -47,9 +47,9 @@ export function ApproachSection() {
                 </Card>
                 <Card className="relative  bg-transparent shadow-none ring-0 mx-auto w-full max-w-sm pt-0">
                     <img
-                        src="/img/harvesting.avif"
+                        src="/img/phyto.png"
                         alt="Event cover"
-                        className="relative border border-[#D5BBEA] h-50 rounded-3xl z-20 w-full object-cover"
+                        className="relative    h-50 rounded-3xl z-20 w-full object-cover"
                     />
                     <CardHeader>
                         <CardTitle className="text-white text-xl font-semibold">
@@ -64,7 +64,7 @@ export function ApproachSection() {
                     <img
                         src="/new/approach-1.jpg"
                         alt="Event cover"
-                        className="relative border border-[#D5BBEA] h-50 rounded-3xl z-20 w-full object-cover"
+                        className="relative h-50 rounded-3xl z-20 w-full object-cover"
                     />
                     <CardHeader>
                         <CardTitle className="text-white text-xl font-semibold">

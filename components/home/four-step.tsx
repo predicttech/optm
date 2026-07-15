@@ -18,8 +18,7 @@ import {
     PopoverTrigger,
 } from "@/components/ui/popover";
 import { AnomaliesCard1, AnomaliesCard12, AnomaliesCard2, AnomaliesCard22, AnomaliesCard3, AnomaliesCard32, AnomaliesCard4, AnomaliesCard42 } from "./anomalies-card";
-import { Button } from "../ui/button";
-import Link from "next/link";
+
 import { ProtocolSection1 } from "./protocol";
 
 
@@ -215,7 +214,7 @@ export function FourStepSection() {
                             </h1>
 
                             <p className="mt-3 text-sm text-white/80">
-                                Persistent neck and back pain isn't always explained by imaging alone. OrthoAGE™ evaluates the biological systems that support the spine—including muscle health, inflammatory activity, movement patterns and joint function—to identify the underlying drivers of pain before building a personalised recovery pathway.
+                                Persistent neck and back pain isn't always explained by imaging alone. OrthoAGE™ evaluates the biological systems that support the spine-including muscle health, inflammatory activity, movement patterns and joint function-to identify the underlying drivers of pain before building a personalised recovery pathway.
                             </p>
                         </div>
 
