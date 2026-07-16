@@ -13,7 +13,7 @@ const steps1 = [
         value: "1",
         day: "Day 1-3",
         title: "Biological Assessment",
-        title2: "Biological Assessment",
+        title2: "The OrthoAGE™ Journey",
         description: `From your first assessment to long-term recovery, every milestone is
 built around measurable biological improvement. Rather than treating
 pain alone, the Knee Protocol monitors inflammation, muscle health,
@@ -82,6 +82,9 @@ export function ProtocolSection1() {
                     >
                         <div className="flex flex-col items-center gap-4 text-center">
                             <h3 className="font-semibold text-2xl">{step.title}</h3>
+                            <p className="text-md font-semibold text-black uppercase">
+                                    {step.title2}
+                                </p>
                             <p className="text-black/60">{step.description}</p>
                         </div>
                     </StepperContent>
@@ -111,6 +114,7 @@ export function ProtocolSection1() {
                                 <p className="text-md font-semibold text-black uppercase">
                                     {step.day}
                                 </p>
+                                
                                 <h3 className="font-semibold text-2xl">{step.title}</h3>
                                 <p className="text-black/60">{step.description}</p>
                             </div>
@@ -128,13 +132,10 @@ const steps2 = [
     {
         value: "1",
         day: "Day 1-3",
-        title: "Biological Assessment",
-        title2: "Biological Assessment",
-        description: `From your first assessment to long-term recovery, every milestone is
-        built around measurable biological improvement. Rather than treating
-        pain alone, the Knee Protocol monitors inflammation, muscle health,
-        cartilage turnover, and movement quality—ensuring each phase moves
-        you closer to lasting recovery.`,
+        title: "The Spine Recovery Protocol",
+        title2: "Look Beyond The Spine. Understand The Biology Behind Movement.",
+        description: `Back and neck pain rarely begins with the spine alone. The OrthoAGE™ Programme evaluates the biological systems that support movement—including muscle health, inflammation, joint function, and movement quality—to uncover the root cause before building a personalised recovery pathway.
+`,
     },
 
     {
@@ -195,6 +196,9 @@ export function ProtocolSection2() {
                     >
                         <div className="flex flex-col items-center gap-4 text-center">
                             <h3 className="font-semibold text-2xl">{step.title}</h3>
+                            <p className="text-md font-semibold text-black uppercase">
+                                    {step.title2}
+                                </p>
                             <p className="text-black/60">{step.description}</p>
                         </div>
                     </StepperContent>
@@ -238,13 +242,10 @@ const steps3 = [
     {
         value: "1",
         day: "Day 1-3",
-        title: "Biological Assessment",
-        title2: "Biological Assessment",
-        description: `From your first assessment to long-term recovery, every milestone is
-        built around measurable biological improvement. Rather than treating
-        pain alone, the Knee Protocol monitors inflammation, muscle health,
-        cartilage turnover, and movement quality—ensuring each phase moves
-        you closer to lasting recovery.`,
+        title: "The Muscle Longevity Programme",
+        title2: "Healthy Muscles. Lifelong Movement.",
+        description: `Strength is one of the strongest predictors of healthy ageing. MuscleAGE™ measures biological muscle health using advanced biomarkers to understand muscle integrity, inflammation, recovery capacity, and biological ageing—helping preserve movement for years to come.
+`,
     },
 
     {
@@ -348,13 +349,10 @@ const steps4 = [
     {
         value: "1",
         day: "Day 1-3",
-        title: "Biological Assessment",
-        title2: "Biological Assessment",
-        description: `From your first assessment to long-term recovery, every milestone is
-        built around measurable biological improvement. Rather than treating
-        pain alone, the Knee Protocol monitors inflammation, muscle health,
-        cartilage turnover, and movement quality—ensuring each phase moves
-        you closer to lasting recovery.`,
+        title: "The Metabolic Health Protocol",
+        title2: "Protect Muscle While You Lose Weight.",
+        description: `Successful weight loss isn't measured by kilograms alone. MuscleAGE™ helps preserve muscle mass while monitoring inflammation, metabolic function, and biological health—ensuring healthier, more sustainable outcomes throughout your transformation.
+`,
     },
 
     {
