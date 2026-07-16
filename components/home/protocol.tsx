@@ -46,7 +46,7 @@ you closer to lasting recovery.`,
 
 export function ProtocolSection1() {
     return (
-        <section className="relative py-20 m-3">
+        <section className="relative border-x max-w-5xl mx-auto border-[#D5BBEA]/60 pt-10 mx-3">
 
             <div className="relative flex flex-col h-full space-y-6 justify-center items-center">
 
@@ -135,8 +135,8 @@ const steps2 = [
         pain alone, the Knee Protocol monitors inflammation, muscle health,
         cartilage turnover, and movement quality—ensuring each phase moves
         you closer to lasting recovery.`,
-            },
-         
+    },
+
     {
         value: "2",
         day: "Day 7",
@@ -163,7 +163,8 @@ const steps2 = [
 
 export function ProtocolSection2() {
     return (
-        <section className="relative py-20 m-3">
+        <section className="relative border-x max-w-5xl mx-auto border-[#D5BBEA]/60 pt-10 mx-3">
+
             <div className="relative flex flex-col h-full space-y-6 justify-center items-center">
                 <div className="max-w-md md:max-w-3xl text-center px-8">
                     <h1
@@ -244,8 +245,8 @@ const steps3 = [
         pain alone, the Knee Protocol monitors inflammation, muscle health,
         cartilage turnover, and movement quality—ensuring each phase moves
         you closer to lasting recovery.`,
-            },
-         
+    },
+
     {
         value: "2",
         day: "Day 7",
@@ -272,7 +273,8 @@ const steps3 = [
 
 export function ProtocolSection3() {
     return (
-        <section className="relative py-20 m-3">
+        <section className="relative border-x max-w-5xl mx-auto border-[#D5BBEA]/60 pt-10 mx-3">
+
             <div className="relative flex flex-col h-full space-y-6 justify-center items-center">
                 <div className="max-w-md md:max-w-3xl text-center px-8">
                     <h1
@@ -353,8 +355,8 @@ const steps4 = [
         pain alone, the Knee Protocol monitors inflammation, muscle health,
         cartilage turnover, and movement quality—ensuring each phase moves
         you closer to lasting recovery.`,
-            },
-         
+    },
+
     {
         value: "2",
         day: "Day 7",
@@ -381,7 +383,8 @@ const steps4 = [
 
 export function ProtocolSection4() {
     return (
-        <section className="relative py-20 m-3">
+        <section className="relative border-x max-w-5xl mx-auto border-[#D5BBEA]/60 pt-10 mx-3">
+
             <div className="relative flex flex-col h-full space-y-6 justify-center items-center">
                 <div className="max-w-md md:max-w-3xl text-center px-8">
                     <h1

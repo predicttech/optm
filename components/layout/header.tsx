@@ -6,10 +6,8 @@ import { Button } from "../ui/button";
 import Logo from "../logo";
 import { cn } from "@/lib/utils";
 
-const navLinks = [
-    { name: "Our Platform", href: "#the-optm-method" },
-    { name: "Conditions We Treat", href: "#conditions-we-treat" },
-    { name: "Our Approach", href: "#our-approach" },
+const navLinks = [ 
+    { name: "Why Our", href: "#conditions-we-treat" }, 
     { name: "The Science", href: "#the-science" },
 ];
 
@@ -38,8 +36,7 @@ export default function Header() {
                         isScrolled &&
                         " max-w-4xl"
                     )}
-                >
-
+                > 
                     <div className="mx-auto flex w-full items-center justify-between">
 
                         <Link href="/" className="text-xl pl-3">
@@ -62,10 +59,8 @@ export default function Header() {
                             <Button>
                             Book Your Assessment
                             </Button>
-                        </Link>
-
-                    </div>
-
+                        </Link> 
+                    </div> 
                 </div>
             </nav>
         </header>
