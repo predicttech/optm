@@ -39,7 +39,7 @@ export default function Header() {
                 > 
                     <div className="mx-auto flex w-full items-center justify-between">
 
-                        <Link href="/" className="text-xl pl-3">
+                        <Link href="/" className="text-xl w-52 pl-3">
                             <Logo fill="white" className="size-16 pt-1" />
                         </Link>
 
