@@ -7,7 +7,7 @@ import Logo from "../logo";
 import { cn } from "@/lib/utils";
 
 const navLinks = [ 
-    { name: "Why Our", href: "#conditions-we-treat" }, 
+    { name: "Why Us", href: "#the-optm-method" }, 
     { name: "The Science", href: "#the-science" },
 ];
 
