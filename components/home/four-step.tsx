@@ -21,6 +21,7 @@ import { AnomaliesCard1, AnomaliesCard12, AnomaliesCard2, AnomaliesCard22, Anoma
 
 import { ProtocolSection1, ProtocolSection2, ProtocolSection3, ProtocolSection4 } from "./protocol";
 import { useState } from "react";
+import React from "react";
 
 
 const biomarkers = [
@@ -64,6 +65,8 @@ const biomarkers = [
 
 export function FourStepSection() {
 
+    const [value, setValue] = React.useState(30);
+
     const [tab, setTab] = useState("1");
 
     const handleTabChange = (value: string) => {
@@ -97,7 +100,7 @@ export function FourStepSection() {
                             </p>
                         </div>
                     </div>
-                    <div className="sticky my-10 top-20 z-20 backdrop-blur-sm overflow-x-auto w-fit mx-auto rounded-full">
+                    <div className="sticky my-10 top-20 z-20 backdrop-blur-sm overflow-x-auto md:w-fit mx-auto rounded-full">
                         <TabsList className="mx-auto flex w-max md:w-fit gap-2 whitespace-nowrap">
                             <TabsTrigger value="1" type="button">Knee</TabsTrigger>
                             <TabsTrigger value="2" type="button">Neck & Back</TabsTrigger>
@@ -136,7 +139,7 @@ export function FourStepSection() {
                             </div>
 
 
-                            <CompareSliderBefore>
+                            <CompareSliderBefore  >
                                 <img
                                     src="/img/knee-pain-dp.jpg"
                                     alt="Before"
@@ -149,7 +152,7 @@ export function FourStepSection() {
 
                             </CompareSliderBefore>
 
-                            <CompareSliderAfter>
+                            <CompareSliderAfter  >
                                 <img
                                     src="/img/knee-pain-dr.jpg"
                                     alt="After"
@@ -162,12 +165,7 @@ export function FourStepSection() {
                             <CompareSliderHandle />
                         </CompareSlider>
 
-                        <CompareSlider
-                            orientation="vertical"
-                            interaction="drag"
-                            defaultValue={60}
-                            className="relative block md:hidden w-full aspect-[8/16] overflow-hidden rounded-none md:rounded-[30px]"
-                        >
+                        <div className="relative block md:hidden w-full aspect-[8/16] overflow-hidden rounded-none md:rounded-[30px]">
                             <div className="absolute z-1 top-0 left-0 right-0 h-1/3 rounded-b-xl md:rounded-b-3xl bg-gradient-to-b from-[#133F26]/95 via-[#133F26]/60 to-transparent" />
                             <div className="top-0 z-1 p-8 max-w-full absolute">
                                 <p className="mt-3  text-sm text-white/80">
@@ -175,39 +173,21 @@ export function FourStepSection() {
                                 </p>
                                 <h1 className="font-heading pt-4  text-lg font-semibold text-white leading-tight md:text-xl">
                                     Measure What Imaging Can't.
-
                                 </h1>
 
                                 <p className="mt-3 text-sm text-white/80">
                                     Knee pain is more than cartilage wear. OrthoAGE™ evaluates the biological environment surrounding the joint including cartilage turnover, muscle health, inflammatory activity and movement stability to build a personalised recovery strategy.
-
                                 </p>
-
                             </div>
-
-                            <CompareSliderBefore>
-                                <img
-                                    src="/img/knee-pain-pp.jpg"
-                                    alt="Before"
-                                    className="w-full h-full object-cover"
-                                />
-                                <div className="flex absolute px-6 left-1/2 w-full -translate-x-1/2 -bottom-30 border-[#D5BBEA]/60 justify-center">
-                                    <AnomaliesCard1 />
-                                </div>
-                            </CompareSliderBefore>
-
-                            <CompareSliderAfter>
-                                <img
-                                    src="/img/knee-pain-pr.jpg"
-                                    alt="After"
-                                    className="w-full h-full object-cover"
-                                />
-                                <div className="flex absolute px-6 left-1/2 w-full -translate-x-1/2 -bottom-30 border-[#D5BBEA]/60 justify-center">
-                                    <AnomaliesCard12 />
-                                </div>
-                            </CompareSliderAfter>
-                            <CompareSliderHandle />
-                        </CompareSlider>
+                            <img
+                                src="/img/knee-pain-pr.jpg"
+                                alt="After"
+                                className="w-full h-full object-cover"
+                            />
+                            <div className="flex absolute px-6 left-1/2 w-full -translate-x-1/2 -bottom-30 border-[#D5BBEA]/60 justify-center">
+                                <AnomaliesCard12 />
+                            </div>
+                        </div>
                         <ProtocolSection1 />
                     </TabsContent>
                     <TabsContent value="2" tabIndex={-1} className={"relative h-full -mt-3 w-full mx-auto max-w-7xl"}>
@@ -266,10 +246,8 @@ export function FourStepSection() {
                             <CompareSliderHandle />
                         </CompareSlider>
 
-                        <CompareSlider
-                            orientation="vertical"
-                            interaction="drag"
-                            defaultValue={60}
+                        <div
+
                             className="relative block md:hidden w-full aspect-[8/16] overflow-hidden rounded-none md:rounded-[30px]"
                         >
                             <div className="absolute z-1 top-0 left-0 right-0 h-1/3 rounded-b-xl md:rounded-b-3xl bg-gradient-to-b from-[#133F26]/95 via-[#133F26]/60 to-transparent" />
@@ -289,29 +267,15 @@ export function FourStepSection() {
 
                             </div>
 
-                            <CompareSliderBefore>
-                                <img
-                                    src="/img/back-pain-pp.jpg"
-                                    alt="Before"
-                                    className="w-full h-full object-cover"
-                                />
-                                <div className="flex absolute px-6 left-1/2 w-full -translate-x-1/2 -bottom-30 border-[#D5BBEA]/60 justify-center">
-                                    <AnomaliesCard2 />
-                                </div>
-                            </CompareSliderBefore>
-
-                            <CompareSliderAfter>
-                                <img
-                                    src="/img/back-pain-pr.jpg"
-                                    alt="After"
-                                    className="w-full h-full object-cover"
-                                />
-                                <div className="flex absolute px-6 left-1/2 w-full -translate-x-1/2 -bottom-30 border-[#D5BBEA]/60 justify-center">
-                                    <AnomaliesCard22 />
-                                </div>
-                            </CompareSliderAfter>
-                            <CompareSliderHandle />
-                        </CompareSlider>
+                            <img
+                                src="/img/back-pain-pr.jpg"
+                                alt="After"
+                                className="w-full h-full object-cover"
+                            />
+                            <div className="flex absolute px-6 left-1/2 w-full -translate-x-1/2 -bottom-30 border-[#D5BBEA]/60 justify-center">
+                                <AnomaliesCard22 />
+                            </div>
+                        </div>
                         <ProtocolSection2 />
                     </TabsContent>
                     <TabsContent value="3" tabIndex={-1} className={"relative h-full -mt-3 w-full mx-auto max-w-7xl"}>
@@ -372,10 +336,8 @@ export function FourStepSection() {
                             <CompareSliderHandle />
                         </CompareSlider>
 
-                        <CompareSlider
-                            orientation="vertical"
-                            interaction="drag"
-                            defaultValue={60}
+                        <div
+
                             className="relative block md:hidden w-full aspect-[8/16] overflow-hidden rounded-none md:rounded-[30px]"
                         >
                             <div className="absolute z-1 top-0 left-0 right-0 h-1/3 rounded-b-xl md:rounded-b-3xl bg-gradient-to-b from-[#133F26]/95 via-[#133F26]/60 to-transparent" />
@@ -385,38 +347,22 @@ export function FourStepSection() {
                                 </p>
                                 <h1 className="font-heading pt-4  text-lg font-semibold text-white leading-tight md:text-xl">
                                     Healthy Muscles. Lifelong Movement.
-
                                 </h1>
 
                                 <p className="mt-3 text-sm text-white/80">
                                     MuscleAGE™ measures biological muscle health using advanced biomarkers associated with muscle integrity, inflammation and functional ageing to help preserve strength over time.
-                                </p>
-
+                                </p> 
                             </div>
 
-                            <CompareSliderBefore>
-                                <img
-                                    src="/img/muscle-pain-pp.jpg"
-                                    alt="Before"
-                                    className="w-full h-full object-cover"
-                                />
-                                <div className="flex absolute px-6 left-1/2 w-full -translate-x-1/2 -bottom-30 border-[#D5BBEA]/60 justify-center">
-                                    <AnomaliesCard3 />
-                                </div>
-                            </CompareSliderBefore>
-
-                            <CompareSliderAfter>
-                                <img
-                                    src="/img/muscle-pain-pr.jpg"
-                                    alt="After"
-                                    className="w-full h-full object-cover"
-                                />
-                                <div className="flex absolute px-6 left-1/2 w-full -translate-x-1/2 -bottom-30 border-[#D5BBEA]/60 justify-center">
-                                    <AnomaliesCard32 />
-                                </div>
-                            </CompareSliderAfter>
-                            <CompareSliderHandle />
-                        </CompareSlider>
+                            <img
+                                src="/img/muscle-pain-pr.jpg"
+                                alt="After"
+                                className="w-full h-full object-cover"
+                            />
+                            <div className="flex absolute px-6 left-1/2 w-full -translate-x-1/2 -bottom-30 border-[#D5BBEA]/60 justify-center">
+                                <AnomaliesCard32 />
+                            </div>
+                        </div>
                         <ProtocolSection3 />
                     </TabsContent>
                     <TabsContent value="4" tabIndex={-1} className={"relative h-full -mt-3 w-full mx-auto max-w-7xl"}>
@@ -448,8 +394,7 @@ export function FourStepSection() {
                                     className="w-60 h-full object-contain"
                                 />
                             </div>
-
-
+ 
                             <CompareSliderBefore>
                                 <img
                                     src="/img/glp-dp.jpg"
@@ -458,9 +403,7 @@ export function FourStepSection() {
                                 />
                                 <div className="flex absolute right-6 top-6 border-[#D5BBEA]/60 justify-center">
                                     <AnomaliesCard4 />
-                                </div>
-
-
+                                </div> 
                             </CompareSliderBefore>
 
                             <CompareSliderAfter>
@@ -476,11 +419,7 @@ export function FourStepSection() {
                             <CompareSliderHandle />
                         </CompareSlider>
 
-                        <CompareSlider
-                            orientation="vertical"
-                            interaction="drag"
-                            defaultValue={60}
-                            className="relative block md:hidden w-full aspect-[8/16] overflow-hidden rounded-none md:rounded-[30px]"
+                        <div className="relative block md:hidden w-full aspect-[8/16] overflow-hidden rounded-none md:rounded-[30px]"
                         >
                             <div className="absolute z-1 top-0 left-0 right-0 h-1/3 rounded-b-xl md:rounded-b-3xl bg-gradient-to-b from-[#133F26]/95 via-[#133F26]/60 to-transparent" />
                             <div className="top-0 z-1 p-8 max-w-full absolute">
@@ -495,25 +434,10 @@ export function FourStepSection() {
 
                                 <p className="mt-3 text-sm text-white/80">
                                     Weight loss is only one part of the journey. MuscleAGE™ monitors biological markers associated with muscle preservation, inflammation and metabolic health to support healthier long-term outcomes.
-
-
-                                </p>
-
+                                    </p>
                             </div>
 
-                            <CompareSliderBefore>
-                                <img
-                                    src="/img/glp-pp.jpg"
-                                    alt="Before"
-                                    className="w-full h-full object-cover"
-                                />
-                                <div className="flex absolute px-6 left-1/2 w-full -translate-x-1/2 -bottom-30 border-[#D5BBEA]/60 justify-center">
-                                    <AnomaliesCard4 />
-                                </div>
-                            </CompareSliderBefore>
-
-                            <CompareSliderAfter>
-                                <img
+                            <img
                                     src="/img/glp-pr.jpg"
                                     alt="After"
                                     className="w-full h-full object-cover"
@@ -521,9 +445,7 @@ export function FourStepSection() {
                                 <div className="flex absolute px-6 left-1/2 w-full -translate-x-1/2 -bottom-30 border-[#D5BBEA]/60 justify-center">
                                     <AnomaliesCard42 />
                                 </div>
-                            </CompareSliderAfter>
-                            <CompareSliderHandle />
-                        </CompareSlider>
+                        </div>
                         <ProtocolSection4 />
                     </TabsContent>
 
