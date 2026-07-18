@@ -37,7 +37,7 @@ export function DoctorsSection() {
                     {/* Image */}
                     <div className="flex justify-center">
                         <Image
-                            src="/new/doctor.png"
+                            src="/img/dr-ganguly.png"
                             alt="Doctor"
                             width={220}
                             height={220}
